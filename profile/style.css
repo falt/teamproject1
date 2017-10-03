@@ -49,67 +49,57 @@ header nav ul li:hover {
 	color: #5295dd;
 }
 
-.mobile-nav-container {
-	height: 50px;
-	width: 50px;
-	border: 1px solid black;
-	display: none;
-}
-
-span {
-	height: 5px;
-	width: 10px;
-	background: black;
-}
-
 
 main {
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	border: //1px solid black;
 	display: flex;
 	flex-direction: row;
+	background: #e6ecf1;
 }
 
 main section {
-	border: 1px solid #d6d6d6;
-}
+/*	border: 1px solid #d6d6d6;
+*/}
 
 .profile-section {
 	flex-grow: 1;
 	width: 700px;
 }
 
-.profile-section .profile {
-	margin: 40px 0;
+.graph-section .profile {
+	margin: 29px 0;
 	width: 100%;
-	height: 250px;
+	height: //250px;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row-reverse;
 	justify-content: space-around;
-	align-items: center;
-	color: gray;
+	align-items: flex-start;
+	color: //gray;
 	font-size: 13px;
+	padding: 20px 0;
+	border: 1px solid gray;
 }
 
-.profile-section .profile .profile-pic {
+.graph-section .profile .profile-pic {
 	width: 85px;
-	height: 100px;
+	height: 85px;
 	overflow: hidden;
 	border: 1px solid black;
-	border-radius: 3px;
+	border-radius: 50%;
 }
 
 .profile-pic img {
-	width: auto; 
-	height: 100%;
+	width: 100%; 
+	height: auto;
 }
 
-.profile-section .profile-text {
+.graph-section .profile-text {
 	display: flex;
-	justify-content: center;
+	justify-content: ;
 	flex-direction: column;
-	align-items: center;
+	align-items: ;
 }
 
 
@@ -128,14 +118,19 @@ main section {
 	overflow: scroll;
 	flex-direction: column;
 	align-items: center;
+	border: 1px solid gray;
+	margin: 30px;
 }
 
 .middle-section article {
 	border: 1px solid #d6d6d6;
 	padding: 10px;
 	margin: 40px 20px 5px 20px;
-	background: #fffefe;
 	box-shadow: //0px 0px 2px black;
+}
+
+.middle-section article:last-child {
+	margin-bottom: 40px;
 }
 
 .middle-section article .read-more {
@@ -172,14 +167,14 @@ main section {
 .graph-section {
 	width: 700px;
 	flex-grow: 1;
+	margin: 0 20px 0 0;
 }
 
 .graph-section .rate-mood-section {
 	width: 100%;
 	height: 200px;
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
-	margin: 40px 0;
+	border: 1px solid gray;
+	margin: 0px 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -189,9 +184,8 @@ main section {
 .graph-section .graph {
 	width: 100%;
 	height: 200px;
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
-	margin: 40px 0;
+	border: 1px solid gray;
+	margin: 0px 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -215,6 +209,7 @@ main section {
 		flex-grow: 3;
 		height: 100%;
 		overflow: initial;
+		margin: 0;
 	}
 
 	.graph-section {
