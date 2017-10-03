@@ -9,6 +9,8 @@
 
 #main-nav {
     height: 60px;
+    position: fixed;
+    width: 100%;
 }
 
 #main-nav a {
@@ -29,7 +31,7 @@
     float: left;
     padding: 10px;
     font-weight: 700;
-    font-size: 35px;
+    font-size: 30px;
 
 }
 
@@ -106,4 +108,69 @@ footer {
   height: 50px;
   text-align: center;
   padding: 25px 0 0 0;
+}
+
+#login{
+  border-top: solid 1px;
+  border-color: lightgrey;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #e6ecf0;
+  align-items: center;
+
+}
+
+#login div{
+  height: 300px;
+  width: 200px;
+  background-color: transparent;
+  padding: 10px;
+  margin: auto;
+
+
+}
+
+#student-login i{
+  background-color: transparent;
+}
+#teacher-login i{
+  background-color: transparent;
+}
+#admin-login i{
+  background-color: transparent;
+}
+
+#student-login label, b{
+  background-color: transparent;
+}
+
+}
+#teacher-login label, b{
+  background-color: transparent;
+}
+
+#admin-login label, b{
+  background-color: transparent;
+}
+
+
+
+
+#contact{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  background-color: #f9f8f4;
+  border-top: solid 1px;
+  border-color: lightgrey;
+
+}
+
+#map{
+  width: 100%;
+  height: 100%;
+  background-color: none;
+
 }

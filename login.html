@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>LMS Login</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+	<head>
+	    <title>LMS Login</title>
+	    <meta charset='utf-8'>
+	    <meta name='viewport' content='width=device-width, initial-scale=1'>
+	    <link rel='stylesheet' type='text/css' href='loginstylesheet.css'>
+	</head>
 
-<body>
-</body>
+	<body>
+		<!--
+		loginknapp
+		<h1>Login Form</h1>
+		-->
 
+		<!-- Add Action='/actionpage' and method='get or post'-->
+		<form id='myForm' action='#' method='#'>
+			<div class='imgcontainer'>
+				<img src='svg/student3.svg' id='first' alt='Avatar' class='avatar'>
+				<img src='svg/teacher3.svg' id='second' alt='Avatar' class='avatar'>
+				<img src='svg/admin3.svg' id='third' alt='Avatar' class='avatar'>
+			</div>
+
+			<div class='container' id='loginform'>
+
+				<input type='text' id='anvnamn' class='input' placeholder='Användarnamn' name='uname' autofocus='true' required>
+				<label for='anvnamn' class='labels'><b>Användarnamn</b></label>
+
+
+				<input type='password' id='lösenord' class='input' placeholder='Lösenord' name='psw' required>
+				<label for='lösenord' class='labels'><b>Lösenord</b></label>
+
+				<button type='button' id='submitLogin' class='login'>Logga in</button>
+				<input type='checkbox' checked='checked'>Kom ihåg mig
+
+				<div>
+					<span class='psw'>Glömt <a href='#'>lösenord?</a></span>
+				</div>
+
+			</div>
+
+			<div class='container'>
+				<button type='button' class='cancelBtn'>Avbryt</button>
+				<!---<button type='reset'>Reset fields</button>-->
+			</div>
+
+		</form>
+		<script src='loginjs.js'></script>
+	</body>
 </html>
