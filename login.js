@@ -15,7 +15,7 @@ function LoginStudent(){
 
 	if(loginusername == student.uname && loginpassword == student.password){
 			alert("Welcome, " + student.name);
-			window.location="profile/studentprofile.html";
+			window.location="profile/studentprofile/studentprofile.html";
 		}
 	else{
 			alert("Skriv in rätt användarnamn/lösenord");
