@@ -1,6 +1,6 @@
 // var admin = {"name":"John", "age":"34", "city":"Malmo","email":"John@gmail.com", "uname":"admin", "password":"admin", "usertype":"admin"};
 // var teacher = {"name":"Fredrik", "age":"28", "city":"Stockholm", "email":"Fredrik@gmail.com", "uname":"teacher", "password":"teacher", "usertype":"teacher"};
-var student = {"name":"Carl", "age":"19", "city":"Gothenburg", "email":"Carl@gmail.com", "uname":"student", "password":"student", "usertype":"student"};
+var student = { "name": "Carl", "age": "19", "city": "Gothenburg", "email": "Carl@gmail.com", "uname": "student", "password": "student", "usertype": "student" };
 
 document.getElementById('studentLoginButtonID').addEventListener("click", LoginStudent);
 // document.getElementById('teacherLoginButtonID').addEventListener("click", LoginTeacher);
@@ -9,18 +9,17 @@ document.getElementById('studentLoginButtonID').addEventListener("click", LoginS
 var loginusername;
 var loginpassword;
 
-function LoginStudent(){
-	loginusername = document.getElementById("username").value;
-	loginpassword = document.getElementById("password").value;
+function LoginStudent() {
+    loginusername = document.getElementById("username").value;
+    loginpassword = document.getElementById("password").value;
 
-	if(loginusername == student.uname && loginpassword == student.password){
-			alert("Welcome, " + student.name);
-			window.location="profile/studentprofile/studentprofile.html";
-		}
-	else{
-			alert("Skriv in rätt användarnamn/lösenord");
-		}
-	}
+    if (loginusername == student.uname && loginpassword == student.password) {
+
+        window.location = "profile/studentprofile/studentprofile.html";
+    } else {
+        alert("Skriv in rätt användarnamn/lösenord");
+    }
+}
 // // function LoginTeacher(){
 // 	username = document.getElementById("teacherInputUnameID").value;
 // 	password = document.getElementById("teacherInputPwordID").value;

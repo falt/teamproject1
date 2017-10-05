@@ -12,11 +12,10 @@
 <body>
     <!--Navigation start-->
     <nav id="main-nav">
-        <h1>LMS</h1>
-        <a href="login.html">Login</a>
-        <a href="about.html">Om oss</a>
-        <a href="contact.html">Kontakt</a>
-
+        <h1><a href="#inner">LMS</a></h1>
+        <a href="#login">Login</a>
+        <a href="#about">Om oss</a>
+        <a href="#contact">Kontakt</a>
     </nav>
     <!-- Navigation end -->
     <!--Main section start-->
@@ -25,83 +24,89 @@
             <h1>LMS</h1>
             <h2>En responsiv lärplatoform</h2>
         </section>
-
-    <!-- Main section end -->
-    <section id="content">
-      <section id="first">
-        <p>Bacon ipsum dolor amet beef ribs pork belly rump t-bone. Meatball burgdoggen shoulder ball tip flank bresaola. Meatloaf cow tri-tip, brisket tenderloin bacon frankfurter cupim beef ribs chuck ham. Alcatra jowl sausage, beef short loin bacon hamburger andouille. Shoulder beef beef ribs pork belly hamburger sirloin prosciutto pork loin, bresaola pancetta salami swine tenderloin andouille.</p>
-
-      </section>
-      <section id="second">
-        <p>Bacon ipsum dolor amet beef ribs pork belly rump t-bone. Meatball burgdoggen shoulder ball tip flank bresaola. Meatloaf cow tri-tip, brisket tenderloin bacon frankfurter cupim beef ribs chuck ham. Alcatra jowl sausage, beef short loin bacon hamburger andouille. Shoulder beef beef ribs pork belly hamburger sirloin prosciutto pork loin, bresaola pancetta salami swine tenderloin andouille.</p>
-
-      </section>
-    </section>
-    <!--Login container-->
-    <section id="login">
-      <!-- for student -->
-      <div id="student-login">
-        <i class="fa fa-user-circle-o fa-5x" aria-hidden="true"></i><br>
-        <!-- <label for='anvnamn' class='labels'><b>Användarnamn</b></label> -->
-        <input type='text' id='username' placeholder='Användarnamn' name='uname' autofocus='true'><br>
-
-        <!-- <label for='lösenord' class='labels'><b>Lösenord</b></label><br> -->
-        <input type='password' id='password' placeholder='Lösenord' name='psw'><br>
-        <button type='button' id='studentLoginButtonID'>Logga in</button>
-
-      </div>
-      <!-- end for student -->
-      <!-- for teacher -->
-      <div id="teacher-login">
-        <i class="fa fa-user-circle fa-5x" aria-hidden="true"></i><br>
-        <!-- <label for='anvnamn' class='labels'><b>Användarnamn</b></label> -->
-        <input type='text' id='username' class='input' placeholder='Användarnamn' name='uname' autofocus='true' required><br>
-
-        <!-- <label for='lösenord' class='labels'><b>Lösenord</b></label><br> -->
-        <input type='password' id='password' class='input' placeholder='Lösenord' name='psw' required><br>
-        <button type='button' id='submitLogin' class='login'>Logga in</button>
-      </div>
-      <!-- end for teacher -->
-      <!-- for admin -->
-      <div id="admin-login">
-        <i class="fa fa-info-circle fa-5x" aria-hidden="true"></i><br>
-        <!-- <label for='anvnamn' class='labels'><b>Användarnamn</b></label> -->
-        <input type='text' id='username' class='input' placeholder='Användarnamn' name='uname' autofocus='true' required><br>
-
-        <!-- <label for='lösenord' class='labels'><b>Lösenord</b></label><br> -->
-        <input type='password' id='password' class='input' placeholder='Lösenord' name='psw' required><br>
-        <button type='button' id='submitLogin' class='login'>Logga in</button>
-      </div>
-      <!-- end for admin -->
-
-    </section>
-    <!-- End of login container-->
-    <section id="contact">
-      <div id="info">
-        <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
-        <h1>Kontakta oss</h1>
-
-        <p>LMS Ab</p>
-        <p>Adress: Hagagatan 25B, <br>113 47 Stockholm</p>
-        <p>Email: info@lms.se</p>
-      </div>
-      <!-- end of contact -->
-      <div id="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2034.166957952645!2d18.04811961555561!3d59.34686081665947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d721efbe7ef%3A0x6b3dbf3bd8af6f17!2sKYH+Stockholm!5e0!3m2!1ssv!2sse!4v1507027124309" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </div>
-
-
-
-
-    </section>
+        <!-- Main section end -->
+        <section id="content">
+            <section id="content-left">
+                <p>Bacon ipsum dolor amet beef ribs pork belly rump t-bone. Meatball burgdoggen shoulder ball tip flank bresaola. Meatloaf cow tri-tip, brisket tenderloin bacon frankfurter cupim beef ribs chuck ham. Alcatra jowl sausage, beef short loin bacon hamburger andouille. Shoulder beef beef ribs pork belly hamburger sirloin prosciutto pork loin, bresaola pancetta salami swine tenderloin andouille.</p>
+            </section>
+            <section id="content-right">
+                <p>Bacon ipsum dolor amet beef ribs pork belly rump t-bone. Meatball burgdoggen shoulder ball tip flank bresaola. Meatloaf cow tri-tip, brisket tenderloin bacon frankfurter cupim beef ribs chuck ham. Alcatra jowl sausage, beef short loin bacon hamburger andouille. Shoulder beef beef ribs pork belly hamburger sirloin prosciutto pork loin, bresaola pancetta salami swine tenderloin andouille.</p>
+            </section>
+        </section>
+        <!--Login container-->
+        <section id="login">
+            <!-- for student -->
+            <div id="student-login">
+                <i class="fa fa-user-circle-o fa-5x" aria-hidden="true"></i>
+                <br>
+                <input type='text' id='username' placeholder='Användarnamn' name='uname'>
+                <br>
+                <input type='password' id='password' placeholder='Lösenord' name='psw'>
+                <br>
+                <button type='button' id='studentLoginButtonID'>Logga in</button>
+            </div>
+            <!-- end for student -->
+            <!-- for teacher -->
+            <div id="teacher-login">
+                <i class="fa fa-user-circle fa-5x" aria-hidden="true"></i>
+                <br>
+                <input type='text' id='username' class='input' placeholder='Användarnamn' name='uname'>
+                <br>
+                <input type='password' id='password' class='input' placeholder='Lösenord' name='psw'>
+                <br>
+                <button type='button' id='submitLogin' class='login'>Logga in</button>
+            </div>
+            <!-- end for teacher -->
+            <!-- for admin -->
+            <div id="admin-login">
+                <i class="fa fa-info-circle fa-5x" aria-hidden="true"></i>
+                <br>
+                <input type='text' id='username' class='input' placeholder='Användarnamn' name='uname'>
+                <br>
+                <input type='password' id='password' class='input' placeholder='Lösenord' name='psw'>
+                <br>
+                <button type='button' id='submitLogin' class='login'>Logga in</button>
+            </div>
+            <!-- end for admin -->
+        </section>
+        <!-- End of login container-->
+        <section id="about">
+            <section id="about-left">
+                <h1>OM OSS</h1>
+                <p>Bacon ipsum dolor amet beef ribs pork belly rump t-bone. Meatball burgdoggen shoulder ball tip flank bresaola. Meatloaf cow tri-tip, brisket tenderloin bacon frankfurter cupim beef ribs chuck ham. Alcatra jowl sausage, beef short loin bacon hamburger andouille. Shoulder beef beef ribs pork belly hamburger sirloin prosciutto pork loin, bresaola pancetta salami swine tenderloin andouille.</p>
+            </section>
+            <section id="about-right">
+                <h1>Vi som jobbar här</h1>
+                <img src="img/jojo.png">
+                <img src="img/jojo.png">
+                <img src="img/jojo.png">
+                <img src="img/jojo.png">
+                <img src="img/jojo.png">
+                <img src="img/jojo.png">
+            </section>
+        </section>
+        <!-- Start of contact -->
+        <section id="contact">
+            <div id="info">
+                <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                <h1>Kontakta oss</h1>
+                <p>LMS Ab</p>
+                <p>Adress: Hagagatan 25B,
+                    <br>113 47 Stockholm</p>
+                <p>Email: info@lms.se</p>
+            </div>
+            <!-- end of contact -->
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2034.166957952645!2d18.04811961555561!3d59.34686081665947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d721efbe7ef%3A0x6b3dbf3bd8af6f17!2sKYH+Stockholm!5e0!3m2!1ssv!2sse!4v1507027124309" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </section>
     </main>
     <!-- Main  end -->
-      <!-- footer start -->
-  <footer>
-    <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-    <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
-    <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-
+    <!-- footer start -->
+    <footer>
+        <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
     </footer>
     <script src="login.js"></script>
 </body>
