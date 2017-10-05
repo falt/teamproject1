@@ -1,4 +1,4 @@
-/* CSS RESET */ 
+/* CSS RESET */
 body, h1, h2,h3,h4,h5,h6,ol,ul,li,a,p{
 	margin: 0;
 	padding: 0;
@@ -7,7 +7,7 @@ body, h1, h2,h3,h4,h5,h6,ol,ul,li,a,p{
 	font-family: 'Roboto';
 }
 
-/* START HEADER NAV AND LOGO */ 
+/* START HEADER NAV AND LOGO */
 header {
 	height: 50px;
 	width: 100%;
@@ -61,7 +61,7 @@ header nav ul li:hover {
 
 header nav .hamburger-nav {
 	width: 40px;
-	height: 30px; 
+	height: 30px;
 	display: flex;
 	justify-content: space-around;
 	flex-direction: column;
@@ -75,7 +75,7 @@ header nav .hamburger-nav .hamburger-menu {
 	background: black;
 }
 
-/* END HEADER NAV AND LOGO */ 
+/* END HEADER NAV AND LOGO */
 
 
 main {
@@ -121,7 +121,7 @@ main section {
 }
 
 .profile-pic img {
-	width: 100%; 
+	width: 100%;
 	height: auto;
 }
 
@@ -206,10 +206,35 @@ main section {
 	border: 1px solid #d6d6d6;
 	margin: 0px 0;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	background: #fff;
 }
+.profile-graph-section .rate-mood-section i:focus {
+	color: #33cc33;
+	outline:none;
+}
+
+.profile-graph-section .rate-mood-section i:hover {
+	color: #33cc33;
+	outline:none;
+
+}
+
+.profile-graph-section .rate-mood-section i:last-child:focus {
+	color: #ff0000;
+	outline:none;
+}
+
+.profile-graph-section .rate-mood-section i:last-child:hover {
+	color: #ff0000;
+	outline:none;
+
+}
+
+
+
+
 
 
 .profile-graph-section .graph {
@@ -223,7 +248,7 @@ main section {
 	background: #fff;
 }
 
-/* MEDIA QUERYS FOR SMALL SCREENS AND DEVICES */ 
+/* MEDIA QUERYS FOR SMALL SCREENS AND DEVICES */
 @media (max-width: 900px) {
 	main {
 		flex-direction: column;
@@ -254,6 +279,3 @@ main section {
 		display: initial;
 	}
 }
-
-
-
