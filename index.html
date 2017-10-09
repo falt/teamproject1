@@ -10,14 +10,23 @@
 </head>
 
 <body>
+
+  <header>
+    <div class="logo">LMS</div>
     <!--Navigation start-->
-    <nav id="main-nav">
-        <h1>LMS</h1>
-        <a href="login.html">Login</a>
+    <nav>
+      <ul>
+        <li><a href="#login">Login</a></li>
+        <li><a href="#content">Om oss</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+
+        <!-- <a href="login.html">Login</a>
         <a href="about.html">Om oss</a>
-        <a href="contact.html">Kontakt</a>
+        <a href="contact.html">Kontakt</a> -->
 
     </nav>
+  </header>
     <!-- Navigation end -->
     <!--Main section start-->
     <main id="wrapper">
@@ -41,9 +50,9 @@
     <section id="login">
       <!-- for student -->
       <div id="student-login">
-        <i class="fa fa-user-circle-o fa-5x" aria-hidden="true"></i><br>
+        <i class="fa fa-user-circle-o fa-5x" aria-hidden="false"></i><br>
         <!-- <label for='anvnamn' class='labels'><b>Användarnamn</b></label> -->
-        <input type='text' id='username' placeholder='Användarnamn' name='uname' autofocus='false'><br>
+        <input type='text' id='username' placeholder='Användarnamn' name='uname' autofocus"true"><br>
 
         <!-- <label for='lösenord' class='labels'><b>Lösenord</b></label><br> -->
         <input type='password' id='password' placeholder='Lösenord' name='psw'><br>
@@ -55,7 +64,7 @@
       <div id="teacher-login">
         <i class="fa fa-user-circle fa-5x" aria-hidden="true"></i><br>
         <!-- <label for='anvnamn' class='labels'><b>Användarnamn</b></label> -->
-        <input type='text' id='username' class='input' placeholder='Användarnamn' name='uname' autofocus='false' required><br>
+        <input type='text' id='username' class='input' placeholder='Användarnamn' name='uname'required><br>
 
         <!-- <label for='lösenord' class='labels'><b>Lösenord</b></label><br> -->
         <input type='password' id='password' class='input' placeholder='Lösenord' name='psw' required><br>
@@ -66,7 +75,7 @@
       <div id="admin-login">
         <i class="fa fa-info-circle fa-5x" aria-hidden="true"></i><br>
         <!-- <label for='anvnamn' class='labels'><b>Användarnamn</b></label> -->
-        <input type='text' id='username' class='input' placeholder='Användarnamn' name='uname' autofocus='false' required><br>
+        <input type='text' id='username' class='input' placeholder='Användarnamn' name='uname' required><br>
 
         <!-- <label for='lösenord' class='labels'><b>Lösenord</b></label><br> -->
         <input type='password' id='password' class='input' placeholder='Lösenord' name='psw' required><br>

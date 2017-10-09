@@ -14,7 +14,6 @@ function LoginStudent(){
 	loginpassword = document.getElementById("password").value;
 
 	if(loginusername == student.uname && loginpassword == student.password){
-			alert("Welcome, " + student.name);
 			window.location="profile/studentprofile/studentprofile.html";
 		}
 	else{
