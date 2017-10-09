@@ -1,0 +1,147 @@
+body, h1, h2, h3, h4, h5, h6, ol, ul, li, a, p {
+    list-style-type: none;
+    font-size: 100%;
+    font-family: Roboto;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background: white;
+}
+
+article, aside, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+body {
+    display: block;
+}
+/* HEADER SECTION */
+header {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-image: initial;
+}
+
+header .logo {
+	width: 90px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+	font-weight: bold;
+}
+header nav ul li {
+	display: inline-block;
+    padding: 0 10px;
+    
+}
+
+header nav ul li:hover {
+	cursor: pointer;
+	color: #5295dd;
+}
+/*  END HEADER SECTION */
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+/* COURSE SECTION */
+
+.course-type {
+    margin: 40px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: darkgrey;
+    border-image: initial;
+    background: white;
+}
+
+.course-type h1 {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    border-bottom: 3px solid black;
+    padding: 20px;
+}
+
+.all-courses {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    font-size: 20px;
+    line-height: 300%;
+    float: right;
+}
+/* COURSE SECTION */
+
+/* CARD SECTION */
+
+.cards-section {
+    width: 1000px;
+    font-size: 24px;
+    border: 1px solid black;
+    border-color: darkgrey;
+    margin: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+.button {
+    width: 900px;
+    height: 30px;
+    background-color: rgb(82, 149, 221);
+    color: white;
+    border-radius: 5px;
+    align-items: center;
+}
+.button h1 {
+    background-color: rgb(82, 149, 221);
+    color: white;
+    margin: 10px;
+}
+.container {
+    max-width: 100%;
+    display: none;
+    width: 800px;
+}
+.container p {
+    max-width: 100%;
+    margin: 10px;
+    font-size: 18px;
+}
+.card h2 {
+    color:black;
+    display: inline-block;
+    text-decoration: none;
+    margin: 10px;
+    background-color: #e6ecf3;
+}
+
+.card {
+    color: white;
+    display: inline-block;
+    background: rgb(82, 149, 221);
+    text-decoration: none;
+    border-color: rgb(82, 149, 221);
+    width: 900px;
+    background-color: #e6ecf3;
+}
+/* CARD SECTION */
