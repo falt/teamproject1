@@ -13,13 +13,15 @@ function LoginStudent() {
     loginusername = document.getElementById("username").value;
     loginpassword = document.getElementById("password").value;
 
-    if (loginusername == student.uname && loginpassword == student.password) {
 
-        window.location = "profile/studentprofile/studentprofile.html";
-    } else {
-        alert("Skriv in rätt användarnamn/lösenord");
-    }
-}
+	if(loginusername == student.uname && loginpassword == student.password){
+			window.location="profile/studentprofile/studentprofile.html";
+		}
+	else{
+			alert("Skriv in rätt användarnamn/lösenord");
+		}
+	}
+
 // // function LoginTeacher(){
 // 	username = document.getElementById("teacherInputUnameID").value;
 // 	password = document.getElementById("teacherInputPwordID").value;
