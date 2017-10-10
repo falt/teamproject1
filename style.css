@@ -4,6 +4,7 @@
     font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
+
 }
 
 header {
@@ -56,42 +57,14 @@ header nav ul li {
 	padding: 0 10px;
 }
 
-/*
-#main-nav {
-    height: 60px;
-    position: fixed;
-    width: 100%;
-    background-color: #f9f8f4
-}
 
-#main-nav a {
-    float: right;
-    margin: 10px;
-    padding: 10px;
-
-    border-radius: 2px;
-    text-decoration: none;
-    color: #000;
-
-}
-#main-nav a:hover{
-  color: lightblue;
-}
-
-#main-nav h1 {
-    float: left;
-    padding: 10px;
-    font-weight: 700;
-    font-size: 30px;
-
-}
-
-*/
 #wrapper {
     width: 100%;
     display: flex;
     flex-direction: column;
+
     background-color: #f9f8f4;
+
 
 }
 
@@ -107,11 +80,11 @@ header nav ul li {
     flex-direction: column;
 }
 
-#inner h1, h2 {
+#inner h1,
+h2 {
     color: #f9f8f4;
     background-color: transparent;
     text-shadow: 1px 1px #000;
-
 }
 
 #inner h1 {
@@ -125,87 +98,117 @@ header nav ul li {
     font-weight: 400;
 }
 
-#content{
-  background-color:;
-  width: 100%;
-  height: 400px;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-
-
+#content,
+#about {
+    background-color: ;
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
-#first{
+#content-left,
+#about-left {
     background-color: transparent;
     width: 600px;
-    height: 200px;
+    height: 300px;
     display: flex;
-    margin-top: 150px;
+    margin: 150px 0 150px 0;
+    flex-direction: column;
+    align-items: center;
 }
-#second{
+
+#content-right {
     background-color: transparent;
     width: 600px;
-    height: 200px;
+    height: 300px;
     display: flex;
-    margin-top: 150px;
+    margin: 150px 0 150px 0;
+    flex-direction: column;
+    align-items: center;
+}
 
+#about-right {
+    background-color: transparent;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    margin: 150px 0 150px 0;
+}
+
+#content-right {
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-right {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#about-right h1 {
+    width: 100%;
+    text-align: center;
+}
+
+#about-right img {
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    border: solid white 1px;
+    margin: 10px;
 }
 
 footer {
-  border-top: solid 1px;
-  border-color: lightgrey;
-  width: 100%;
-  height: 50px;
-  text-align: center;
-  padding: 25px 0 0 0;
+    border-top: solid 1px;
+    border-color: lightgrey;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding: 25px 0 0 0;
 }
 
-#login{
-  border-top: solid 1px;
-  border-color: lightgrey;
-  width: 100%;
-  height: 400px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #e6ecf0;
-
-
-
+#login {
+    border-top: solid 1px;
+    border-color: lightgrey;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e6ecf0;
 }
 
-#login div{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  height: 300px;
-  width: 200px;
-  background-color: transparent;
-  padding: 20px;
-  border: solid #d6d6d6 1px;
-
+#login div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 200px;
+    background-color: transparent;
+    padding: 20px;
+    border: solid #d6d6d6 1px;
 }
 
 
-
-
-#student-login i{
-  background-color: transparent;
-  margin-bottom: 15px;
-
-
+#student-login i {
+    background-color: transparent;
+    margin-bottom: 15px;
 }
-#teacher-login i{
-  background-color: transparent;
-  margin-bottom: 15px;
+
+#teacher-login i {
+    background-color: transparent;
+    margin-bottom: 15px;
 }
-#admin-login i{
-  background-color: transparent;
-  margin-bottom: 15px;
+
+#admin-login i {
+    background-color: transparent;
+    margin-bottom: 15px;
 }
 
 
@@ -213,54 +216,49 @@ footer {
 
 
 
-#contact{
-  width: 100%;
-  height: 500px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #f9f8f4;
-  border-top: solid 1px;
-  border-color: lightgrey;
-
+#contact {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f9f8f4;
+    border-top: solid 1px;
+    border-color: lightgrey;
 }
 
-#info{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  height: 200px;
-  margin: 10px;
-  background-color: transparent;
-  border: solid 1px #d6d6d6;
-  flex-direction: column;
-
+#info {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    background-color: transparent;
+    border: solid 1px #d6d6d6;
+    flex-direction: column;
 }
 
-#info i{
-  position: absolute;
-  top: -18px;
+#info i {
+    position: absolute;
+    top: -18px;
 }
 
 
 
 #info p {
-  align-self: flex-start ;
-  margin-left: 70px;
-
+    align-self: flex-start;
+    margin-left: 70px;
 }
 
-#info h1{
-  display: flex;
-  justify-content: center;
-  margin: 10px;
-  text-shadow: 1px;
-
-
-
+#info h1 {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    text-shadow: 1px;
 }
+
 
 #map{
   background-color: none;
@@ -272,3 +270,4 @@ footer {
 
 
 }
+
