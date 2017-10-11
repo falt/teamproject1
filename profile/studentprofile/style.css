@@ -147,16 +147,20 @@ main section {
 	overflow: scroll;
 	flex-direction: column;
 	align-items: center;
-	border: 1px solid #d6d6d6;
+	border: //1px solid #d6d6d6;
 	margin: 30px;
 }
 
 .main-section article {
-	border: 1px solid #d6d6d6;
+	border: //1px solid #d6d6d6;
 	padding: 10px;
 	margin: 40px 20px 5px 20px;
 	box-shadow: //0px 0px 2px black;
 	background: #fff;
+}
+
+.main-section article:first-child {
+	margin: 0 20px 5px 20px; 
 }
 
 .main-section article:last-child {
@@ -268,6 +272,10 @@ main section {
 	justify-content: center;
 	align-items: center;
 	background: #fff;
+}
+
+.rate-weekly form {
+	padding: 10px; 
 }
 
 .rate-weekly #q3  {
