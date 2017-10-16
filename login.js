@@ -2,9 +2,8 @@
 // var teacher = {"name":"Fredrik", "age":"28", "city":"Stockholm", "email":"Fredrik@gmail.com", "uname":"teacher", "password":"teacher", "usertype":"teacher"};
 var student = { "name": "Carl", "age": "19", "city": "Gothenburg", "email": "Carl@gmail.com", "uname": "student", "password": "student", "usertype": "student" };
 
-document.getElementById('studentLoginButtonID').addEventListener("click", LoginStudent);
-// document.getElementById('teacherLoginButtonID').addEventListener("click", LoginTeacher);
-// document.getElementById('adminLoginButtonID').addEventListener("click", LoginAdmin);
+document.getElementById('LoginButton').addEventListener("click", LoginStudent);
+
 
 var loginusername;
 var loginpassword;

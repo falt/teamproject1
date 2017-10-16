@@ -17,9 +17,9 @@
 
     <nav>
       <ul>
-        <li><a href="#login">Login</a></li>
         <li><a href="#content">Om oss</a></li>
         <li><a href="#contact">Kontakt</a></li>
+        <li><a id="expandBtn" href="#">Login</a></li>
       </ul>
 
 
@@ -33,6 +33,24 @@
             <h1>LMS</h1>
             <h2>En responsiv lärplatoform</h2>
         </section>
+        
+    <!--Login container-->
+           
+        <div id ="loginBox">
+            
+            <input type='text' id='username' placeholder='Användarnamn' name='uname'>
+            <br>
+            <input type='password' id='password' placeholder='Lösenord' name='psw'>
+            <br>
+            <button type='button' id='LoginButton' >Logga in</button>
+        </div>
+
+     <!-- End of login container-->
+
+
+
+
+
 
         <!-- Main section end -->
         <section id="content">
@@ -43,43 +61,7 @@
                 <p>Bacon ipsum dolor amet beef ribs pork belly rump t-bone. Meatball burgdoggen shoulder ball tip flank bresaola. Meatloaf cow tri-tip, brisket tenderloin bacon frankfurter cupim beef ribs chuck ham. Alcatra jowl sausage, beef short loin bacon hamburger andouille. Shoulder beef beef ribs pork belly hamburger sirloin prosciutto pork loin, bresaola pancetta salami swine tenderloin andouille.</p>
             </section>
         </section>
-        <!--Login container-->
-        <section id="login">
-            <!-- for student -->
-            <div id="student-login">
-                <i class="fa fa-user-circle-o fa-5x" aria-hidden="true"></i>
-                <br>
-                <input type='text' id='username' placeholder='Användarnamn' name='uname'>
-                <br>
-                <input type='password' id='password' placeholder='Lösenord' name='psw'>
-                <br>
-                <button type='button' id='studentLoginButtonID'>Logga in</button>
-            </div>
-            <!-- end for student -->
-            <!-- for teacher -->
-            <div id="teacher-login">
-                <i class="fa fa-user-circle fa-5x" aria-hidden="true"></i>
-                <br>
-                <input type='text' id='username' class='input' placeholder='Användarnamn' name='uname'>
-                <br>
-                <input type='password' id='password' class='input' placeholder='Lösenord' name='psw'>
-                <br>
-                <button type='button' id='submitLogin' class='login'>Logga in</button>
-            </div>
-            <!-- end for teacher -->
-            <!-- for admin -->
-            <div id="admin-login">
-                <i class="fa fa-info-circle fa-5x" aria-hidden="true"></i>
-                <br>
-                <input type='text' id='username' class='input' placeholder='Användarnamn' name='uname'>
-                <br>
-                <input type='password' id='password' class='input' placeholder='Lösenord' name='psw'>
-                <br>
-                <button type='button' id='submitLogin' class='login'>Logga in</button>
-            </div>
-            <!-- end for admin -->
-        </section>
-        <!-- End of login container-->
+
         <section id="about">
             <section id="about-left">
                 <h1>OM OSS</h1>
@@ -119,6 +101,7 @@
         <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
     </footer>
     <script src="login.js"></script>
+    <script src="expand.js"></script>
 </body>
 
 </html>
