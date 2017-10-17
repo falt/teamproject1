@@ -17,7 +17,8 @@ function LoginStudent() {
 			window.location="profile/studentprofile/studentprofile.html";
 		}
 	else{
-			alert("Skriv in rätt användarnamn/lösenord");
+			let element = document.getElementById("faultLogin");
+			element.classList.toggle("showFault");
 		}
 	}
 
@@ -47,3 +48,9 @@ function LoginStudent() {
 //
 // 		}
 // 	}
+
+
+document.getElementById("expandBtn").onclick = function myFunction() {
+    let element = document.getElementById("loginBox");
+    element.classList.toggle("showLogin");
+}
