@@ -22,6 +22,18 @@ function LoginStudent() {
 		}
 	}
 
+////Expand login window////
+
+document.getElementById("expandBtn").onclick = function myFunction() {
+	let element = document.getElementById("loginBox");
+	element.classList.toggle("showLogin");
+
+
+	}
+
+
+
+
 // // function LoginTeacher(){
 // 	username = document.getElementById("teacherInputUnameID").value;
 // 	password = document.getElementById("teacherInputPwordID").value;
