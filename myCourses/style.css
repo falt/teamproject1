@@ -176,14 +176,6 @@ footer {
     background: #fff; 
 }
 
-.aside {
-    width: 80%; 
-    height: 100vh; 
-    border: 1px solid black; 
-    margin: 10px; 
-    border-radius: 5px; 
-    border:1px solid #d6d6d6; 
-}
 
 
 @media (max-width: 972px) {
