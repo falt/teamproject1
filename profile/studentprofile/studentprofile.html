@@ -115,14 +115,16 @@
 				</div>
 
 			</div>
-			<div class="attendance center">
-				<div>
-					<p>Anmäl din närvaro på dagens lektion:</p> <br>
+			<div class="attendance">
+				<div class="center column">
+					<div class="attendance-content">
+						<p>Anmäl din närvaro på dagens lektion </p> <br>
+					</div>
+					<div id="dailyClass" class="attendance-content row">
+						<p>Javascript: </p> <form><input id="attendanceInput" type="textbox"> <div id="attendanceApproved" class="attendanceChange"><p> Närvaro godkännd </p></div>	
+						<input id="attendanceButton" type="submit"></form>
+					</div>
 				</div>
-				<div class="row">
-					<p>Javascript:</p> <input type="textbox">	
-				</div>
-				
 			</div>
 
 			<div class="rate-mood-section">
@@ -173,6 +175,6 @@
 		<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
 
 		</footer>
-
+		<script src="attendance.js"></script>
 </body>
 </html>
