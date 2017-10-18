@@ -8,7 +8,6 @@
 }
 
 header {
-    z-index: 1;
 	height: 50px;
 	width: 100%;
 	border: 1px solid #d6d6d6;
@@ -16,9 +15,10 @@ header {
 	justify-content: space-between;
 	position: fixed;
 	top: 0px;
-    bottom: 0px;
+  bottom: 0px;
 	background: white;
-  
+  z-index: 2;
+
 
 }
 
@@ -44,13 +44,12 @@ header nav {
 
 header nav a {
 	text-decoration: none;
-    color: black;
-    font-size: 17px;
+	color: black;
 }
 header nav a:hover {
 	text-decoration: none;
 	color: black;
-    cursor: pointer;
+  cursor: pointer;
 	color: #5295dd;
 }
 
@@ -64,28 +63,26 @@ header nav ul li {
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #f9f8f4;
-
-
+    background-color: #fff;
 }
 
 #inner {
-    background: url(img/background.jpg);
+    background: url(img/stud.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
-    height: 500px;
+    height: 700px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-#inner h1,
-h2 {
+#inner h1, h2 {
     color: #f9f8f4;
     background-color: transparent;
     text-shadow: 1px 1px #000;
+    z-index: 1;
 }
 
 #inner h1 {
@@ -99,11 +96,95 @@ h2 {
     font-weight: 400;
 }
 
-#content,
-#about {
+#content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.about-info{
+  width: 500px;
+  height: 350px;
+}
+
+
+
+.about-info h4 {
+  font-size: 30px;
+  font-weight: normal;
+  font-style: oblique;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about-info span{
+  color: #5295dd;
+  font-weight:bold;
+}
+
+.about-info p{
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  padding-top: 20px;
+}
+
+
+.box-orange{
+  width: 500px;
+  height: 350px;
+  background-color: #5295dd;
+  border-radius: 5px;
+}
+
+.img{
+  height: 50px;
+  width: 60px;
+  margin-top: -34px;
+  background: url(img/qua.png);
+  background-size: 80px;
+  background-repeat: no-repeat;
+}
+
+
+
+
+.box-orange p {
+  width: 280px;
+  margin-left: 167px;
+  margin-top: 34px;
+  color: #f7f7f7;
+  font-style: italic;
+
+}
+#content-right {
+    background-color: transparent;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    margin: 150px 0 150px 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#content-left {
+    background-color: transparent;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    margin: 150px 0 150px 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+#price {
+    border-top: solid 1px;
+    border-color: lightgrey;
     background-color: ;
     width: 100%;
-    height: 400px;
+    height: 550px;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -111,63 +192,176 @@ h2 {
     align-items: center;
 }
 
-#content-left,
-#about-left {
-    background-color: transparent;
-    width: 600px;
-    height: 300px;
+.basic{
+  width: 200px;
+  height: 300px;
+  background-color: #f7f7f7;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.basic .basic-logo{
+  width: 200px;
+  height: 50px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: #5295dd;
+  display: flex;
+  justify-content: center;
+}
+
+.basic ul{
+  list-style-type: none;
+
+}
+
+
+
+.basic .basic-logo h2{
+  font-size: 25px;
+  text-shadow: none;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+
+.business{
+  width: 200px;
+  height: 300px;
+  background-color: #f7f7f7;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.business .business-logo{
+  width: 200px;
+  height: 50px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: #5295dd;
+  display: flex;
+  justify-content: center;
+}
+
+  .business ul{
+    border-top: solid 2px;
+    border-color: #fff;
+    list-style-type: none;
+
+
+}
+
+  .business li{
     display: flex;
-    margin: 150px 0 150px 0;
-    flex-direction: column;
-    align-items: center;
-}
-
-#content-right {
-    background-color: transparent;
-    width: 600px;
-    height: 300px;
-    display: flex;
-    margin: 150px 0 150px 0;
-    flex-direction: column;
-    align-items: center;
-}
-
-#about-right {
-    background-color: transparent;
-    width: 400px;
-    height: 300px;
-    display: flex;
-    margin: 150px 0 150px 0;
-}
-
-#content-right {
-    flex-direction: column;
-    align-items: center;
-}
-
-#about-right {
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
+    font-size: 15px;
+    margin-top: 30px;
+
 }
 
-#about-right h1 {
+  .business .button{
+    background-color: #5295dd;
+    width: 125px;
+    height: 30px;
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-left: 39px;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+
+  .business .button:hover{
+    background-color: #277edb;
+
+}
+
+  .business a{
+      display: flex;
+      text-decoration: none;
+      color: #fff;
+      justify-content: center;
+      align-items: center;
+
+
+}
+
+
+
+
+  .business .business-logo h2 {
+    font-size: 25px;
+    text-shadow: none;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+  .business p{
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+  /*.button-buy{
+    height: 15px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: #DD6925;
+  }
+    .button-buy p {
+      justify-content: center;
+      color: #fff
+    }*/
+.enterprise{
+  width: 200px;
+  height: 300px;
+  background-color: #f7f7f7;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.enterprise .enterprise-logo{
+  width: 200px;
+  height: 50px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: #5295dd;
+  display: flex;
+  justify-content: center;
+}
+.enterprise ul{
+  list-style-type: none;
+}
+
+.enterprise .enterprise-logo h2{
+  font-size: 25px;
+  text-shadow: none;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+
+footer {
+    border-top: solid 1px;
+    border-color: lightgrey;
     width: 100%;
+    height: 50px;
     text-align: center;
+    padding: 25px 0 0 0;
 }
 
-#about-right img {
-    height: 80px;
-    width: 80px;
-    border-radius: 100%;
-    border: solid white 1px;
-    margin: 10px;
-}
-
-
-
-#loginBox.showLogin {
-    top: 50px;
+#loginBox.show {
+    top: -250px;
 }
 
 
@@ -177,49 +371,37 @@ h2 {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    Top: -250px;
+    top: 50px;
     right: 0px;
     height: 200px;
-    width: 180px;
-    background-color: lightgrey;
+    width: 200px;
+    background-color: grey;
     padding: 20px;
-    border: none;
-    transition: top 1s;
-    border-bottom-left-radius: 5px;
-    box-shadow: 1px 1px darkgray    ;
-    
-    
+    border: solid #d6d6d6 1px;
+
+
 }
+
+
+
 
 #loginBox input{
     width: 150px;
     height: 30px;
-    font-size: 17px;
+    font-size: 20px;
     border: none;
-    border-radius: 2px;
 }
 
 #loginBox button{
     width:150px;
     height: 30px;
-    font-size: 17px;
+    font-size: 20px;
     background-color: #5BB064;
     border: none;
-    border-radius: 2px;
-    
+
 }
 
-#faultLogin {
-    width: 150px;
-    color: red;
-    font-size: 12px;   
-    visibility: hidden; 
-    margin: 5px;
-}
 
-#faultLogin.showFault{
-    visibility: visible;
-}
 
 
 
@@ -229,7 +411,7 @@ h2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #f9f8f4;
+    background-color: #fff;
     border-top: solid 1px;
     border-color: lightgrey;
 }
@@ -267,23 +449,104 @@ h2 {
 }
 
 
-#map{
-  background-color: none;
+.working-here {
   display: flex;
-  justify-content: flex-end;
-  border: solid 1px;
-  border-color: lightgrey;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: transparent;
+  width: 390px;
+  height: 250px;
+  border-radius: 20px;
+  background-color: #f7f7f7;
+  margin: 150px 0 150px 0;
+}
 
+.working-here h4{
+  margin-top: 15px;
+  font-size: 30px;
+  font-weight: normal;
+  font-style: oblique;
+
+}
+
+.working-here p{
+  font-size: 15px;
+  text-align: center;
+
+}
+.working-here span{
+  color: #5295dd;
+  font-weight:bold;
+}
+
+
+.blur{
+  filter: blur(10px);
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    width: 400px;
+    height: 200px;
+    background-color: #5e5c5a;
+    opacity: 0.4;
+    margin-top: -144px;
 
 
 }
 
-footer {
-    border-top: solid 1px;
-    border-color: lightgrey;
-    width: 100%;
-    height: 50px;
-    text-align: center;
-    padding: 25px 0 0 0;
+#loginBox.showLogin {
+    top: 50px;
 }
 
+
+#loginBox {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    Top: -250px;
+    right: 0px;
+    height: 200px;
+    width: 180px;
+    background-color: lightgrey;
+    padding: 20px;
+    border: none;
+    transition: top 1s;
+    border-bottom-left-radius: 5px;
+    box-shadow: 1px 1px darkgray    ;
+
+
+}
+
+#loginBox input{
+    width: 150px;
+    height: 30px;
+    font-size: 17px;
+    border: none;
+    border-radius: 2px;
+}
+
+#loginBox button{
+    width:150px;
+    height: 30px;
+    font-size: 17px;
+    background-color: #5BB064;
+    border: none;
+    border-radius: 2px;
+
+}
+
+#faultLogin {
+    width: 150px;
+    color: red;
+    font-size: 12px;
+    visibility: hidden;
+    margin: 5px;
+}
+
+#faultLogin.showFault{
+    visibility: visible;
+}
