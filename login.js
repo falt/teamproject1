@@ -17,7 +17,7 @@ function LoginStudent() {
 			window.location="profile/studentprofile/studentprofile.html";
 		}
 	else{
-			let element = document.getElementById("faultLogin");
+				let element = document.getElementById("faultLogin");
 			element.classList.toggle("showFault");
 		}
 	}
@@ -48,7 +48,6 @@ function LoginStudent() {
 //
 // 		}
 // 	}
-
 
 document.getElementById("expandBtn").onclick = function myFunction() {
     let element = document.getElementById("loginBox");
