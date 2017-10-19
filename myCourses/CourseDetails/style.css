@@ -99,9 +99,28 @@ main {
 	background-color: rgb(242, 242, 242);
 }
 
-main section {
-/*	border: 1px solid #d6d6d6;
-*/}
+.main-section .course-type-nav-bar {
+	width: 100%; 
+	display: flex; 
+	justify-content: flex-start;
+	/* border-bottom: 1px solid lightgray;  */
+	background: #f2f2f2; 
+}
+
+.main-section .course-type-nav-bar li{
+	 padding: 10px; 
+	 margin: 0 5px 0 0; 
+	 border-top: 1px solid lightgray; 
+	 border-left: 1px solid lightgray; 
+	 border-right: 1px solid lightgray; 	 
+	 border-top-left-radius: 2px; 
+	 border-top-right-radius: 2px; 
+	 /* background: #fff;  */
+}
+
+.course-type-nav-bar li:hover {
+	cursor: pointer; 
+}
 
 .profile-section {
 	flex-grow: 1;
