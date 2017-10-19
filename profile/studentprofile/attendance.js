@@ -1,4 +1,7 @@
-document.getElementById('attendanceButton').addEventListener("click", attendance);
+document.getElementById('attendanceButton').addEventListener("click",function(e){
+    e.preventDefault()
+    attendance()
+} );
 
 
 
