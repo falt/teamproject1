@@ -17,7 +17,7 @@ header {
 	top: 0px;
   bottom: 0px;
 	background: white;
-  z-index: 2;
+  z-index: 3;
 
 
 }
@@ -360,50 +360,6 @@ footer {
     padding: 25px 0 0 0;
 }
 
-#loginBox.show {
-    top: -250px;
-}
-
-
-#loginBox {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    top: 50px;
-    right: 0px;
-    height: 200px;
-    width: 200px;
-    background-color: grey;
-    padding: 20px;
-    border: solid #d6d6d6 1px;
-
-
-}
-
-
-
-
-#loginBox input{
-    width: 150px;
-    height: 30px;
-    font-size: 20px;
-    border: none;
-}
-
-#loginBox button{
-    width:150px;
-    height: 30px;
-    font-size: 20px;
-    background-color: #5BB064;
-    border: none;
-
-}
-
-
-
-
 
 #contact {
     width: 100%;
@@ -511,12 +467,13 @@ footer {
     right: 0px;
     height: 200px;
     width: 180px;
-    background-color: lightgrey;
+    background-color: #f7f7f7;
     padding: 20px;
     border: none;
     transition: top 1s;
     border-bottom-left-radius: 5px;
-    box-shadow: 1px 1px darkgray    ;
+    box-shadow: 1px 1px darkgray;
+    z-index: 2;
 
 
 }
@@ -533,7 +490,7 @@ footer {
     width:150px;
     height: 30px;
     font-size: 17px;
-    background-color: #5BB064;
+    background-color: #5295dd;
     border: none;
     border-radius: 2px;
 
