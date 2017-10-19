@@ -27,10 +27,18 @@ for(let i = 0; i < nav.length; i++) {
     for(let j = 0; j < nav.length; j++) {
       if(e.target == nav[j]) {
         nav[j].style.background = "white";
+
+        nav[j].style.borderTop = "1px solid lightgray";
+        nav[j].style.borderLeft = "1px solid lightgray";
+        nav[j].style.borderRight = "1px solid lightgray";        
+        
         courseCategoryElem[j].style.display = "block"; 
       } else {
         nav[j].style.background = "initial"; 
-        courseCategoryElem[j].style.display = "none";         
+        courseCategoryElem[j].style.display = "none";  
+        nav[j].style.borderTop = "none";
+        nav[j].style.borderLeft = "none";
+        nav[j].style.borderRight = "none";         
       }
     }
 
