@@ -26,9 +26,11 @@ for(let i = 0; i < nav.length; i++) {
         
     for(let j = 0; j < nav.length; j++) {
       if(e.target == nav[j]) {
-        nav[j].style.background = "white"; 
+        nav[j].style.background = "white";
+        courseCategoryElem[j].style.display = "block"; 
       } else {
         nav[j].style.background = "initial"; 
+        courseCategoryElem[j].style.display = "none";         
       }
     }
 
