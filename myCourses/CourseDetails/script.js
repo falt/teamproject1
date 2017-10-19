@@ -32,7 +32,7 @@ for(let i = 0; i < nav.length; i++) {
         nav[j].style.borderLeft = "1px solid lightgray";
         nav[j].style.borderRight = "1px solid lightgray";        
         
-        courseCategoryElem[j].style.display = "block"; 
+        courseCategoryElem[j].style.display = "flex"; 
       } else {
         nav[j].style.background = "initial"; 
         courseCategoryElem[j].style.display = "none";  
