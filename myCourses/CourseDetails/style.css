@@ -110,9 +110,9 @@ main {
 .main-section .course-type-nav-bar li{
 	 padding: 10px; 
 	 margin: 0 5px 0 0; 
-	 border-top: 1px solid lightgray; 
+	 /* border-top: 1px solid lightgray; 
 	 border-left: 1px solid lightgray; 
-	 border-right: 1px solid lightgray; 	 
+	 border-right: 1px solid lightgray; 	  */
 	 border-top-left-radius: 2px; 
 	 border-top-right-radius: 2px; 
 	 /* background: #fff;  */
@@ -122,53 +122,11 @@ main {
 	cursor: pointer; 
 }
 
-.profile-section {
-	flex-grow: 1;
-	width: 700px;
-}
-
-.profile-graph-section .profile {
-	margin: 29px 0;
-	height: //250px;
-	display: flex;
-	flex-direction: row-reverse;
-	justify-content: space-around;
-	align-items: flex-start;
-	color: //gray;
-	font-size: 13px;
-	padding: 20px 10px;
-	border: 1px solid #rgb(242, 242, 242);
+.course-type-nav-bar li:first-of-type {
 	background: #fff;
-	border-radius: 7px;
-}
-
-.profile-graph-section .profile .profile-pic {
-	width: 100px;
-	height: 100px;
-	overflow: hidden;
-	border: 1px solid #d6d6d6;
-	border-radius: 50%;
-}
-
-.profile-pic img {
-	width: 100%;
-	height: auto;
-}
-
-.graph-section .profile-text {
-	display: flex;
-	justify-content: ;
-	flex-direction: column;
-	align-items: ;
-}
-
-
-.profile-text h3 {
-	font-size: 20px;
-}
-
-.profile-text p {
-	margin: 10px 0;
+	 border-top: 1px solid lightgray; 
+	 border-left: 1px solid lightgray; 
+	 border-right: 1px solid lightgray; 
 }
 
 .main-section {
@@ -244,6 +202,10 @@ main {
 
 .articleClass {
 	display: none; 
+}
+
+.articleClass:first-of-type {
+	display: block; 
 }
 
 
