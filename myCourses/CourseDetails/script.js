@@ -1,5 +1,5 @@
-document.getElementById("span").addEventListener("click", ExpandToggle)
-var d = document.getElementById("span");
+//document.getElementById("span").addEventListener("click", ExpandToggle)
+//var d = document.getElementById("span");
 
 
 function ExpandToggle(){
@@ -18,29 +18,29 @@ function ExpandToggle(){
 
 
 // COURSE-NAV-BAR
-const nav = document.querySelectorAll(".course-type-nav-bar li"); 
-const courseCategoryElem = document.querySelectorAll(".articleClass"); 
+const nav = document.querySelectorAll(".course-type-nav-bar li");
+const courseCategoryElem = document.querySelectorAll(".articleClass");
 
 for(let i = 0; i < nav.length; i++) {
   nav[i].addEventListener("click", (e)=>{
-        
+
     for(let j = 0; j < nav.length; j++) {
       if(e.target == nav[j]) {
         nav[j].style.background = "white";
 
         nav[j].style.borderTop = "1px solid lightgray";
         nav[j].style.borderLeft = "1px solid lightgray";
-        nav[j].style.borderRight = "1px solid lightgray";        
-        
-        courseCategoryElem[j].style.display = "flex"; 
+        nav[j].style.borderRight = "1px solid lightgray";
+
+        courseCategoryElem[j].style.display = "flex";
       } else {
-        nav[j].style.background = "initial"; 
-        courseCategoryElem[j].style.display = "none";  
+        nav[j].style.background = "initial";
+        courseCategoryElem[j].style.display = "none";
         nav[j].style.borderTop = "none";
         nav[j].style.borderLeft = "none";
-        nav[j].style.borderRight = "none";         
+        nav[j].style.borderRight = "none";
       }
     }
 
-  }); 
+  });
 }
