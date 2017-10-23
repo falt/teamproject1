@@ -7,6 +7,21 @@ body, h1, h2,h3,h4,h5,h6,ol,ul,li,a,p{
 	font-family: 'Roboto';
 }
 
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+}
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 /* START HEADER NAV AND LOGO */
 header {
 	height: 50px;
@@ -79,7 +94,6 @@ header nav .hamburger-nav .hamburger-menu {
 main {
 	width: 100%;
 	height: 100%;
-	border: //1px solid black;
 	display: flex;
 	flex-direction: row;
 	margin: 40px 0 0 0;
@@ -90,17 +104,15 @@ main {
 
 .profile-section {
 	flex-grow: 1;
-	width: 700px;
+	width: 700px;	
 }
 
 .profile-graph-section .profile {
 	margin: 29px 0;
-	height: //250px;
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: space-around;
 	align-items: flex-start;
-	color: //gray;
 	font-size: 13px;
 	padding: 20px 10px;
 	border: 1px solid #rgb(242, 242, 242);
@@ -278,6 +290,32 @@ button:hover {
 	text-align: center;
 	justify-content: column;
 }
+.attendance{
+	width: 100%;
+	height: 100px;
+	background-color: #fff; 
+	border: 1px solid #d6d6d6;
+	display: flex;
+	flex-direction: column;
+}
+
+.attendanceChange{
+	display: none;
+}
+
+.attendance-content{
+	width: 90%;
+	align-items: center;
+	height: 40px;
+}
+
+#attendanceInput{
+	margin-left: 10px;
+}
+#attendanceApproved {
+	color: lightgreen;
+	margin-left: 10px;
+}
 
 .profile-graph-section .rate-mood-section i:focus {
 	color: #33cc33;
@@ -297,7 +335,6 @@ button:hover {
 .profile-graph-section .rate-mood-section i:nth-child(2):hover {
 	color: #f9f94f;
 	outline:none;
-
 }
 
 .profile-graph-section .rate-mood-section i:last-child:focus {
@@ -308,7 +345,6 @@ button:hover {
 .profile-graph-section .rate-mood-section i:last-child:hover {
 	color: #ff0000;
 	outline:none;
-
 }
 /* RATE MOOD SECTION (SMILEYS) END */
 

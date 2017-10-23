@@ -2,9 +2,8 @@
 // var teacher = {"name":"Fredrik", "age":"28", "city":"Stockholm", "email":"Fredrik@gmail.com", "uname":"teacher", "password":"teacher", "usertype":"teacher"};
 var student = { "name": "Carl", "age": "19", "city": "Gothenburg", "email": "Carl@gmail.com", "uname": "student", "password": "student", "usertype": "student" };
 
-document.getElementById('studentLoginButtonID').addEventListener("click", LoginStudent);
-// document.getElementById('teacherLoginButtonID').addEventListener("click", LoginTeacher);
-// document.getElementById('adminLoginButtonID').addEventListener("click", LoginAdmin);
+document.getElementById('LoginButton').addEventListener("click", LoginStudent);
+
 
 var loginusername;
 var loginpassword;
@@ -18,7 +17,8 @@ function LoginStudent() {
 			window.location="profile/studentprofile/studentprofile.html";
 		}
 	else{
-			alert("Skriv in rätt användarnamn/lösenord");
+				let element = document.getElementById("faultLogin");
+			element.classList.toggle("showFault");
 		}
 	}
 
@@ -48,3 +48,44 @@ function LoginStudent() {
 //
 // 		}
 // 	}
+
+document.getElementById("expandBtn").onclick = function myFunction() {
+    let element = document.getElementById("loginBox");
+    element.classList.toggle("showLogin");
+}
+
+
+
+const businessBtns = document.querySelectorAll(".business .button");
+
+// Smooth scroll for contact buttons 
+businessBtns.forEach((button, index)=> {
+	button.addEventListener("click", ()=> {
+		window.scrollTo({ top: "1851", left: 0, behavior: "smooth" });
+	});
+});
+
+// Smooth scroll for header nav
+const menuBtns = document.querySelectorAll("header li");
+const sections = document.querySelectorAll(".content");
+
+menuBtns.forEach((button,index)=> {
+	button.addEventListener("click", ()=> {
+		const targetY = sections[index].offsetTop; 
+
+		scroll(targetY); 
+
+	}); 
+}); 
+
+// Smoooth scroll function 
+function scroll(targetY) {
+	window.scrollTo({ top: targetY, left: 0, behavior: "smooth" });
+}
+
+
+const logoButton = document.querySelector(".logo"); 
+
+logoButton.addEventListener("click", ()=> {
+	window.scrollTo({ top: 0, left: 0, behavior: "smooth" });	
+});

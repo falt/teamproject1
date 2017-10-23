@@ -17,9 +17,10 @@
 
     <nav>
       <ul>
-        <li><a href="#login">Login</a></li>
-        <li><a href="#content">Om oss</a></li>
-        <li><a href="#contact">Kontakt</a></li>
+        <li><a>Om LMS</a></li>
+        <li><a>Priser</a></li>
+        <li><a>Kontakt</a></li>
+        <li><a id="expandBtn">Login</a></li>
       </ul>
 
 
@@ -30,73 +31,110 @@
     <!--Main section start-->
     <main id="wrapper">
         <section id="inner">
+
             <h1>LMS</h1>
             <h2>En responsiv lärplatoform</h2>
-        </section>
+            <div class="blur">
+            </div>
 
-        <!-- Main section end -->
-        <section id="content">
-            <section id="content-left">
-                <p>Bacon ipsum dolor amet beef ribs pork belly rump t-bone. Meatball burgdoggen shoulder ball tip flank bresaola. Meatloaf cow tri-tip, brisket tenderloin bacon frankfurter cupim beef ribs chuck ham. Alcatra jowl sausage, beef short loin bacon hamburger andouille. Shoulder beef beef ribs pork belly hamburger sirloin prosciutto pork loin, bresaola pancetta salami swine tenderloin andouille.</p>
-            </section>
-            <section id="content-right">
-                <p>Bacon ipsum dolor amet beef ribs pork belly rump t-bone. Meatball burgdoggen shoulder ball tip flank bresaola. Meatloaf cow tri-tip, brisket tenderloin bacon frankfurter cupim beef ribs chuck ham. Alcatra jowl sausage, beef short loin bacon hamburger andouille. Shoulder beef beef ribs pork belly hamburger sirloin prosciutto pork loin, bresaola pancetta salami swine tenderloin andouille.</p>
-            </section>
         </section>
         <!--Login container-->
-        <section id="login">
-            <!-- for student -->
-            <div id="student-login">
-                <i class="fa fa-user-circle-o fa-5x" aria-hidden="true"></i>
-                <br>
-                <input type='text' id='username' placeholder='Användarnamn' name='uname'>
-                <br>
-                <input type='password' id='password' placeholder='Lösenord' name='psw'>
-                <br>
-                <button type='button' id='studentLoginButtonID'>Logga in</button>
-            </div>
-            <!-- end for student -->
-            <!-- for teacher -->
-            <div id="teacher-login">
-                <i class="fa fa-user-circle fa-5x" aria-hidden="true"></i>
-                <br>
-                <input type='text' id='username' class='input' placeholder='Användarnamn' name='uname'>
-                <br>
-                <input type='password' id='password' class='input' placeholder='Lösenord' name='psw'>
-                <br>
-                <button type='button' id='submitLogin' class='login'>Logga in</button>
-            </div>
-            <!-- end for teacher -->
-            <!-- for admin -->
-            <div id="admin-login">
-                <i class="fa fa-info-circle fa-5x" aria-hidden="true"></i>
-                <br>
-                <input type='text' id='username' class='input' placeholder='Användarnamn' name='uname'>
-                <br>
-                <input type='password' id='password' class='input' placeholder='Lösenord' name='psw'>
-                <br>
-                <button type='button' id='submitLogin' class='login'>Logga in</button>
-            </div>
-            <!-- end for admin -->
+
+        <div id ="loginBox">
+
+            <input type='text' id='username' placeholder='Användarnamn' name='uname'>
+            <br>
+            <input type='password' id='password' placeholder='Lösenord' name='psw'>
+            <div id="faultLogin"><p>Skriv in rätt användarnamn/lösenord</p></div>
+            <button type='button' id='LoginButton' >Logga in</button>
+        </div>
+
+     <!-- End of login container-->
+
+
+
+
+
+
+        <!-- content starting -->
+        <section class="content" id="content">
+            <section id="content-left">
+              <div class="about-info">
+                <h4>Vad vi erbjuder hos <span class="LMS">LMS</span></h4><br>
+                  <p>Bacon ipsum dolor amet ham jerky pork chop tri-tip, ground round boudin pig kielbasa frankfurter cupim fatback salami chuck jowl turducken. Tenderloin alcatra burgdoggen, fatback kielbasa hamburger shank tri-tip landjaeger strip steak.</p><br>
+                  <p> T-bone frankfurter drumstick kevin, prosciutto leberkas chicken. Leberkas tail bacon, ball tip hamburger tri-tip beef ribs swine. Kielbasa corned beef hamburger tri-tip beef meatloaf burgdoggen ball tip ground round prosciutto
+                  </div>
+            </section>
+            <section id="content-right">
+              <div class="box-orange">
+                <div class="img">
+                </div>
+                <p>"Bacon ipsum dolor amet beef ribs pork belly rump t-bone. Meatball burgdoggen shoulder ball tip flank bresaola. Meatloaf cow tri-tip, brisket tenderloin bacon frankfurter cupim beef ribs chuck ham. Alcatra jowl sausage, beef short loin bacon hamburger andouille. Shoulder beef beef ribs pork belly hamburger sirloin prosciutto pork loin, bresaola pancetta salami swine tenderloin andouille."</p>
+                <div>
+            </section>
         </section>
-        <!-- End of login container-->
-        <section id="about">
-            <section id="about-left">
-                <h1>OM OSS</h1>
-                <p>Bacon ipsum dolor amet beef ribs pork belly rump t-bone. Meatball burgdoggen shoulder ball tip flank bresaola. Meatloaf cow tri-tip, brisket tenderloin bacon frankfurter cupim beef ribs chuck ham. Alcatra jowl sausage, beef short loin bacon hamburger andouille. Shoulder beef beef ribs pork belly hamburger sirloin prosciutto pork loin, bresaola pancetta salami swine tenderloin andouille.</p>
-            </section>
-            <section id="about-right">
-                <h1>Vi som jobbar här</h1>
-                <img src="img/jojo.png">
-                <img src="img/jojo.png">
-                <img src="img/jojo.png">
-                <img src="img/jojo.png">
-                <img src="img/jojo.png">
-                <img src="img/jojo.png">
-            </section>
+        <!-- content ending-->
+
+        <section class="content" id="price">
+
+          <div class="business">
+            <div class="business-logo">
+              <h2>Basic</h2>
+            </div>
+            <p>$50/Month</p>
+            <ul class="business-info">
+              <li>Antal användare: 10st</li>
+              <li>Antal kurser: 5st</li>
+            </ul>
+            <div class="button">
+            <a class="btn" title="Contact us">Contact us</a>
+          </div>
+          </div>
+            <div class="business">
+              <div class="business-logo">
+                <h2>Business</h2>
+              </div>
+              <p>$150/Month</p>
+              <ul class="business-info">
+                <li>Antal användare: 50st</li>
+                <li>Antal kurser: 10st</li>
+              </ul>
+              <div class="button">
+              <a class="btn" title="Contact us">Contact us</a>
+            </div>
+            </div>
+            <div class="business">
+              <div class="business-logo">
+                <h2>Enterprise</h2>
+              </div>
+              <p>$500/Month</p>
+              <ul class="business-info">
+                <li>Antal användare: 100+</li>
+                <li>Antal kurser: 120st</li>
+              </ul>
+              <div class="button">
+              <a class="btn" title="Contact us">Contact us</a>
+            </div>
+            </div>
         </section>
         <!-- Start of contact -->
-        <section id="contact">
+        <section class="content" id="contact">
+          <div class="working-here">
+            <h4>Vi hos <span>LMS<span></h4>
+            <p>Vi hos LMS bygger en plattform som ansluter lärare och studenter, tjänster och resurser som de behöver för att få jobb.
+              LMS lanserades 2017 och är den snabbast växande affärsapplikationen i historien.
+              Miljontals människor runt om i världen använder LMS för att föra sina studier, ge mening om sitt arbete och driva sin skönhet framåt.
+            </p>
+            <!-- <h1>Vi som jobbar här</h1>
+            <img src="img/jojo.png">
+            <img src="img/jojo.png">
+            <img src="img/jojo.png">
+            <img src="img/jojo.png">
+            <img src="img/jojo.png">
+            <img src="img/jojo.png"> -->
+
+          </div>
+            <!-- end of contact -->
             <div id="info">
                 <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
                 <h1>Kontakta oss</h1>
@@ -104,11 +142,10 @@
                 <p>Adress: Hagagatan 25B,
                     <br>113 47 Stockholm</p>
                 <p>Email: info@lms.se</p>
+                <p>Telefon: +467013371337</p>
             </div>
-            <!-- end of contact -->
-            <div id="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2034.166957952645!2d18.04811961555561!3d59.34686081665947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d721efbe7ef%3A0x6b3dbf3bd8af6f17!2sKYH+Stockholm!5e0!3m2!1ssv!2sse!4v1507027124309" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
+
+
         </section>
     </main>
     <!-- Main  end -->
@@ -119,6 +156,7 @@
         <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
     </footer>
     <script src="login.js"></script>
+    
 </body>
 
 </html>
