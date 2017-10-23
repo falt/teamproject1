@@ -403,6 +403,7 @@ button:hover {
 	resize: none;
 	width: 300px;
 	height: 60px;
+	margin: 20px;
 }
 
 .rate-weekly div {

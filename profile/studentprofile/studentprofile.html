@@ -25,7 +25,7 @@
 
 			<ul>
 				<li><a href="#">Hem</a></li>
-				<li><a href="myCourses/mycourses.html">Mina kurser</a></li>
+				<li><a href="../../myCourses/mycourses.html">Mina kurser</a></li>
 				<li><a href="#">Min profil</a></li>
 				<li><a href="#">Schema</a></li>
 			</ul>
@@ -124,7 +124,18 @@
 				</div>
 
 			</div>
-			
+
+			<div class="attendance">
+				<div class="center column">
+					<div class="attendance-content">
+						<p>Anmäl din närvaro på dagens lektion </p> <br>
+					</div>
+					<div id="dailyClass" class="attendance-content row">
+						<p>Javascript: </p> <form><input id="attendanceInput" type="textbox"> <div id="attendanceApproved" class="attendanceChange"><p> Närvaro godkänd </p></div>	
+						<input id="attendanceButton" type="submit"></form>
+					</div>
+				</div>
+			</div>
 			<div class="rate-mood-section"> 
 				<div class="rate-mood-section-header" ><h1>Hur mår du idag?</h1></div>
 					<div class="smileys">
@@ -132,23 +143,13 @@
 					<i class="fa fa-meh-o fa-5x" tabindex="0" aria-hidden="true"><p>Okej</p></i>				
 					<i class="fa fa-frown-o fa-5x" tabindex="0" aria-hidden="true"><p>Dåligt.</p></i>
 					</div>
-			<div class="attendance">
-				<div class="center column">
-					<div class="attendance-content">
-						<p>Anmäl din närvaro på dagens lektion </p> <br>
-					</div>
-					<div id="dailyClass" class="attendance-content row">
-						<p>Javascript: </p> <form><input id="attendanceInput" type="textbox"> <div id="attendanceApproved" class="attendanceChange"><p> Närvaro godkännd </p></div>	
-						<input id="attendanceButton" type="submit"></form>
-					</div>
 				</div>
-			</div>
 
-			<div class="rate-mood-section">
+			<!-- <div class="rate-mood-section">
 				<i class="fa fa-smile-o fa-5x" tabindex="0" aria-hidden="true"></i>
 				<i class="fa fa-meh-o fa-5x" tabindex="0" aria-hidden="true"></i>
 				<i class="fa fa-frown-o fa-5x" tabindex="0" aria-hidden="true"></i>
-			</div>
+			</div> -->
 
 			<div class="graph"><-- GRAPH GOES HERE --></div>
 
@@ -172,7 +173,7 @@
 				</div>
 				<div>
 					<p>Hur upplever du stämningen i klassen?</p>
-					<textarea id="q3" name="question-tree" rows="5" maxlength="150">Skriv din utvärdering här...</textarea>
+					<textarea class="center" id="q3" name="question-tree" rows="5" maxlength="150">Skriv din utvärdering här...</textarea>
 				</div>
 
 				<button type="text" onclick="changeStyle()">Skicka</button>
