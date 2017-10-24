@@ -1,15 +1,15 @@
-let cardButtons = document.getElementsByClassName("card-button"); 
+let cardButtons = document.getElementsByClassName("card-button");
 let cardContainers = document.getElementsByClassName("card-container");
-let arrows = document.getElementsByClassName("arrow");  
+let arrows = document.getElementsByClassName("arrow");
 
-for(let i = 0; i < cardButtons.length; i++) {
-    cardButtons[i].addEventListener("click", function(){
-        if(cardContainers[i].style.height != "300px") {
+for (let i = 0; i < cardButtons.length; i++) {
+    cardButtons[i].addEventListener("click", function () {
+        if (cardContainers[i].style.height != "300px") {
             cardContainers[i].style.height = "300px";
-            arrows[i].className = "arrow fa fa-sort-asc";             
+            arrows[i].className = "arrow fa fa-sort-asc";
         } else {
-            cardContainers[i].style.height = "40px"; 
-            arrows[i].className = "arrow fa fa-sort-desc";             
+            cardContainers[i].style.height = "40px";
+            arrows[i].className = "arrow fa fa-sort-desc";
         }
     });
 }
