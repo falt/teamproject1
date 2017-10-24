@@ -2,7 +2,7 @@
   //border: 1px solid;
   height: 100%;
   width:90%;
-  display:flex;
+  display:none;
   flex-direction: row;
   justify-content:flex-start;
   flex-wrap: wrap;
