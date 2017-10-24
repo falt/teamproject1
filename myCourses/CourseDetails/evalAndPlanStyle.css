@@ -3,6 +3,10 @@ hr {
   margin: 0 0px;
 }
 
+article.articleClass.courseEval{
+  flex-direction: column;
+}
+
 .coursePlan {
 	display:flex;
 	flex-direction: column;

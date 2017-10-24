@@ -44,3 +44,15 @@ for(let i = 0; i < nav.length; i++) {
 
   });
 }
+
+/*Skapa något som tar in filnamnet till p-tagen istället för statiskt meddelande*/
+
+var items = document.getElementsByClassName('uploadBtn');
+for (var i = 0; i < items.length; i++) {
+  items[i].addEventListener('click', TaskComplete);
+}
+
+function TaskComplete(){
+  console.log(this);
+  document.getElementById("taskComplete").innerHTML="Inlämning.pdf<br>Uppgift klar!";
+}
