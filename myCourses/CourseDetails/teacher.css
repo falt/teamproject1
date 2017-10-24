@@ -1,5 +1,5 @@
 .teachers{
-  display: flex;
+  display: none;
   justify-content: flex-start;
   flex-direction: column;
   //border: 1px black solid;
