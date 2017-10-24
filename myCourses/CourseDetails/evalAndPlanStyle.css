@@ -37,12 +37,11 @@ article.articleClass.courseEval{
 /*Evaluation////////////////////////////*/
 
 .evalForm{
-  border: 1px;
-  border-color: lightgrey;
-  border-style: solid;
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
+  justify-content:center;
+  align-items: center;
 }
 
 .answers{
@@ -53,15 +52,16 @@ article.articleClass.courseEval{
 }
 
 .courseEval button{
-  width: 100%;
+  width: 120px;
   height: 60px;
-  background-color: #5295dd;
+  background-color: #DD6925;
   border-radius: 20px;
   border: 0px;
   color: white;
   font-size: 20px;
   display: flex;
   justify-content:center;
+  margin-bottom: 20px;
 }
 
 #textBlock{
@@ -76,7 +76,7 @@ article.articleClass.courseEval{
 
 .evalFieldsets{
   border: 0px;
-  margin: 20px 20px 20px 0px;
+  width: 80%;
 }
 
 .evalFieldsets p{
@@ -86,20 +86,19 @@ article.articleClass.courseEval{
 }
 
 .questions{
-  border-top: 40px solid;
-  border-color: #5295dd;
+  border-top: 1px solid;
+  border-color: #DD6925;
   margin: 20px;
   padding-top: 20px;
-  font-size: 30px;
+  font-size: 20px;
   display: flex;
-
 }
 
 #evalTitle{
   display: flex;
-  margin-left: 30px;
   margin-top: 30px;
-  font-size: 50px;
+  font-size: 27px;
+  justify-content: center;
 }
 
 .answers input[type=radio] {
