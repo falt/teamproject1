@@ -28,9 +28,9 @@ for(let i = 0; i < nav.length; i++) {
       if(e.target == nav[j]) {
         nav[j].style.background = "white";
 
-        nav[j].style.borderTop = "1px solid lightgray";
-        nav[j].style.borderLeft = "1px solid lightgray";
-        nav[j].style.borderRight = "1px solid lightgray";
+        nav[j].style.borderTop = "1px solid white";
+        nav[j].style.borderLeft = "1px solid white";
+        nav[j].style.borderRight = "1px solid white";
 
         courseCategoryElem[j].style.display = "flex";
       } else {
@@ -55,4 +55,10 @@ for (var i = 0; i < items.length; i++) {
 function TaskComplete(){
   console.log(this);
   document.getElementById("taskComplete").innerHTML="Inlämning.pdf<br>Uppgift klar!";
+}
+
+/* Tillbaka knappen */
+
+function goBack() {
+  window.history.back()
 }
