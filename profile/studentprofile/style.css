@@ -22,6 +22,11 @@ body, h1, h2,h3,h4,h5,h6,ol,ul,li,a,p{
 	align-items: center;
 }
 
+.hide{
+	display: none;
+}
+
+
 /* START HEADER NAV AND LOGO */
 header {
 	height: 50px;
@@ -115,7 +120,7 @@ main {
 	align-items: flex-start;
 	font-size: 13px;
 	padding: 20px 10px;
-	border: 1px solid #rgb(242, 242, 242);
+	border: 1px solid rgb(242, 242, 242);
 	background: #fff;
 	border-radius: 7px;
 }
@@ -201,7 +206,7 @@ main {
 }
 
 button {
-	margin-top: 5px;
+	margin: 5px 10px;
 	font-size: 16px;
 	text-decoration: none;
 	color: white;
@@ -302,10 +307,6 @@ button:hover {
 	display: flex;
 	flex-direction: column;
 	margin: 20 20 20 0;
-}
-
-.attendanceChange{
-	display: none;
 }
 
 .attendance-content{
@@ -423,7 +424,9 @@ button:hover {
 	background: #0CA22D;
 	transition: all 0.2s ease;
 }
-
+#sendWeekly{
+	color: lightgreen;
+}
 /* RATE MOOD SECTION WEEKLY END */
 
 /* MEDIA QUERYS FOR SMALL SCREENS AND DEVICES */ 
@@ -461,6 +464,8 @@ button:hover {
 
 }
 
+
+
 footer {
   border-top: solid 1px;
   border-color: lightgrey;
@@ -477,3 +482,4 @@ footer {
 	100% {
 	  transform:translateY(-20%);
 	}
+}
