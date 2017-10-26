@@ -5,6 +5,7 @@ body, h1, h2, h3, h4, h5, h6, ol, ul, li, a, p {
     margin: 0px;
     padding: 0px;
     text-decoration: none;
+    color: black;
 }
 
 
@@ -55,7 +56,7 @@ header nav ul li {
 
 header nav ul a:hover {
 	cursor: pointer;
-    color: #DD6925; 
+    color: #EA6D2C; 
 }
 
 header nav ul li a {
@@ -123,8 +124,8 @@ main .courses .courses-header:hover {
 main .courses .courses-header h1 {
     font-size: 25px; 
     padding: 0 15px; 
-    /* border-bottom: 1px dotted #DD6925;  */
-    color: #DD6925; 
+    /* border-bottom: 1px dotted #EA6D2C;  */
+    color: #EA6D2C; 
 }
 
 main .course-cards {
@@ -150,7 +151,7 @@ main .courses .course-cards .course-card {
     cursor: pointer;
     transform: scale(1.05);  
     transition: transform 2s ease; 
-    background: #DD6925; 
+    
 }
 
 .course-card .course-card-header h1 {
