@@ -488,6 +488,7 @@ footer {
     font-size: 17px;
     border: none;
     border-radius: 2px;
+    padding: 0 0 0 10px; 
 }
 
 #loginBox button{
