@@ -189,6 +189,18 @@ button:hover {
 
 /* END MAIN SECTION */
 
+/* FOOTER */ 
+footer {
+    border-top: solid 1px;
+    border-color: lightgrey;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding: 25px 0 0 0;
+    position: fixed;
+    bottom: 0px; 
+    background: #fff; 
+  }
 
 /* MEDIA QUERYS FOR SMALL SCREENS AND DEVICES */ 
 
@@ -210,14 +222,4 @@ button:hover {
 
 
 
-footer {
-  border-top: solid 1px;
-  border-color: lightgrey;
-  width: 100%;
-  height: 50px;
-  text-align: center;
-  padding: 25px 0 0 0;
-  position: fixed;
-  bottom: 0px; 
-  background: #fff; 
-}
+
