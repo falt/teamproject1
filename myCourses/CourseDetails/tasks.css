@@ -1,5 +1,4 @@
 .taskClass{
-  //border: 1px solid;
   height: 100%;
   width:90%;
   display:none;
@@ -14,14 +13,13 @@
   height: 250px;
   width: 40%;
   border: 1px lightgray solid;
-  border-radius: 20px;
+  border-radius: 5px;
   margin: 10px;
   flex-wrap: nowrap;
 
 }
 .taskClass div h1{
   font-size: 20px;
-  text-decoration: underline;
   font-weight: normal;
   margin-left:10px;
   margin-top: 10px;
@@ -55,3 +53,4 @@
   height: 25px;
   margin: 5px 0px;
 }
+
