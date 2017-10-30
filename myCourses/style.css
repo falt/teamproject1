@@ -115,18 +115,21 @@ main .ongoing-courses .course-card {
     background-image: url(https://image.flaticon.com/icons/svg/182/182321.svg); 
     background-repeat: no-repeat; 
     background-position: 100% 0px;  
+    background-size: 20%;
 }
 
 main .future-courses .course-card {
     background-image: url(https://image.flaticon.com/icons/svg/182/182323.svg); 
     background-repeat: no-repeat; 
-    background-position: 100% 0px;  
+    background-position: 100% 0px;
+    background-size: 20%;  
 }
 
 main .finished-courses .course-card {
     background-image: url(https://image.flaticon.com/icons/svg/182/182327.svg); 
     background-repeat: no-repeat; 
     background-position: 100% 0px;  
+    background-size: 20%;
 }
 
 main .courses .courses-header {
