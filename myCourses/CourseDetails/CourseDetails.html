@@ -10,6 +10,8 @@
 	<link rel="stylesheet" href="evalAndPlanStyle.css">
 	<link rel="stylesheet" href="tasks.css">
 	<link rel="stylesheet" href="teacher.css">
+	<link rel="stylesheet" href="grades.css">
+	<link rel="stylesheet" href="examinations.css">
 	<meta charset="utf-8">
 </head>
 
@@ -53,12 +55,25 @@
 		<!-- MAIN SECTION (LEFT) -->
 		<section class="main-section">
 
-			<div class="courses-header">
-				<button class="goBackButton" onclick="goBack()">
-					<i class="fa fa-backward fa-3x"></i>
-				</button>
-				<h1>Arbetsmetodik</h1>
-			</div>
+
+				<div class="courses-header">
+					<button class="goBackButton" onclick="goBack()">
+          <i class="fa fa-backward fa-3x"></i></button>
+					<h1>Arbetsmetodik</h1>
+				</div>
+
+				<ul class="course-type-nav-bar">
+
+					<li>Kursplan</li>
+					<li>Schema</li>
+					<li>Uppgifter</li>
+					<li>Betyg</li>
+					<li>Examinationsmoment</li>
+					<li>Kursutvärdering</li>
+					<li>Lärare</li>
+
+				</ul>
+
 
 			<ul class="course-type-nav-bar">
 
@@ -286,11 +301,116 @@
 
 			</article>
 
+			<!--Grades start-->
 
+			<article class="articleClass gradesClass" id="hej" >
+				<h1>Betyg</h1><br>
+					<div class="gradesLists">
+						<div>
+							<ul><legend>Namn</legend>
+								<li>Uppgift 1</li>
+								<li>Uppgift 2</li>
+								<li>Uppgift 3</li>
+								<li>Uppgift 4</li>
+								<li>Uppgift 5</li>
+								<li>Uppgift 6</li>
+								<li>Uppgift 7</li>
+								<li>Uppgift 8</li>
+								<li>Uppgift 9</li>
+							</ul>
+
+							<ul><legend>Ämne</legend>
+								<li>HTML/CSS/JS</li>
+								<li>HTML/CSS/JS</li>
+								<li>HTML/CSS/JS</li>
+								<li>HTML/CSS/JS</li>
+								<li>HTML/CSS/JS</li>
+								<li>HTML/CSS/JS</li>
+								<li>HTML/CSS/JS</li>
+								<li>HTML/CSS/JS</li>
+								<li>HTML/CSS/JS</li>
+							</ul>
+
+							<ul><legend>Betyg</legend>
+								<li>G</li>
+								<li>G</li>
+								<li>G</li>
+								<li>G</li>
+								<li>G</li>
+								<li>G</li>
+								<li>-</li>
+								<li>-</li>
+								<li>-</li>
+							</ul>
+
+						</div>
+					</div>
+
+			</article>
+
+
+
+
+			<!-- Grades End-->
+
+			<!-- Examinations start -->
+
+			<article class="articleClass examinationsClass">
+				<div class="examinations">
+					<div>
+						<p>Uppgift 1</p>
+						<i class="fa fa-check fa-4x" aria-hidden="true"></i>
+					</div>
+					<div>
+						<p>Uppgift 2</p>
+						<i class="fa fa-check fa-4x" aria-hidden="true"></i>
+					</div>
+					<div>
+						<p>Uppgift 3</p>
+						<i class="fa fa-check fa-4x" aria-hidden="true"></i>
+					</div>
+					<div>
+						<p>Uppgift 5</p>
+						<i class="fa fa-check fa-4x" aria-hidden="true"></i>
+					</div>
+					<div>
+						<p>Uppgift 6</p>
+						<i class="fa fa-check fa-4x" aria-hidden="true"></i>
+					</div>
+					<div>
+						<p>Uppgift 7</p>
+						<i class="fa fa-check fa-4x" aria-hidden="true"></i>
+					</div>
+					<div>
+						<p>Uppgift 8</p>
+						<i class="fa fa-check fa-4x" aria-hidden="true"></i>
+					</div>
+					<div>
+						<p>Grupprojekt</p>
+						<i class="fa fa-times fa-4x" aria-hidden="true"></i>
+					</div>
+					<div>
+						<p>Individuellt projekt</p>
+						<i class="fa fa-times fa-4x" aria-hidden="true"></i>
+					</div>
+					<div>
+						<p>Tentamen</p>
+						<i class="fa fa-times fa-4x" aria-hidden="true"></i>
+					</div>
+
+				</div>
+
+
+
+			</article>
+
+
+			<!--examinations end-->
+
+			<!--Evaluation-->
 
 			<article class="articleClass courseEval">
 
-				<!--Evaluation-->
 
 				<form class="evalForm">
 					<legend id="evalTitle">Kursutvärdering</legend>
