@@ -62,3 +62,10 @@ function TaskComplete(){
 function goBack() {
   window.history.back()
 }
+
+document.getElementById("sendButton").addEventListener("click", SendEval);
+
+function SendEval(){
+  let myBtn = document.getElementById("sendButton");
+  myBtn.textContent = "Tack för din medverkan!";
+}
