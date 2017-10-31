@@ -6,23 +6,35 @@
   height: 100%;
   width: 100%;
 }
-.teachers div{
+.teacherbox{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin: 20px 20px;
   border: 1px lightgray solid;
-  border-radius: 20px;
-  width: 20%;
-  height: 100px;
+  border-radius: 5px;
+  width: 400px;
+  height: 150px;
 }
 .teachers h1{
   font-size: 25px;
   font-weight: normal;
-  text-decoration: underline;
   margin-left: 20px;
 }
 .teachers p{
   font-size: 16px;
   margin-left: 20px;
   margin-top: 5px;
+}
+
+.teacherimg{
+  
+  height: 100px;
+  width: 100px;
+  margin: 5px 10px;
+}
+
+.teacherimg img {
+  height:110px;
+  width: 110px;
+  border-radius: 5px;
 }

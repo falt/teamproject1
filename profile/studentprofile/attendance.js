@@ -14,14 +14,13 @@ function attendance() {
     let button = document.getElementById("attendanceButton")
 
     if(attendanceInput == "abc123"){
-        // let textfield = document.getElementById("attendanceInput");
-        // let approved = document.getElementById("attendanceApproved");
         textfield.classList.toggle("hide");
         approved.classList.toggle("hide");
         button.classList.toggle("hide")
         console.log("rätt")
     } else {
         console.log("fel")
+        textfield.value = "skriv in rätt kod";
     }
 }
 
@@ -37,3 +36,6 @@ function send(){
     button.classList.toggle("hide");
     approved.classList.toggle("hide");
 }
+
+
+

@@ -1,0 +1,32 @@
+.gradesClass{
+  flex-direction: column;
+  width: 40%;
+}
+.gradesLists{
+  display: flex;
+  flex-direction:column;
+  border: 1px lightgray solid;
+  border-width: 100%;
+  width: 100%;
+}
+.gradesLists div{
+  display: flex;
+}
+.gradesLists ul{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.gradesLists ul li{
+  margin: 5px 0;
+  font-size: 16px;
+  margin-left: 5px;
+}
+.gradesLists legend{
+  font-size: 20px;
+  margin: 0;
+  border: 0px;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: lightgray;
+}

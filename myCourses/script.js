@@ -18,4 +18,8 @@ for(let i = 0; i < cardButtons.length; i++) {
     });
 }
 
-	
+/* Tillbaka knappen */
+
+function goBack() {
+    window.history.back()
+  }

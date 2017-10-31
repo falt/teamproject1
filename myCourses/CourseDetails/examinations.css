@@ -1,0 +1,29 @@
+.examinationsClass{
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.examinations{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}
+.examinations div{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  border: 1px lightgray solid;
+  border-radius: 5px;
+  height: 100px;
+  width: 200px;
+  margin: 20px 20px;
+}
+.examinations div p{
+  margin-left: 5px;
+}
+.examinations .fa{
+  color: #E96D2D;
+}
