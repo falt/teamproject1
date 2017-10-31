@@ -1,0 +1,256 @@
+body, h1, h2, h3, h4, h5, h6, ol, ul, li, a, p {
+    list-style-type: none;
+    font-size: 100%;
+    font-family: Roboto;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+
+/* HEADER SECTION */
+header {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    flex-direction: row;
+    border-width: 1px;
+    border-style: solid;
+    border-color:#d6d6d6;
+    border-image: initial;
+    top: 0px;
+    background-color: #fff;
+    z-index: 1;
+}
+
+header .logo {
+	width: 90px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+header .logo img {
+    width: 100px; 
+    margin: 0 0 0 25px; 
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    margin: 0 10px 0 0; 
+}
+
+header nav ul li {
+	display: inline-block;
+    padding: 0 10px;
+}
+
+header nav ul a:hover {
+	cursor: pointer;
+    color: #DD6925; 
+}
+
+header nav ul li a {
+    color: black; 
+}
+
+/*  END HEADER SECTION */
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex; 
+    flex-direction: row;
+    justify-content: center; 
+    margin: 50px 0 0 0; 
+    background-color: rgb(242, 242, 242);
+} 
+
+main .course-section {
+    background: white;
+    margin: 10px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    border-radius: 5px; 
+    border:1px solid #d6d6d6;
+    overflow: scroll; 
+}
+
+main .courses {
+    background: white; 
+    margin: 10px 0; 
+    border-radius: 2px;
+}
+
+main .ongoing-courses .course-card {
+    background-image: url(https://image.flaticon.com/icons/svg/182/182321.svg); 
+    background-repeat: no-repeat; 
+    background-position: 100% 0px;  
+}
+
+main .future-courses .course-card {
+    background-image: url(https://image.flaticon.com/icons/svg/182/182323.svg); 
+    background-repeat: no-repeat; 
+    background-position: 100% 0px;  
+}
+
+main .finished-courses .course-card {
+    background-image: url(https://image.flaticon.com/icons/svg/182/182327.svg); 
+    background-repeat: no-repeat; 
+    background-position: 100% 0px;  
+}
+
+main .courses .courses-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    height: 50px;
+}
+
+
+main .courses .courses-header:hover {
+    cursor: pointer; 
+}
+
+main .courses .courses-header h1 {
+    font-size: 25px; 
+    padding: 0 15px; 
+    /* border-bottom: 1px dotted #DD6925;  */
+    color: #DD6925; 
+}
+
+main .course-cards {
+    width: 100%; 
+    display: flex;
+    justify-content: center; 
+    flex-direction: column; 
+}
+
+main .courses .course-cards .course-card {
+    width: 300px; 
+    margin: 10px; 
+    border-radius: 5px; 
+    border: 1px solid lightgray;
+}
+
+.course-card .course-card-header {
+    width: 220px;
+    border-radius: 2px; 
+}
+
+.course-card:hover {
+    cursor: pointer;
+    transform: scale(1.05);  
+    transition: transform 2s ease; 
+    background: #DD6925; 
+}
+
+.course-card .course-card-header h1 {
+    padding: 10px 10px 5px 10px; 
+    font-size: 17px; 
+    text-transform: uppercase;     
+}
+
+.course-card .course-card-header p {
+    padding: 5px 10px; 
+    font-size: 14px; 
+}
+
+.course-card .course-card-header a {
+    color: inherit; 
+}
+
+main .courses .course-card-header span {
+    background: #fb6400; 
+    padding: 0 5px; 
+    border-radius: 50%; 
+    font-size: 17px; 
+}
+
+footer {
+    border-top: solid 1px;
+    border-color: lightgrey;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding: 25px 0 0 0;
+    display: fixed; 
+    bottom: 0px; 
+    background: #fff; 
+}
+
+
+
+@media (max-width: 972px) {
+
+        main .course-section {
+            width: 100%; 
+            flex-direction: column;
+        }
+
+        main .course-section .course-cards {
+            flex-direction: row; 
+            justify-content: flex-start; 
+            flex-wrap: wrap; 
+        }
+
+
+    }
+
+
+@media (max-width: 660px) {
+
+
+    header {
+        height: 90px; 
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        transition: all 0.3s ease;         
+    }
+
+    header .logo img {
+        width: 100px; 
+        margin: 0; 
+        transition: all 1s ease;         
+    }
+
+    main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        margin: 90px 0 0 0; 
+        transition: all 1s ease;         
+    }
+
+    main .course-section {
+        flex-direction: column;
+        width: 95%; 
+        transition: all 1s ease; 
+        align-items: center;
+    }
+
+    main .courses {
+        align-items: center;         
+    }
+
+    main .courses .course-cards .course-card {
+        flex-direction: column; 
+        width: 95%; 
+    }
+
+    main .courses .course-card-header {
+        width: 100%; 
+        transition: all 1s ease;         
+    }
+
+}

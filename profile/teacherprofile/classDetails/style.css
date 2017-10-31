@@ -1,0 +1,249 @@
+/* CSS RESET */
+body, h1, h2,h3,h4,h5,h6,ol,ul,li,a,p{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 100%;
+	font-family: 'Roboto';
+}
+
+/* START HEADER NAV AND LOGO */
+header {
+	height: 50px;
+	width: 100%;
+	border: 1px solid #d6d6d6;
+	border-top-color: white;
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	top: 0px;
+	background: white;
+}
+
+header .logo {
+	width: 90px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+header nav {
+	height: 50px;
+	width: 350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 10px 0 0;
+	color: #776f6f;
+}
+
+header nav a {
+	text-decoration: none;
+	color: black;
+}
+
+header nav ul li {
+	display: inline-block;
+	padding: 0 10px;
+}
+
+header a:hover {
+	cursor: pointer;
+	color: #DD6925;
+}
+
+/* END HEADER NAV AND LOGO */
+
+main {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	margin: 40px 0 0 0;
+	background-color: rgb(242, 242, 242);
+}
+.courses-header {
+	font-size: 36px;
+	display: flex;
+	justify-content: center;
+	margin: 10px 0px 10px 20px;
+}
+.courses-header h1 {
+	margin: 0 20px 0 20px;
+
+}
+
+.goBackButton {
+	border: 1px solid #DD6925;
+	background-color: #DD6925;
+	color: white;
+	border-radius: 7px;
+}
+.goBackButton i {
+	display: flex;
+	justify-content: center;
+	flex-direction: center;
+	padding: 5px 10px 5px 5px;
+}
+
+.main-section .course-type-nav-bar {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	background: #f2f2f2;
+	margin-top: 5px;
+}
+
+.main-section .course-type-nav-bar li{
+	 padding: 10px;
+	 margin: 0 5px 0 0;
+	 background: rgb(242, 242, 242);
+	 border-top: 1px solid rgb(242, 242, 242);
+	 border-left: 1px solid rgb(242, 242, 242);
+	 border-right: 1px solid rgb(242, 242, 242);
+	 border-top-left-radius: 5px;
+	 border-top-right-radius: 5px;
+	 margin-top: 10px;
+}
+
+.course-type-nav-bar li:hover {
+	cursor: pointer;
+}
+
+.course-type-nav-bar li:first-of-type {
+	background: #fff;
+	border-top: 1px solid white;
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	margin-top: 10px;
+}
+
+.main-section {
+	flex-grow: 2;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	align-items:flex-start;
+	border: 1px solid rgb(242, 242, 242);
+	margin: 30px;
+	background-color: white;
+	border-radius: 7px;
+}
+
+.main-section article {
+	padding: 10px;
+	margin: 10px 20px 5px 20px;
+}
+
+.main-section hr {
+	margin-bottom: 20px;
+}
+
+.main-section article:last-child {
+	margin-bottom: 40px;
+}
+
+.articleClass {
+	display: none;
+}
+
+.articleClass:first-of-type {
+	display:flex;
+}
+
+/* MOVE TO SEPARETE STYLE SHEETS? */ 
+
+.articleClass .assignments-section {
+	display: flex; 
+	flex-direction: row; 
+	flex-wrap: wrap; 
+	height: 100%; 
+	overflow: scroll; 
+}
+
+.assignments-header {
+	width: 100%; 
+}
+
+.articleClass .assignments-section .assignment {
+	display: flex; 
+	flex-direction: column; 
+	margin: 10px; 
+	border: 1px solid lightgray; 
+	border-radius: 5px; 
+	padding: 10px; 
+	margin: 10px 10px 10px 0; 
+	width: 450px; 
+
+}
+
+.assignment  .assignment-file {
+	color: gray; 
+	font-style: italic; 
+	font-size: 15px; 
+}
+
+.assignment  .assignment-file:hover {
+	cursor: pointer; 
+	text-decoration: underline; 
+}
+
+.assignment form {
+	display: flex; 
+	flex-direction: column; 
+	margin: 20px 0 0 0; 
+}
+
+.assignment form input[type="button"] {
+	width: 100px; 
+	margin: 10px 0; 
+}
+
+.articleClass h1 {
+	font-size: 25px; 
+	margin: 10px 0; 
+}
+
+.articleClass h2 {
+	font-size: 20px; 
+	margin: 10px 0;
+}
+
+.articleClass p {
+	margin: 10px 0; 
+}
+
+.articleClass textarea {
+	width: 95%; 
+	height: 100px; 
+	margin: 10px 0 0 0; 
+}
+
+
+/* ---- */ 
+
+footer {
+  border-top: solid 1px;
+  border-color: lightgray;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  padding: 25px 0 0 0;
+}
+
+.expand{
+	color: blue;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.expandedBlock{
+	display: block;
+	margin-left: 0;
+}

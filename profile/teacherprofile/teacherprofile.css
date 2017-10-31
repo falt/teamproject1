@@ -66,7 +66,6 @@ header nav ul li {
 
 /* END HEADER NAV AND LOGO */
 
-
 main {
     min-height: 80vh; 
 	width: 100%;
@@ -91,8 +90,7 @@ main {
 .aside-section .aside-content-box {
 	margin: 29px 0;
 	display: flex;
-	flex-direction: row-reverse;
-	justify-content: space-around;
+	justify-content: flex-start;
 	align-items: flex-start;
 	font-size: 13px;
 	padding: 20px 10px;
@@ -159,10 +157,6 @@ button:hover {
 
 .main-section article .read-more:hover {
 	color: white;
-}
-
-.main-section article:hover {
-	cursor: pointer;
 }
 
 .main-section article h1 {
