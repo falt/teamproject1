@@ -104,12 +104,6 @@ main {
 .main-section .course-type-nav-bar li{
 	 padding: 10px;
 	 margin: 0 5px 0 0;
-	 /* background: rgb(242, 242, 242);
-	 border-top: 1px solid rgb(242, 242, 242);
-	 border-left: 1px solid rgb(242, 242, 242);
-	 border-right: 1px solid rgb(242, 242, 242);
-	 border-top-left-radius: 5px;
-	 border-top-right-radius: 5px; */
 	 margin-top: 10px;
 }
 
@@ -162,15 +156,26 @@ main {
 
 /* MOVE TO SEPARETE STYLE SHEETS? */ 
 
+.assignments-wrapper {
+	flex-direction: column; 
+}
+
 .articleClass .assignments-section {
 	display: flex; 
 	flex-direction: row; 
 	flex-wrap: wrap; 
-	overflow: scroll; 
 }
 
 .assignments-header {
-	width: 100%; 
+	width: 100%;
+	cursor: pointer; 
+	transition: all 1s ease; 	
+}
+
+.colapsed {
+	height: 50px; 
+	overflow: hidden;
+	transition: all 1s ease; 
 }
 
 .assignment .edit-grade {
