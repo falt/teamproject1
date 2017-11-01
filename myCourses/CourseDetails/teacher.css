@@ -2,14 +2,13 @@
   display: none;
   justify-content: flex-start;
   flex-direction: column;
-  //border: 1px black solid;
   height: 100%;
-  width: 100%;
+  width: 95%;
 }
 .teacherbox{
   display: flex;
   flex-direction: row;
-  margin: 20px 20px;
+  //margin: 20px 20px;
   border: 1px lightgray solid;
   border-radius: 5px;
   width: 400px;
@@ -19,6 +18,7 @@
   font-size: 25px;
   font-weight: normal;
   margin-left: 20px;
+  color: #EA6D2C;
 }
 .teachers p{
   font-size: 16px;
@@ -27,7 +27,7 @@
 }
 
 .teacherimg{
-  
+
   height: 100px;
   width: 100px;
   margin: 5px 10px;

@@ -6,7 +6,9 @@ body, h1, h2,h3,h4,h5,h6,ol,ul,li,a,p{
 	font-size: 100%;
 	font-family: 'Roboto';
 }
-
+html{
+	overflow-y: scroll;
+}
 /* START HEADER NAV AND LOGO */
 header {
 	height: 50px;
@@ -131,7 +133,7 @@ main {
 	justify-content: flex-start;
 	flex-direction: column;
 	align-items:flex-start;
-	border: 1px solid rgb(242, 242, 242);
+	//border: 1px solid rgb(242, 242, 242);
 	margin: 30px;
 	background-color: white;
 	border-radius: 7px;
@@ -176,4 +178,16 @@ footer {
 .expandedBlock{
 	display: block;
 	margin-left: 0;
+}
+
+@media (max-width: 800px){
+	.main-section .course-type-nav-bar{
+		flex-direction: column;
+	}
+	.articleClass{
+		margin-top: 50px;
+	}
+	ul.course-type-nav-bar li:last-child{
+		margin-bottom: 20px;
+	}
 }
