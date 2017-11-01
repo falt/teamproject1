@@ -41,8 +41,13 @@ const editGradeBtns = document.querySelectorAll(".edit-grade");
 
 // Adds eventlistener to all submit-grade-buttons and toggles between show and hide class
 editGradeBtns.forEach((button, index)=> {
+  
   button.addEventListener('click',(e)=> {
+    
     gradeContainers[index].classList.toggle("done-grade");
+    editGradeBtns[index].className = editGradeBtns[index].className == "edit-grade hide" ? editGradeBtns[index].className = "edit-grade show" : editGradeBtns[index].className = " edit-grade hide"; 
+    
+
 
   })
 }); 
@@ -50,11 +55,26 @@ editGradeBtns.forEach((button, index)=> {
 // Edit submited grade 
 gradeBtns.forEach((button, index)=>{
   button.addEventListener('click', (e)=> {
+
     e.preventDefault(); 
 
     gradeContainers[index].classList.toggle("done-grade"); 
-    editGradeBtns[index].classList.toggle("hide");     
-    editGradeBtns[index].classList.toggle("show"); 
-    console.dir(e.target); 
+
+    editGradeBtns[index].className = editGradeBtns[index].className = "edit-grade show"; 
+    
   }) 
+}); 
+
+
+const assignmentHeaderBtn = document.querySelectorAll(".assignments-header h1"); 
+const assignmentSections = document.querySelectorAll(".assignments-section"); 
+
+
+assignmentHeaderBtn.forEach((element, index)=> {
+  element.addEventListener('click', (e)=> {
+
+    assignmentSections[index].className == "assignments-section" ? assignmentSections[index].className = "assignments-section colapsed" : assignmentSections[index].className = "assignments-section"; 
+
+  })
+
 }); 
