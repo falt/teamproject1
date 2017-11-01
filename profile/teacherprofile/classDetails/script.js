@@ -28,7 +28,7 @@ for(let i = 0; i < nav.length; i++) {
   });
 }
 
-/* Tillbakaknappen */
+/* Backbutton */
 function goBack() {
   window.history.back()
 }
@@ -46,11 +46,15 @@ editGradeBtns.forEach((button, index)=> {
     
     gradeContainers[index].classList.toggle("done-grade");
     editGradeBtns[index].className = editGradeBtns[index].className == "edit-grade hide" ? editGradeBtns[index].className = "edit-grade show" : editGradeBtns[index].className = " edit-grade hide"; 
-    
-
 
   })
 }); 
+
+const pendingGrades = document.querySelector(".assignments-pending"); 
+const doneGrades = document.querySelector(".assignments-done"); 
+const headerDoneGrade = document.querySelector(".assignments-done h2"); 
+
+
 
 // Edit submited grade 
 gradeBtns.forEach((button, index)=>{
@@ -61,6 +65,19 @@ gradeBtns.forEach((button, index)=>{
     gradeContainers[index].classList.toggle("done-grade"); 
 
     editGradeBtns[index].className = editGradeBtns[index].className = "edit-grade show"; 
+    
+    // Saves the container to add "DONE-GRADE" to 
+    const tagetContainer = e.target.parentNode.parentNode.parentNode.nextElementSibling;
+    const targetHeading = e.target.parentNode.parentNode.parentNode.nextElementSibling.firstElementChild;
+    
+
+    const containerToMove = e.target.parentNode.parentNode;  
+
+    // Adds the targeted elements grandfather (whole container) to target container 
+    tagetContainer.prepend(containerToMove); 
+
+    // Prepends the heading so that it sits on top of all grades 
+    tagetContainer.prepend(targetHeading); 
     
   }) 
 }); 

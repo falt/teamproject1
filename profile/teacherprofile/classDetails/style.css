@@ -18,6 +18,7 @@ header {
 	position: fixed;
 	top: 0px;
 	background: white;
+	z-index: 1; 
 }
 
 header .logo {
@@ -166,11 +167,12 @@ main {
 	justify-content: space-between; 
 	flex-wrap: wrap; 
 	padding: 0 0 0 10px;
-	margin: 10px 0;	
+	margin: 10px 0 25px 0;	
 }
 
 .assignments-header {
 	width: 100%;
+	border-bottom: 1px solid lightgray; 
 	transition: all 1s ease;
 }
 
@@ -180,7 +182,7 @@ main {
 
 .assignment-description {
 	width: 55%; 
-	margin: 15px 0; 
+	margin: 25px 0; 
 }
 
 .assignment-description ul {
@@ -206,6 +208,10 @@ main {
 	position: relative; 
 	top: -30px; 
 	right: -380px; 
+}
+
+.assignments-pending, .assignments-done {
+	margin: 20px 0; 
 }
 
 .assignment .edit-grade:hover {
