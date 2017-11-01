@@ -68,12 +68,15 @@ gradeBtns.forEach((button, index)=>{
 
 const assignmentHeaderBtn = document.querySelectorAll(".assignments-header h1"); 
 const assignmentSections = document.querySelectorAll(".assignments-section"); 
-
+const arrows = document.querySelectorAll(".assignments-header i"); 
 
 assignmentHeaderBtn.forEach((element, index)=> {
   element.addEventListener('click', (e)=> {
 
     assignmentSections[index].className == "assignments-section" ? assignmentSections[index].className = "assignments-section colapsed" : assignmentSections[index].className = "assignments-section"; 
+    
+    arrows[index].className == "fa fa-arrow-right" ? arrows[index].className = "fa fa-arrow-down" : arrows[index].className = "fa fa-arrow-right";
+
 
   })
 
