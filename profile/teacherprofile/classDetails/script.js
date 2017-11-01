@@ -1,21 +1,3 @@
-//document.getElementById("span").addEventListener("click", ExpandToggle)
-//var d = document.getElementById("span");
-
-
-function ExpandToggle(){
-  var expand = document.getElementById("topic1");
-  if(!expand)return true;
-  if(expand.style.display=="none"){
-    expand.style.display="block";
-    d.innerHTML = "Visa mindre";
-  }
-  else{
-    expand.style.display="none";
-    d.innerHTML = "Visa mer...";
-    window.scrollTo(0, 0);
-  }
-}
-
 
 // COURSE-NAV-BAR
 const nav = document.querySelectorAll(".course-type-nav-bar li");
@@ -46,20 +28,33 @@ for(let i = 0; i < nav.length; i++) {
   });
 }
 
-/*Skapa något som tar in filnamnet till p-tagen istället för statiskt meddelande*/
-
-var items = document.getElementsByClassName('uploadBtn');
-for (var i = 0; i < items.length; i++) {
-  items[i].addEventListener('click', TaskComplete);
-}
-
-function TaskComplete(){
-  console.log(this);
-  document.getElementById("taskComplete").innerHTML="Inlämning.pdf<br>Uppgift klar!";
-}
-
-/* Tillbaka knappen */
-
+/* Tillbakaknappen */
 function goBack() {
   window.history.back()
 }
+
+
+// Submit grade 
+const gradeBtns = document.querySelectorAll(".submit-grade");
+const gradeContainers = document.querySelectorAll(".assignment");
+const editGradeBtns = document.querySelectorAll(".edit-grade");   
+
+// Adds eventlistener to all submit-grade-buttons and toggles between show and hide class
+editGradeBtns.forEach((button, index)=> {
+  button.addEventListener('click',(e)=> {
+    gradeContainers[index].classList.toggle("done-grade");
+
+  })
+}); 
+
+// Edit submited grade 
+gradeBtns.forEach((button, index)=>{
+  button.addEventListener('click', (e)=> {
+    e.preventDefault(); 
+
+    gradeContainers[index].classList.toggle("done-grade"); 
+    editGradeBtns[index].classList.toggle("hide");     
+    editGradeBtns[index].classList.toggle("show"); 
+    console.dir(e.target); 
+  }) 
+}); 
