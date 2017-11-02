@@ -32,7 +32,7 @@ article.articleClass.courseEval{
   resize: none;
   width: 100%;
   margin-top: 0px;
-  border: 1px solid;
+  border: 1px lightgray solid;
   border-radius: 5px;
   display: flex;
 }
@@ -51,13 +51,15 @@ article.articleClass.courseEval{
   padding-top: 20px;
   display: flex;
   font-size: 20px;
+  border-color: lightgray;
 }
 
 #evalTitle{
   display: flex;
-  font-size: 27px;
+  font-size: 25px;
   justify-content: flex-start;
   color: #EA6D2C;
+  font-weight: bold;
 }
 
 .answers input[type=radio] {

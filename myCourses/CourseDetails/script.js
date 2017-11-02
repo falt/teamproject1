@@ -53,8 +53,7 @@ for (var i = 0; i < items.length; i++) {
 }
 
 function TaskComplete(){
-  console.log(this);
-  document.getElementById("taskComplete").innerHTML="Inlämning.pdf<br>Uppgift klar!";
+  this.value = "Inlämnad!";
 }
 
 /* Tillbaka knappen */
