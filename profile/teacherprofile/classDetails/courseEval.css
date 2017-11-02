@@ -1,0 +1,20 @@
+.evaluations{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+    background-color: red;
+}
+
+.courseEval{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: yellow;
+    width: 100%;
+}
+
+.evalQuestion{
+    width: 300px;
+    height: 300px;
+}
