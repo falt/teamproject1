@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../../font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
 	<meta charset="utf-8">
 </head>
 
@@ -172,14 +173,14 @@
 				<div class="rate-mood-section-header">
 					<h1>Hur mår du idag?</h1>
 				</div>
-				<div class="smileys">
+				<div id="happy" class="smileys">
 					<i class="fa fa-smile-o fa-5x" tabindex="0" aria-hidden="true">
 						<p>Bra!</p>
 					</i>
-					<i class="fa fa-meh-o fa-5x" tabindex="0" aria-hidden="true">
+					<i id="okay" class="fa fa-meh-o fa-5x" tabindex="0" aria-hidden="true">
 						<p>Okej</p>
 					</i>
-					<i class="fa fa-frown-o fa-5x" tabindex="0" aria-hidden="true">
+					<i id="not-happy"class="fa fa-frown-o fa-5x" tabindex="0" aria-hidden="true">
 						<p>Dåligt.</p>
 					</i>
 				</div>
@@ -192,7 +193,7 @@
 			</div> -->
 
 			<div class="graph">
-				<-- GRAPH GOES HERE -->
+				<canvas id="pie-chart" width="100" height="50"></canvas>
 			</div>
 
 			<div class="rate-weekly">
@@ -240,6 +241,7 @@
 	</footer>
 	<script src="studentprofile.js"></script>
 	<script src="attendance.js"></script>
+	<script src="piechart.js"></script>
 	</footer>
 
 </body>
