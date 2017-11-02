@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Course Details</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../../font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="courseEval.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
 
 	<meta charset="utf-8">
 </head>
+
 <body>
 
 	<!-- HEADER AND NAV -->
 	<header>
-		<div class="logo"><img src="../../profile/studentprofile/KYH-logo.png" width="90"></div>
+		<div class="logo">
+			<img src="../../profile/studentprofile/KYH-logo.png" width="90">
+		</div>
 
 		<nav>
 
 			<ul>
-				<li><a href="#">Hem</a></li>
-				<li><a href"#">Mina kurser</a></li>
-				<li><a href="#">Schema</a></li>
+				<li>
+					<a href="#">Hem</a>
+				</li>
+				<li>
+					<a href "#">Mina kurser</a>
+				</li>
+				<li>
+					<a href="#">Schema</a>
+				</li>
 			</ul>
 		</nav>
 
@@ -34,22 +46,24 @@
 		<!-- MAIN SECTION -->
 		<section class="main-section">
 
-				<div class="courses-header">
-					<button class="goBackButton" onclick="goBack()"><i class="fa fa-backward fa-3x"></i></button>
-					<h1>FE17</h1>
-					<p>Arbetsmetodik</p>
-				</div>
+			<div class="courses-header">
+				<button class="goBackButton" onclick="goBack()">
+					<i class="fa fa-backward fa-3x"></i>
+				</button>
+				<h1>FE17</h1>
+				<p>Arbetsmetodik</p>
+			</div>
 
-				<div class="course-type-nav-bar-container">
-						<ul class="course-type-nav-bar">
-								
-							<li>Start</li>
-							<li>Inlämningar</li>
-							<li>Kursutvärdering</li>
-							<li>Elever</li>
-		
-						</ul>
-				</div>
+			<div class="course-type-nav-bar-container">
+				<ul class="course-type-nav-bar">
+
+					<li>Start</li>
+					<li>Inlämningar</li>
+					<li>Kursutvärdering</li>
+					<li>Elever</li>
+
+				</ul>
+			</div>
 
 
 
@@ -59,32 +73,34 @@
 			</article>
 
 			<article class="articleClass">
-				
+
 				<div class="assignments-section">
 
 					<div class="assignments-header">
-						<h1>Arbetsmetodik och agila arbetsmetoder uppgift 1</h1>													
+						<h1>Arbetsmetodik och agila arbetsmetoder uppgift 1</h1>
 					</div>
-							
+
 
 					<div class="assignment">
 						<h2>Adam Larsson</h2>
 
 						<span class="edit-grade hide">Redigera</span>
-						
-						<p>Inlämnad 2017-09-30 23:00</p>						
-						<p>Inlämning: <span class="assignment-file">agila_arbetsmetoder.pdf</span></p>
+
+						<p>Inlämnad 2017-09-30 23:00</p>
+						<p>Inlämning:
+							<span class="assignment-file">agila_arbetsmetoder.pdf</span>
+						</p>
 
 						<form>
-							
+
 							<label for="grade">Betygsätt uppgift</label>
 							<select name="grade">
-								<option value="IG">IG</option>									
+								<option value="IG">IG</option>
 								<option value="G">G</option>
 								<option value="VG">VG</option>
 							</select>
 
-							<label for="assignment-comment">Kommentera uppgift</label>								
+							<label for="assignment-comment">Kommentera uppgift</label>
 							<textarea required></textarea>
 							<input class="submit-grade" type="submit" value="Skicka" />
 						</form>
@@ -93,21 +109,23 @@
 					<div class="assignment">
 						<h2>Eva Adamsson</h2>
 
-						<span class="edit-grade hide">Redigera</span>						
+						<span class="edit-grade hide">Redigera</span>
 
-						<p>Inlämnad 2017-09-29 19:33</p>												
-						<p>Inlämning: <span class="assignment-file">agila_arbetsmetoder.pdf</span></p>
+						<p>Inlämnad 2017-09-29 19:33</p>
+						<p>Inlämning:
+							<span class="assignment-file">agila_arbetsmetoder.pdf</span>
+						</p>
 
 						<form>
-							
+
 							<label for="grade">Betygsätt uppgift</label>
 							<select name="grade">
-								<option value="IG">IG</option>									
+								<option value="IG">IG</option>
 								<option value="G">G</option>
 								<option value="VG">VG</option>
 							</select>
 
-							<label for="assignment-comment">Kommentera uppgift</label>								
+							<label for="assignment-comment">Kommentera uppgift</label>
 							<textarea required></textarea>
 							<input class="submit-grade" type="submit" value="Skicka" />
 						</form>
@@ -116,21 +134,23 @@
 					<div class="assignment">
 						<h2>Bror Schön</h2>
 
-						<span class="edit-grade hide">Redigera</span>						
+						<span class="edit-grade hide">Redigera</span>
 
-						<p>Inlämnad 2017-09-29 19:33</p>												
-						<p>Inlämning: <span class="assignment-file">agila_arbetsmetoder.pdf</span></p>
+						<p>Inlämnad 2017-09-29 19:33</p>
+						<p>Inlämning:
+							<span class="assignment-file">agila_arbetsmetoder.pdf</span>
+						</p>
 
 						<form>
-							
+
 							<label for="grade">Betygsätt uppgift</label>
 							<select name="grade">
-								<option value="IG">IG</option>									
+								<option value="IG">IG</option>
 								<option value="G">G</option>
 								<option value="VG">VG</option>
 							</select>
 
-							<label for="assignment-comment">Kommentera uppgift</label>								
+							<label for="assignment-comment">Kommentera uppgift</label>
 							<textarea required></textarea>
 							<input class="submit-grade" type="submit" value="Skicka" />
 						</form>
@@ -140,21 +160,23 @@
 					<div class="assignment">
 						<h2>Felicia Gottfridsson</h2>
 
-						<span class="edit-grade hide">Redigera</span>						
+						<span class="edit-grade hide">Redigera</span>
 
-						<p>Inlämnad 2017-09-29 19:33</p>												
-						<p>Inlämning: <span class="assignment-file">agila_arbetsmetoder.pdf</span></p>
+						<p>Inlämnad 2017-09-29 19:33</p>
+						<p>Inlämning:
+							<span class="assignment-file">agila_arbetsmetoder.pdf</span>
+						</p>
 
 						<form>
-							
+
 							<label for="grade">Betygsätt uppgift</label>
 							<select name="grade">
-								<option value="IG">IG</option>									
+								<option value="IG">IG</option>
 								<option value="G">G</option>
 								<option value="VG">VG</option>
 							</select>
 
-							<label for="assignment-comment">Kommentera uppgift</label>								
+							<label for="assignment-comment">Kommentera uppgift</label>
 							<textarea required></textarea>
 							<input class="submit-grade" type="submit" value="Skicka" />
 						</form>
@@ -162,19 +184,56 @@
 
 			</article>
 
-			<article class="articleClass">
+			<article class="articleClass evaluations">
 				<h1>Kursutvärdering</h1>
+				<div class="courseEval">
+
+					<div class="evalQuestion">
+						<h3>Vad tyckte du om kursen i allmänhet?</h3>
+						<canvas id="firstChart" max-width="300" max-height="300"></canvas>
+					</div>
+
+					<div class="evalQuestion">
+						<h3>Hur var kvalitén på kurslitteraturen?</h3>
+						<canvas id="secondChart" max-width="300" max-height="300"></canvas>
+					</div>
+
+					<div class="evalQuestion">
+						<h3>Vad ger du förläsningarna för betyg?</h3>
+						<canvas id="thirdChart" max-width="300" max-height="300"></canvas>
+					</div>
+
+					<div class="evalQuestion">
+						<h3>Fick du tillräckligt med hjälp av lärarna?</h3>
+						<canvas id="fourthChart" max-width="300" max-height="300"></canvas>
+					</div>
+
+					<div class="evalQuestion">
+						<h3>Övriga kommentarer:</h3>
+						<ul>
+							<li><p>Superbra kurs!</p></li>
+							<li><p>Bästa kursen ever</p></li>
+							<li><p>Läraren är så bra i tv</p></li>
+							<li><p>Bästa kursen</p></li>
+							<li><p>Bra</p></li>
+						</ul>
+					</div>
+				</div>
+
+
+
+
 			</article>
 
 			<article class="articleClass">
 				<div class="students">
-					
+
 					<h1>FE17</h1>
 
 				</div>
 
 			</article>
-	
+
 		</section>
 
 	</main>
@@ -184,8 +243,11 @@
 		<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
 		<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
 
-		</footer>
+	</footer>
 
-		<script src="script.js"></script>
+	<script src="script.js"></script>
+	<script src="chart.js"></script>
+
 </body>
+
 </html>
