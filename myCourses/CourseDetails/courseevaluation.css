@@ -85,6 +85,7 @@ article.articleClass.courseEval{
 	transition: 0.2s;
 	cursor: pointer;
 	color: #DD6925;
+  z-index: 1;
   }
 
 .evalForm input[type="radio"]:hover {
