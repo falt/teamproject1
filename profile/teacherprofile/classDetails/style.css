@@ -18,6 +18,7 @@ header {
 	position: fixed;
 	top: 0px;
 	background: white;
+	z-index: 1; 
 }
 
 header .logo {
@@ -163,25 +164,54 @@ main {
 .articleClass .assignments-section {
 	display: flex; 
 	flex-direction: row; 
+	justify-content: space-between; 
 	flex-wrap: wrap; 
+	padding: 0 0 0 10px;
+	margin: 10px 0 25px 0;	
 }
 
 .assignments-header {
 	width: 100%;
+	border-bottom: 1px solid lightgray; 
+	transition: all 1s ease;
+}
+
+.assignments-header h1 {
 	cursor: pointer; 
-	transition: all 1s ease; 	
+}
+
+.assignment-description {
+	width: 55%; 
+	margin: 25px 0; 
+}
+
+.assignment-description ul {
+	margin: 20px 0; 
+}
+
+.assignment-description ul li{
+	list-style: disc; 
+	margin: 0 20px; 
 }
 
 .colapsed {
-	height: 50px; 
+	height: 50px;
 	overflow: hidden;
-	transition: all 1s ease; 
+	border: 1px solid lightgray;
+	padding: 0 0 0 10px;
+	margin: 10px 0;
+	border-radius: 5px; 
+	transition: all 1s ease;	
 }
 
 .assignment .edit-grade {
 	position: relative; 
 	top: -30px; 
 	right: -380px; 
+}
+
+.assignments-pending, .assignments-done {
+	margin: 20px 0; 
 }
 
 .assignment .edit-grade:hover {
@@ -260,11 +290,10 @@ main {
 
 .done-grade {
 	height: 40px; 
-	background: #dd6925; 
+	background:; 
 	overflow: hidden; 
 	transform: all 1s ease; 
 }
-
 
 /* ---- */ 
 
