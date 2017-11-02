@@ -13,7 +13,6 @@
 }
 .taskClass h1{
   font-size: 20px;
-  font-weight: normal;
   margin-left:10px;
   margin-top: 10px;
 }
@@ -48,11 +47,9 @@
 .articleColumn{
   height: 1300px;
   width: 40%;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left:15px;
-  margin-right:15px;
-
+}
+.articleColumn:last-of-type{
+  margin-left: 28px;
 }
 
 .articleColumn h1 {
