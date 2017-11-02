@@ -1,11 +1,11 @@
 let chart = new Chart(document.getElementById("pie-chart"), {
         type: 'pie',
         data: {
-          labels: ["Happy", "Okay", "Not happy"],
+          labels: ["Happy", "Okay", "Unhappy"],
           datasets: [{
             label: "How satisfied",
             backgroundColor: ["#33cc33 ", "#f9f94f ","#ff0000 ",],
-            data: [1,1,1 ]
+            data: [1,1,1],
           }]
         },
         options: {
@@ -26,7 +26,6 @@ let chart = new Chart(document.getElementById("pie-chart"), {
 
     for(let i = 0; i < smileys.length; i++) {
       smileys[i].addEventListener('click', function(e){
-        console.log(e.target.id);
         chart.data.datasets[0].data[0] += 1;
           chart.update();
 
