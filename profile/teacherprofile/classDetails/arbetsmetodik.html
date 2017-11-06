@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="../../../font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="assignments.css">
+	<link rel="stylesheet" href="divideGroups.css">
+	
 	
 	<meta charset="utf-8">
 </head>
@@ -310,10 +312,121 @@
 				<h1>Kursutvärdering</h1>
 			</article>
 
-			<article class="articleClass">
-				<div class="students">
+			<article class="articleClass students">
+
+				<!-- <div class="students"> -->
 					
-					<h1>FE17</h1>
+					<div class="menu-container">
+						
+						<h1>Skapa gruppuppgift för FE17</h1>
+						
+						<label for="assignment-name">Namn på uppgift:</label>
+						<input type="text" id="assignment-name" name="assignment-name">
+				
+						<label for="amount-of-groups">Antal grupper</label>
+						
+						<select id="amount-of-groups">
+							<option value="5">5</option>
+							<option value="4">4</option>
+							<option value="3">3</option>
+							<option value="2">2</option>
+						</select>
+
+						<button id="divide-groups-btn">Dela in klassen i 5 grupper</button>
+						
+				
+						<div class="class-list">
+							<h3>FE17</h3>
+				
+							<ul>
+								<li draggable="true">Daniel</li>
+								<li draggable="true">Andreas</li>
+								<li draggable="true">Robin</li>
+								<li draggable="true">Johanna</li>
+								<li draggable="true">Björn</li>
+								<li draggable="true">Ture</li>
+								<li draggable="true">Bror</li>
+								<li draggable="true">Bratislav</li>
+								<li draggable="true">Leif</li>
+								<li draggable="true">Martin</li>
+								<li draggable="true">Adam</li>
+								<li draggable="true">Eva</li>
+								<li draggable="true">Rickard</li>
+								<li draggable="true">Victor</li>
+								<li draggable="true">Mattias</li>
+								<li draggable="true">Hanna</li>
+								<li draggable="true">Ellinor</li>
+								<li draggable="true">Linnea</li>
+								<li draggable="true">Fredrik</li>
+								<li draggable="true">Kusin</li>
+								<li draggable="true">Brate</li>
+								<li draggable="true">Oskar</li>
+								<li draggable="true">Alex</li>
+								<li draggable="true">Nathalie</li>
+								<li draggable="true">Tom</li>
+								<li draggable="true">Thorvald</li>
+								<li draggable="true">Svetlana</li>
+								<li draggable="true">Petter</li>
+								<li draggable="true">Pär</li>
+								<li draggable="true">Boris</li>
+								<li draggable="true">Bodil</li>
+								<li draggable="true">Boel</li>
+								<li draggable="true">Rolf</li>
+								<li draggable="true">Rihanna</li>
+								<li draggable="true">Beyonce</li>
+								<li draggable="true">Jamie</li>
+								<li draggable="true">Lars</li>
+								<li draggable="true">Mahatma</li>
+								<li draggable="true">Adolf</li>
+								<li draggable="true">Tim</li>
+								</ul>
+				
+						</div>
+				
+				
+					</div>
+				
+					<div class="container hidden">
+				
+						<div class="assignment-header">
+							<h1></h1>                
+						</div>
+				
+						<div class="assignment-groups">
+				
+							<div class="grid">
+								<h2>Grupp 1</h2>
+								<ul>
+								</ul>            
+							</div>
+					
+							<div class="grid">
+								<h2>Grupp 1</h2>
+								<ul>
+								</ul>            
+							</div>
+					
+							<div class="grid">
+								<h2>Grupp 1</h2>                
+								<ul>
+								</ul>
+							</div>
+					
+							<div class="grid">
+								<h2>Grupp 1</h2>                
+								<ul>
+								</ul>                
+							</div>
+							
+							<div class="grid">
+								<h2>Grupp 1</h2>                
+								<ul>
+								</ul>                                
+							</div>
+						</div>
+					</div>
+						
+							
 
 				</div>
 
@@ -329,7 +442,7 @@
 		<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
 
 	</footer>
-
+	<script src="divideGroups.js"></script>
 	<script src="script.js"></script>
 </body>
 </html>
