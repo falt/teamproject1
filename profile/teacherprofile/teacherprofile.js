@@ -9,18 +9,25 @@ buttons.forEach( function(button) { //calls all buttons with class .readmore1
 })
 
 let articles = document.querySelectorAll(".editable")
+console.log(articles)
 
 function editableContent() {
     for (let i = 0; i < articles.length; i++){
-        articles[i].contentEditable = "true"
-    }
-}
-
-let createPost = document.querySelector('createPost')
-    function createPost() {
-            if (x.style.display === "none") {
-                x.style.display = "block";
+            if (editableContent = true) {
+                (articles[i].contentEditable = "true")
             } else {
-                x.style.display = "none";
-            }
+                document.getElementById('fa fa-trash')
+            }     
         }
+    }
+
+ function createPost() {
+    var newPost = document.getElementById('create-post');
+        if (newPost.style.display === "none") {
+            newPost.style.display = "block";
+        } else {
+            newPost.style.display = "none";
+        }
+    }
+
+    
