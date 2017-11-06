@@ -37,6 +37,7 @@ header {
 	position: fixed;
 	top: 0px;
 	background: white;
+	z-index: 1;
 }
 
 header .logo {
@@ -109,7 +110,7 @@ main {
 
 .profile-section {
 	flex-grow: 1;
-	width: 700px;	
+	width: 700px;
 }
 
 .profile-graph-section .profile {
@@ -300,7 +301,7 @@ button:hover {
 	display: flex;
 	justify-content: center;
 	flex-direction: center;
-	background-color: #fff; 
+	background-color: #fff;
 	border: 1px solid rgb(242, 242, 242);
 	border-top-right-radius: 5px;
 	border-top-left-radius: 5px;
@@ -427,9 +428,11 @@ button:hover {
 #sendWeekly{
 	color: lightgreen;
 }
+
+
 /* RATE MOOD SECTION WEEKLY END */
 
-/* MEDIA QUERYS FOR SMALL SCREENS AND DEVICES */ 
+/* MEDIA QUERYS FOR SMALL SCREENS AND DEVICES */
 
 @media (max-width: 900px) {
 	main {
@@ -478,7 +481,7 @@ footer {
 	0% {
 	  transform:translateY(0%);
 	}
-   
+
 	100% {
 	  transform:translateY(-20%);
 	}
