@@ -1,0 +1,24 @@
+.evaluations{
+    display: none;
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+}
+
+.courseEval{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.evalQuestion{
+    width: 400px;
+    height: 400px;
+}
+
+.chart{
+    height: 300px;
+    width: 300px;
+}
