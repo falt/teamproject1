@@ -1,0 +1,114 @@
+body, ul, li{
+    margin: 0; 
+    padding: 0; 
+    font-family: sans-serif; 
+    list-style-type: none; 
+}
+
+.students {
+    width: 800px; 
+    display: none;
+    flex-direction: column; 
+}
+
+
+.menu-container {
+    display: flex;
+    flex-direction: column; 
+}
+
+
+.menu-container input, select {
+    width: 200px; 
+}
+
+.menu-container label {
+    margin: 10px 0; 
+}
+
+.menu-container button {
+    height: 25px;
+    color: white;
+    background: #dd6925;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0; 
+    width: 200px; 
+}
+
+
+.menu-container ul {
+    display: flex; 
+    flex-direction: column; 
+    flex-wrap: wrap; 
+    height: 100px; 
+}
+
+.class-list {
+    width: 100%; 
+}
+
+.class-list h3 {
+    margin: 10px 10px 10px 0; 
+}
+
+.assignment-header {
+    display: flex; 
+}
+
+.assignment-groups {
+    display: flex;
+    justify-content: center; 
+}
+
+.container {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+.grid {
+    width: 150px; 
+    min-height: 500px; 
+    border: 1px solid lightgray;
+    border-radius: 5px; 
+    display: flex; 
+    justify-content: center; 
+    flex-direction: column; 
+    margin: 10px 10px 0 0; 
+}
+
+.grid h2 {
+    margin: 10px; 
+}
+
+.grid ul {
+    margin: 0; 
+    padding: 0;  
+    width: 100%; 
+    height: 100%; 
+}
+
+.grid ul li {
+    background: rgb(255, 255, 255); 
+    padding: 10px 25px 10px 5px; 
+    list-style-type: none; 
+    border-top: 1px solid lightgray;
+    margin: 2px 0; 
+}
+
+.grid ul li:last-child {
+    border-bottom: 1px solid lightgray; 
+}
+
+.grid ul li:hover {
+    cursor: pointer; 
+}
+
+.grid p:hover {
+    cursor: pointer; 
+}
+
+.hidden {
+    display: none; 
+}
