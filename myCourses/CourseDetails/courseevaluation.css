@@ -1,53 +1,17 @@
-
-hr {
-  margin: 0 0px;
-}
-
 article.articleClass.courseEval{
   flex-direction: column;
-  height
 }
-
-.coursePlan {
-	display:flex;
-	flex-direction: column;
-  width: 95%;
-}
-
-.coursePlan h1 {
-	margin-top: 30px;
-	margin-bottom: 0px;
-	font-size: 35px;
-	display: flex;
-	justify-content: flex-start;
-	flex-direction: column;
-}
-.coursePlan h2 {
-	font-size: 23px;
-  color: #EA6D2C;
-}
-
-.coursePlan h3 {
-	font-size: 20px;
-}
-
-.coursePlan p {
-	font-size: 18px;
-	margin: 10px 0;
-}
-
-/*Evaluation////////////////////////////*/
 
 .evalForm{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .answers{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .courseEval button[type=button]{
@@ -60,8 +24,6 @@ article.articleClass.courseEval{
   font-size: 20px;
   display: flex;
   justify-content:center;
-  margin-bottom: 20px;
-  margin-left: 40px;
   margin-top: 20px;
 }
 
@@ -70,13 +32,14 @@ article.articleClass.courseEval{
   resize: none;
   width: 100%;
   margin-top: 0px;
-  border: 1px solid;
+  border: 1px lightgray solid;
   border-radius: 5px;
   display: flex;
 }
 
 .evalFieldsets{
   border: 0px;
+  padding: 0px;
 }
 
 .evalFieldsets p{
@@ -85,32 +48,29 @@ article.articleClass.courseEval{
 
 .questions{
   border-top: 1px solid;
-  margin: 20px;
   padding-top: 20px;
   display: flex;
   font-size: 20px;
+  border-color: lightgray;
 }
 
 #evalTitle{
   display: flex;
-  margin-top: 30px;
-  font-size: 27px;
+  font-size: 25px;
   justify-content: flex-start;
   color: #EA6D2C;
+  font-weight: bold;
 }
 
 .answers input[type=radio] {
   transform: scale(1);
 }
 
-.courseEval legend{
-  margin-left: 20px;
-}
-
 .pDiv{
   display: flex;
   justify-content: space-around;
   flex-direction: row;
+  width:250px;
 }
 
 
@@ -125,6 +85,7 @@ article.articleClass.courseEval{
 	transition: 0.2s;
 	cursor: pointer;
 	color: #DD6925;
+  z-index: 1;
   }
 
 .evalForm input[type="radio"]:hover {

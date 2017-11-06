@@ -20,6 +20,7 @@ header {
 	position: fixed;
 	top: 0px;
 	background: white;
+	z-index: 2;
 }
 
 header .logo {
@@ -141,7 +142,7 @@ main {
 
 .main-section article {
 	padding: 10px;
-	margin: 10px 20px 5px 20px;
+	margin: 30px 20px 5px 30px;
 }
 
 .main-section hr {
@@ -180,14 +181,29 @@ footer {
 	margin-left: 0;
 }
 
+view-container-border{
+	overflow:scroll;
+}
+.scheduleClass span#calendarTitle{
+	font-size: 30px;
+	color: orange;
+}
+
 @media (max-width: 800px){
 	.main-section .course-type-nav-bar{
 		flex-direction: column;
 	}
+}
+@media (max-width: 820px){
 	.articleClass{
 		margin-top: 50px;
 	}
 	ul.course-type-nav-bar li:last-child{
 		margin-bottom: 20px;
+	}
+	.iframeClass{
+		width: 400px;
+	  height: 400px;
+		overflow: scroll;
 	}
 }

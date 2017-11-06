@@ -1,5 +1,6 @@
 .examinationsClass{
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 .examinations{
   display: flex;
@@ -10,18 +11,22 @@
 }
 .examinations div{
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  align-items:center;
   flex-direction: column;
   border: 1px lightgray solid;
   border-radius: 5px;
   height: 100px;
   width: 200px;
-  margin: 20px 20px;
+  /*margin: 20px 20px;*/
 }
 .examinations div p{
   margin-left: 5px;
 }
 .examinations .fa{
   color: #E96D2D;
+
+@media (max-width: 1000px) {
+  .examinations{
+
+  }
 }
