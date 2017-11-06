@@ -192,7 +192,7 @@ header nav ul li {
     margin: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -239,6 +239,7 @@ header nav ul li {
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+  margin: 20px; 
 }
 
 .business .business-logo{
@@ -420,6 +421,7 @@ footer {
   border-radius: 20px;
   background-color: #f7f7f7;
   margin: 150px 0 150px 0;
+  padding: 25px;
 }
 
 .working-here h4{

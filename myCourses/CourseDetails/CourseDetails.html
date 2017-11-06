@@ -1,36 +1,47 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Course Details</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../../font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="evalAndPlanStyle.css">
+	<link rel="stylesheet" href="courseevaluation.css">
+	<link rel="stylesheet" href="courseplan.css">
 	<link rel="stylesheet" href="tasks.css">
 	<link rel="stylesheet" href="teacher.css">
+	<link rel="stylesheet" href="examinations.css">
 	<meta charset="utf-8">
 </head>
+
 <body>
 
 	<!-- HEADER AND NAV -->
 	<header>
-		<div class="logo"><img src="../../profile/studentprofile/KYH-logo.png" width="90"></div>
+		<div class="logo">
+			<img src="../../profile/studentprofile/KYH-logo.png" width="90">
+		</div>
 
 		<nav>
 
 			<!-- In progress -->
-<!-- 			<div class="hamburger-nav">
+			<!-- 			<div class="hamburger-nav">
 				<span class="hamburger-menu"></span>
 				<span class="hamburger-menu"></span>
 				<span class="hamburger-menu"></span>
 			</div> -->
 
 			<ul>
-				<li><a href="#">Hem</a></li>
-				<li><a href="../../myCourses/Ongoing courses/ongoingcourses.html">Mina kurser</a></li>
-				<li><a href="#">Min profil</a></li>
-				<li><a href="#">Schema</a></li>
+				<li>
+					<a href="#">Hem</a>
+				</li>
+				<li>
+					<a href="../../myCourses/mycourses.html">Mina kurser</a>
+				</li>
+				<li>
+					<a href="#">Schema</a>
+				</li>
 			</ul>
 		</nav>
 
@@ -44,193 +55,334 @@
 		<!-- MAIN SECTION (LEFT) -->
 		<section class="main-section">
 
-				<div class="courses-header">
-					<button class="goBackButton" onclick="goBack()"><i class="fa fa-backward fa-3x"></i></button>
-					<h1>Arbetsmetodik</h1>
+
+			<div class="courses-header">
+				<button class="goBackButton" onclick="goBack()">
+					<i class="fa fa-backward fa-3x"></i>
+				</button>
+				<h1>Arbetsmetodik</h1>
+			</div>
+
+			<ul class="course-type-nav-bar">
+
+				<li>Kursplan</li>
+				<li>Schema</li>
+				<li>Uppgifter</li>
+				<li>Examinationsmoment</li>
+				<li>Kursutvärdering</li>
+				<li>Lärare</li>
+
+			</ul>
+
+			<article class="articleClass coursePlan">
+
+				<div class="divClass">
+					<div>
+						<h2 id="first-h2">Kursplan</h2>
+						<hr>
+						<p>Utbildningsnummer: 201514480-2 och 201514500-2 </p>
+						<h3>
+							<b>Kurspoäng</b>
+						</h3>
+						<p>20 poäng</p>
+					</div>
+
+					<div>
+						<h2>Innehåll</h2>
+						<hr>
+						<p>Kursen ger kunskap i modern lättrörlig projektmetodik och praktiska färdigheter inom detta. Andra systemutvecklingsmetoder
+							som ex. testdriven utveckling ingår i kursen. Kursen ger exempel på relevanta verktyg och arbetsmetoder för en utvecklare.
+						</p>
+
+						<p>Under kursen lär sig de studerande versionshantering och verktyg relevanta för utvecklarrollen. Kursen går igenom effektiva
+							arbetsflöden för utveckling av system samt hur man delar sitt arbete inom ett team och hitta gemensamma arbetsflöden
+							för hela teamet. </p>
+						</div>
+
+					<div>
+						<h2>Mål</h2>
+						<hr>
+						<p>Efter avslutad kurs ska den studerande ha… </p>
+						<h3>Kunskaper om:</h3>
+						<ul>
+							<li><p>Arbete i projektteam, agila metoder och övrig arbetsmetodik</p></li>
+							<li><p>Utvecklingsverktyg</p></li>
+							<li><p>Versionshantering</p></li>
+							<li><p>Kravhantering</p></li>
+							<li><p>Icke-agila projektmodeller och hur de skiljer sig från det agila tankesättet</p></li>
+							<li><p>Testdriven utveckling</p></li>
+						</ul>
+					</div>
+
 				</div>
 
-				<ul class="course-type-nav-bar">
+				<div class="divClass">
 
-					<li>Kursplan</li>
-					<li>Schema</li>
-					<li>Uppgifter</li>
-					<li>Kursutvärdering</li>
-					<li>Lärare</li>
+				<div>
 
-				</ul>
+					<div>
+						<h3>Färdigheter i att:</h3>
+						<ul>
+							<li><p>Använda olika projektmetoder inom webbutveckling</p></li>
+							<li><p>Hantera krav och genomföra samt följa upp uppgifter inom webbutveckling</p></li>
+							<li><p>Söka och använda information inom webbutveckling</p></li>
+							<li><p>Sätta upp sin egen utvecklingsmiljö/-verktyg och arbeta i dessa</p></li>
+							<li><p>Arbeta med versionshantering både individuellt och i grupp</p></li>
+						</ul>
+					</div>
 
-			<article class="articleClass coursePlan" >
-					<h2>KURSPLAN</h2>
-					<hr>
-					<p>Utbildningsnummer: 201514480-2 och 201514500-2 </p><br>
-					<h3><b>Kurspoäng</b></h3>
-					<p>20 poäng</p>
-					<br>
+					<div>
+						<h3>Kompetenser för att: </h3>
+						<ul>
+							<li><p>Ansvara för projekt på egen hand eller medverka i större webbutvecklingsprojekt</p></li>
+							<li><p>Arbeta både självständigt och samarbeta i projektteam</p></li>
+						</ul>
+					</div>
 
-					<h2>INNEHÅLL</h2><hr>
-					<p>Kursen ger kunskap i modern lättrörlig projektmetodik och praktiska färdigheter inom detta. Andra systemutvecklingsmetoder som ex. testdriven utveckling ingår i kursen. Kursen ger exempel på relevanta verktyg och arbetsmetoder för en utvecklare. Under kursen lär sig de studerande versionshantering och verktyg relevanta för utvecklarrollen. Kursen går igenom effektiva arbetsflöden för utveckling av system samt hur man delar sitt arbete inom ett team och hitta gemensamma 			arbetsflöden för hela teamet. </p><br>
-
-
-						<h2>MÅL</h2><hr>
-						<p>Efter avslutad kurs ska den studerande ha… </p><br>
-						<h3>1. Kunskaper om:</h3>
-						<p>Arbete i projektteam, agila metoder och övrig arbetsmetodik <p>
-						<p>Utvecklingsverktyg</p>
-						<p>Versionshantering </p>
-						<p>Kravhantering </p>
-						<p>Icke-agila projektmodeller och hur de skiljer sig från det agila tankesättet </p>
-						<p>Testdriven utveckling </p><br>
-
-						<h3>2. Färdigheter i att:</h3>
-						<p>Använda olika projektmetoder inom webbutveckling </p>
-						<p>Hantera krav och genomföra samt följa upp uppgifter inom webbutveckling</p>
-						<p>Söka och använda information inom webbutveckling</p>
-						<p>Sätta upp sin egen utvecklingsmiljö/-verktyg och arbeta i dessa </p>
-						<p>Arbeta med versionshantering både individuellt och i grupp </p><br>
-
-						<h3>3. Kompetenser för att: </h3>
-						<p>Ansvara för projekt på egen hand eller medverka i större webbutvecklingsprojekt </p>
-						<p>Arbeta både självständigt och samarbeta i projektteam </p><br>
-
-						<h2>EXAMINATIONSFORM</h2><hr>
+					<div>
+						<h2>Mål</h2>
+						<hr>
 						<p>Individuellt projekt</p>
 						<p>Tentamen/Hemtenta</p>
-						<p>Projekt i grupp </p><br>
+						<p>Projekt i grupp </p>
+					</div>
+					<div>
+						<h2>Betygssättning</h2>
+						<hr>
+						<h3>
+							<b>Betygsgrader</b>
+						</h3>
+						<p>IG, G och VG</p>
 
-						<h2>BETYGSSÄTTNING</h2><hr>
-						<h3><b>Betygsgrader</b></h3>
-						<p>IG, G och VG</p><br>
+						<h3>
+							<b>Icke godkänt (IG)</b>
+						</h3>
+						<p>Den studerande har fullföljt kursen men inte nått alla mål för kursen </p>
 
-						<h3><b>Icke godkänt (IG)</b></h3>
-						<p>Den studerande har fullföljt kursen men inte nått alla mål för kursen </p><br>
+						<h3>
+							<b>Kriterier för betyget Godkänt (G)</b>
+						</h3>
+						<p>Den studerande har nått samtliga mål med kursen</p>
 
-						<h3><b>Kriterier för betyget Godkänt (G)</b></h3>
-						<p>Den studerande har nått samtliga mål med kursen</p><br>
+						<h3>
+							<b>Kriterier för betyget Väl Godkänt (VG)</b>
+						</h3>
+						<p>Den studerande har nått samtliga mål med kursen och kan självständigt redogöra utförligt för kunskapsmålen och med
+							mycket gott handlag självständigt uppnå de färdigheter och kompetenser som kursens mål sätter upp.
+							<p>
 
-						<h3><b>Kriterier för betyget Väl Godkänt (VG)</b></h3>
-						<p>Den studerande har nått samtliga mål med kursen och kan självständigt redogöra utförligt för kunskapsmålen och med mycket gott handlag självständigt uppnå de färdigheter och kompetenser som kursens mål sätter upp.<p><br>
+					</div>
 
+				</div>
+				</div>
 
 			</article>
 
 			<article class="articleClass scheduleClass">
 
-			<div>
-				<iframe src="https://calendar.google.com/calendar/embed?src=n8gotd8e0n7gtqpq6qro2k5icg%40group.calendar.google.com&ctz=Europe/Amsterdam" style="border: 0" width="800" height="600" frameborder="0" scrolling="no">
-				</iframe>
+				<div class="iframeClass">
+					<iframe
+					src="https://calendar.google.com/calendar/embed?showTitle=0&amp;height=500&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=n8gotd8e0n7gtqpq6qro2k5icg%40group.calendar.google.com&amp;color=%235F6B02&amp;ctz=Europe%2FAmsterdam" style="border-width:0" width="700" height="500" frameborder="0" scrolling="no">
+					</iframe>
 
-			</div>
+				</div>
+
+
+
+			</article>
+			<article class="articleClass">
+				<div class="articleColumn">
+
+					<h1>Pågående </h1>
+					<div class="taskClass">
+						<div>
+							<h2>Inlämning 5</h2>
+							<h3>Senast inlämnad:
+								<time>23:59</time>, 23 october.</h3>
+							<h3>Javascript</h3>
+							<p>Skapa en funktion som ger ett slumpmässigt tal i konsolen.</p>
+						</div>
+
+						<form enctype="multipart/form-data">
+							<input type="file" id="fileUpload">
+							<input type="button" id="uppg1Btn" class="uploadBtn" value="Ladda upp fil"></input>
+						</form>
+					</div>
+
+					<div class="taskClass">
+						<h2>Inlämning 6</h2>
+						<h3>Senast inlämnad:
+							<time>23:59</time>, 23 october.</h3>
+						<h3>Javascript</h3>
+						<p>Skapa en tvådimensionell array och lägg till en annan arrays värden.</p>
+
+						<form enctype="multipart/form-data">
+							<input type="file" id="fileUpload">
+							<input type="button" class="uploadBtn" value="Ladda upp fil"></input>
+						</form>
+					</div>
+
+
+					<div class="taskClass">
+						<h2>Inlämning 7</h2>
+						<h3>Senast inlämnad:
+							<time>23:59</time>, 23 october.</h3>
+						<h3>Javascript</h3>
+						<p>Återskapa det klassiska spelet Pong.</p>
+
+						<form enctype="multipart/form-data">
+							<input type="file" id="fileUpload">
+							<input type="button" class="uploadBtn" value="Ladda upp fil"></input>
+						</form>
+					</div>
+
+
+					<div class="taskClass">
+						<h2>Inlämning 8</h2>
+						<h3>Senast inlämnad:
+							<time>23:59</time>, 23 october.</h3>
+						<h3>Javascript</h3>
+						<p>Återskapa Roms fall under Caesar Augustus med hjälp av funktioner.</p>
+
+						<form enctype="multipart/form-data">
+							<input type="file" id="fileUpload">
+							<input type="button" class="uploadBtn" value="Ladda upp fil"></input>
+						</form>
+					</div>
+				</div>
+				</div>
+
+				<div class="articleColumn">
+					<h1>Avslutade</h1>
+
+					<div class="taskClass">
+						<h2>Inlämning 1</h2>
+						<p class="grading">G</p>
+						<h3>Senast inlämnad:
+							<time>23:59</time>, 23 october.</h3>
+						<h3>Javascript</h3>
+						<p>Rita en kyckling med hjälp av canvas.</p>
+
+						<form enctype="multipart/form-data">
+							<input type="file" id="fileUpload">
+							<input type="button" class="uploadBtn" value="Ladda upp fil"></input>
+						</form>
+					</div>
+
+					<div class="taskClass">
+						<h2>Inlämning 2</h2>
+						<p class="grading">G</p>
+						<h3>Senast inlämnad:
+							<time>23:59</time>, 23 october.</h3>
+						<h3>Javascript</h3>
+						<p>Skapa en grävling i canvas med hjälp av cirklar.</p>
+
+						<form enctype="multipart/form-data">
+							<input type="file" id="fileUpload">
+							<input type="button" class="uploadBtn" value="Ladda upp fil"></input>
+						</form>
+					</div>
+
+					<div class="taskClass">
+						<h2>Inlämning 3</h2>
+						<p class="grading">G</p>
+						<h3>Senast inlämnad:
+							<time>23:59</time>, 23 october.</h3>
+						<h3>Javascript</h3>
+						<p>Indentera en listas värden med 10.</p>
+
+						<form enctype="multipart/form-data">
+							<input type="file" id="fileUpload">
+							<input type="button" class="uploadBtn" value="Ladda upp fil"></input>
+						</form>
+					</div>
+
+					<div class="taskClass">
+						<h2>Inlämning 4</h2>
+						<p class="grading">G</p>
+						<h3>Senast inlämnad:
+							<time>23:59</time>, 23 october.</h3>
+						<h3>Javascript</h3>
+						<p>Använd kommandotolken för att skapa en ny html-fil.</p>
+
+						<form enctype="multipart/form-data">
+							<input type="file" id="fileUpload">
+							<input type="button" class="uploadBtn" value="Ladda upp fil"></input>
+						</form>
+					</div>
+				</div>
+			</article>
+
+
+
+
+
+
+
+			<!-- Grades End-->
+
+			<!-- Examinations start -->
+
+			<article class="articleClass examinationsClass">
+				<div class="examinations">
+					<div>
+						<p>Uppgift 1</p>
+						<i class="fa fa-check fa-4x" aria-hidden="true"></i>
+					</div>
+					<div>
+						<p>Uppgift 2</p>
+						<i class="fa fa-check fa-4x" aria-hidden="true"></i>
+					</div>
+					<div>
+						<p>Uppgift 3</p>
+						<i class="fa fa-check fa-4x" aria-hidden="true"></i>
+					</div>
+					<div>
+						<p>Uppgift 4</p>
+						<i class="fa fa-check fa-4x" aria-hidden="true"></i>
+					</div>
+					<div>
+						<p>Uppgift 5</p>
+						<i class="fa fa-check fa-4x" aria-hidden="true"></i>
+					</div>
+					<div>
+						<p>Uppgift 6</p>
+						<i class="fa fa-check fa-4x" aria-hidden="true"></i>
+					</div>
+					<div>
+						<p>Uppgift 7</p>
+						<i class="fa fa-check fa-4x" aria-hidden="true"></i>
+					</div>
+					<div>
+						<p>Uppgift 8</p>
+						<i class="fa fa-check fa-4x" aria-hidden="true"></i>
+					</div>
+					<div>
+						<p>Grupprojekt</p>
+						<i class="fa fa-times fa-4x" aria-hidden="true"></i>
+					</div>
+					<div>
+						<p>Individuellt projekt</p>
+						<i class="fa fa-times fa-4x" aria-hidden="true"></i>
+					</div>
+					<div>
+						<p>Tentamen</p>
+						<i class="fa fa-times fa-4x" aria-hidden="true"></i>
+					</div>
+
+				</div>
 
 
 
 			</article>
 
-			<article class="articleClass taskClass">
 
-				<div><h1>Inlämning 1</h1>
-					<h2>Senast inlämnad: <time>23:59</time>, 23 october.</h2>
-					<h3>Javascript</h3>
-					<p>Skapa en funktion som ger ett slumpmässigt tal i konsolen.</p>
+			<!--examinations end-->
 
-					<form enctype="multipart/form-data">
-						<input type="file" id="fileUpload">
-						<input type="button" class="uploadBtn" value="Ladda upp fil"></input>
-						<p id="taskComplete"></p>
-					</form>
-				</div>
-
-				<div><h1>Inlämning 2</h1>
-					<h2>Senast inlämnad: <time>23:59</time>, 23 october.</h2>
-					<h3>Javascript</h3>
-					<p>Skapa en tvådimensionell array och lägg till en annan arrays värden.</p>
-
-					<form enctype="multipart/form-data">
-						<input type="file" id="fileUpload">
-						<input type="button" class="uploadBtn" value="Ladda upp fil"></input>
-						<p id="taskComplete"></p>
-					</form>
-				</div>
-
-
-				<div><h1>Inlämning 3</h1>
-					<h2>Senast inlämnad: <time>23:59</time>, 23 october.</h2>
-					<h3>Javascript</h3>
-					<p>Återskapa det klassiska spelet Pong.</p>
-
-					<form enctype="multipart/form-data">
-						<input type="file" id="fileUpload">
-						<input type="button" class="uploadBtn" value="Ladda upp fil"></input>
-						<p id="taskComplete"></p>
-					</form>
-				</div>
-
-				<div><h1>Inlämning 4</h1>
-					<h2>Senast inlämnad: <time>23:59</time>, 23 october.</h2>
-					<h3>Javascript</h3>
-					<p>Återskapa Roms fall under Caesar Augustus med hjälp av funktioner.</p>
-
-					<form enctype="multipart/form-data">
-						<input type="file" id="fileUpload">
-						<input type="button" class="uploadBtn" value="Ladda upp fil"></input>
-						<p id="taskComplete"></p>
-					</form>
-				</div>
-
-				<div><h1>Inlämning 5</h1>
-					<h2>Senast inlämnad: <time>23:59</time>, 23 october.</h2>
-					<h3>Javascript</h3>
-					<p>Rita en kyckling med hjälp av canvas.</p>
-
-					<form enctype="multipart/form-data">
-						<input type="file" id="fileUpload">
-						<input type="button" class="uploadBtn" value="Ladda upp fil"></input>
-						<p id="taskComplete"></p>
-					</form>
-				</div>
-
-				<div><h1>Inlämning 6</h1>
-					<h2>Senast inlämnad: <time>23:59</time>, 23 october.</h2>
-					<h3>Javascript</h3>
-					<p>Skapa en grävling i canvas med hjälp av cirklar.</p>
-
-					<form enctype="multipart/form-data">
-						<input type="file" id="fileUpload">
-						<input type="button" class="uploadBtn" value="Ladda upp fil"></input>
-						<p id="taskComplete"></p>
-					</form>
-				</div>
-
-				<div><h1>Inlämning 7</h1>
-					<h2>Senast inlämnad: <time>23:59</time>, 23 october.</h2>
-					<h3>Javascript</h3>
-					<p>Indentera en listas värden med 10.</p>
-
-					<form enctype="multipart/form-data">
-						<input type="file" id="fileUpload">
-						<input type="button" class="uploadBtn" value="Ladda upp fil"></input>
-						<p id="taskComplete"></p>
-					</form>
-				</div>
-
-				<div><h1>Inlämning 8</h1>
-					<h2>Senast inlämnad: <time>23:59</time>, 23 october.</h2>
-					<h3>Javascript</h3>
-					<p>Använd kommandotolken för att skapa en ny html-fil.</p>
-
-					<form enctype="multipart/form-data">
-						<input type="file" id="fileUpload">
-						<input type="button" class="uploadBtn" value="Ladda upp fil"></input>
-						<p id="taskComplete"></p>
-					</form>
-				</div>
-
-			</article>
-
-
+			<!--Evaluation-->
 
 			<article class="articleClass courseEval">
 
-								<!--Evaluation-->
 
 				<form class="evalForm">
 					<legend id="evalTitle">Kursutvärdering</legend>
@@ -240,6 +392,7 @@
 					<fieldset class="evalFieldsets">
 						<div class="answers">
 							<input type="radio" name="radioBtn">
+
 							<label for="radioBtn">1</label>
 							<input type="radio" name="radioBtn">
 							<label for="radioBtn">2</label>
@@ -252,8 +405,9 @@
 						</div>
 
 						<div class="pDiv">
-							<p> <- lågt  </p>
-							<p> högt ->  </p>
+							<p>
+								<- lågt </p>
+									<p> högt -> </p>
 						</div>
 
 					</fieldset>
@@ -275,8 +429,9 @@
 						</div>
 
 						<div class="pDiv">
-							<p> <- lågt  </p>
-							<p> högt ->  </p>
+							<p>
+								<- lågt </p>
+									<p> högt -> </p>
 						</div>
 
 					</fieldset>
@@ -298,8 +453,9 @@
 						</div>
 
 						<div class="pDiv">
-							<p> <- lågt  </p>
-							<p> högt ->  </p>
+							<p>
+								<- lågt </p>
+									<p> högt -> </p>
 						</div>
 
 					</fieldset>
@@ -321,8 +477,9 @@
 						</div>
 
 						<div class="pDiv">
-							<p> <- lågt  </p>
-							<p> högt ->  </p>
+							<p>
+								<- lågt </p>
+									<p> högt -> </p>
 						</div>
 
 					</fieldset>
@@ -332,43 +489,45 @@
 
 
 					<fieldset class="evalFieldsets">
-					<div class="answers">
-					<textarea id="textBlock" maxlength="345" col="5" rows="5"></textarea>
-					</div>
+						<div class="answers">
+							<textarea id="textBlock" maxlength="400" rows="10"></textarea>
+						</div>
 					</fieldset>
 
-					<button type=text>Skicka in</button>
+					<button type="button" id="sendButton">Skicka in</button>
 				</form>
 
 
-				</article>
+			</article>
 
 
-				<!-- Evaluation End-->
+			<!-- Evaluation End-->
 
 
 			<article class="articleClass teachers">
 				<h1>Lärare</h1>
 
-				<div>
-					<p><b>Namn:</b> <i>Leif GW Persson</i></p>
-					<p><b>E-mail:</b> <i>gw_meister@hotmail.com</i></p>
-					<p><b>Tel.nr:</b> <i>08 345 602</i></p>
-					<p><b>Fax:</b> <i>08 133 700 00</i></p>
+				<div class="teacherbox">
+					<div class="teacherimg">
+						<img src="../../img/GW.png" alt="">
+					</div>
+					<div class="teacherinfo">
+						<p>
+							<b>Namn:</b> Leif GW Persson</p>
+						<p>
+							<b>E-mail:</b> gw_meister@hotmail.com</p>
+						<p>
+							<b>Tel.nr:</b> 08 345 602</p>
+						<p>
+							<b>Fax:</b> 08 133 700 00</p>
+
+					</div>
+
+
 				</div>
-				<div>
-					<p><b>Namn:</b> <i>Betty Bettina</i></p>
-					<p><b>E-mail:</b> <i>bettybettina@pa.se</i></p>
-					<p><b>Tel.nr:</b> <i>08 059 59 59</i></p>
-				</div>
-				<div>
-					<p><b>Namn:</b> <i>Evert Memert</i></p>
-					<p><b>E-mail:</b> <i>evert.memert@gmail.com</i></p>
-					<p><b>Tel.nr:</b> <i>070 587 69 46</i></p>
-				</div>
+
 
 			</article>
-
 
 		</section>
 
@@ -379,8 +538,9 @@
 		<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
 		<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
 
-		</footer>
+	</footer>
 
-		<script src="script.js"></script>
+	<script src="script.js"></script>
 </body>
+
 </html>

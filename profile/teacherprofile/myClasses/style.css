@@ -5,7 +5,6 @@ body, h1, h2, h3, h4, h5, h6, ol, ul, li, a, p {
     margin: 0px;
     padding: 0px;
     text-decoration: none;
-    color: black;
 }
 
 
@@ -24,7 +23,6 @@ header {
     top: 0px;
     background-color: #fff;
     z-index: 1;
-    border-top-color: white;
 }
 
 header .logo {
@@ -57,7 +55,7 @@ header nav ul li {
 
 header nav ul a:hover {
 	cursor: pointer;
-    color: #EA6D2C; 
+    color: #DD6925; 
 }
 
 header nav ul li a {
@@ -65,24 +63,6 @@ header nav ul li a {
 }
 
 /*  END HEADER SECTION */
-
-/* GO BACK BUTTON START */
-
-.goBackButton {
-	border: 1px solid #DD6925;
-	background-color: #DD6925;
-	color: white;
-    border-radius: 7px;
-    margin-top: 11px;
-}
-.goBackButton i {
-	display: flex;
-	justify-content: center;
-	flex-direction: center;
-	padding: 5px 10px 5px 5px;
-}
-
-/* GO BACK BUTTON END */
 
 main {
     width: 100%;
@@ -115,21 +95,18 @@ main .ongoing-courses .course-card {
     background-image: url(https://image.flaticon.com/icons/svg/182/182321.svg); 
     background-repeat: no-repeat; 
     background-position: 100% 0px;  
-    background-size: 20%;
 }
 
 main .future-courses .course-card {
     background-image: url(https://image.flaticon.com/icons/svg/182/182323.svg); 
     background-repeat: no-repeat; 
-    background-position: 100% 0px;
-    background-size: 20%;  
+    background-position: 100% 0px;  
 }
 
 main .finished-courses .course-card {
     background-image: url(https://image.flaticon.com/icons/svg/182/182327.svg); 
     background-repeat: no-repeat; 
     background-position: 100% 0px;  
-    background-size: 20%;
 }
 
 main .courses .courses-header {
@@ -139,6 +116,7 @@ main .courses .courses-header {
     height: 50px;
 }
 
+
 main .courses .courses-header:hover {
     cursor: pointer; 
 }
@@ -146,8 +124,8 @@ main .courses .courses-header:hover {
 main .courses .courses-header h1 {
     font-size: 25px; 
     padding: 0 15px; 
-    /* border-bottom: 1px dotted #EA6D2C;  */
-    color: #EA6D2C; 
+    /* border-bottom: 1px dotted #DD6925;  */
+    color: #DD6925; 
 }
 
 main .course-cards {
@@ -173,7 +151,7 @@ main .courses .course-cards .course-card {
     cursor: pointer;
     transform: scale(1.05);  
     transition: transform 2s ease; 
-    
+    background: #DD6925; 
 }
 
 .course-card .course-card-header h1 {
@@ -185,6 +163,17 @@ main .courses .course-cards .course-card {
 .course-card .course-card-header p {
     padding: 5px 10px; 
     font-size: 14px; 
+}
+
+.course-card .course-card-header a {
+    color: inherit; 
+}
+
+main .courses .course-card-header span {
+    background: #fb6400; 
+    padding: 0 5px; 
+    border-radius: 50%; 
+    font-size: 17px; 
 }
 
 footer {

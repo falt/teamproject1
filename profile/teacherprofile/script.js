@@ -10,4 +10,4 @@ function genid() {
 
   return text;
 }
-console.log(genid());
+  

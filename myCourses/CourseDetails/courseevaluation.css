@@ -1,0 +1,121 @@
+article.articleClass.courseEval{
+  flex-direction: column;
+}
+
+.evalForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.answers{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.courseEval button[type=button]{
+  width: 200px;
+  height: 50px;
+  background-color: #DD6925;
+  border-radius: 5px;
+  border: 0px;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content:center;
+  margin-top: 20px;
+}
+
+#textBlock{
+  overflow: hidden;
+  resize: none;
+  width: 100%;
+  margin-top: 0px;
+  border: 1px lightgray solid;
+  border-radius: 5px;
+  display: flex;
+}
+
+.evalFieldsets{
+  border: 0px;
+  padding: 0px;
+}
+
+.evalFieldsets p{
+  display: flex;
+}
+
+.questions{
+  border-top: 1px solid;
+  padding-top: 20px;
+  display: flex;
+  font-size: 20px;
+  border-color: lightgray;
+}
+
+#evalTitle{
+  display: flex;
+  font-size: 25px;
+  justify-content: flex-start;
+  color: #EA6D2C;
+  font-weight: bold;
+}
+
+.answers input[type=radio] {
+  transform: scale(1);
+}
+
+.pDiv{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width:250px;
+}
+
+
+.evalForm input[type="radio"] {
+	-webkit-appearance: none;
+	margin: 0 10px;
+	width: 24px;
+	height: 24px;
+	background: white;
+	box-shadow: inset 0 0em #DD6925, 0 0 0 0.1em #DD6925;
+	border-radius: 50%;
+	transition: 0.2s;
+	cursor: pointer;
+	color: #DD6925;
+  z-index: 1;
+  }
+
+.evalForm input[type="radio"]:hover {
+	background: #DD6925;
+	box-shadow: inset 0 0 0 0.4em white, 0 0 0 0.2em;
+  }
+.evalForm input[type="radio"]:checked {
+	background: #DD6925;
+	box-shadow: inset 0 0 0 0.3em white, 0 0 0 0.3em;
+  }
+
+.evalForm input[type="radio"]:focus {
+	outline: 0;
+  }
+.evalForm #q3  {
+	resize: none;
+	width: 300px;
+	height: 60px;
+	margin: 20px;
+}
+
+.evalForm div {
+	margin-top: 15px;
+}
+.evalForm p {
+	padding: 7px;
+}
+/*
+#send:checked {
+	background: #0CA22D;
+	transition: all 0.2s ease;
+}
+*/

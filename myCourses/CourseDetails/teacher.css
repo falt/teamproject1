@@ -2,27 +2,54 @@
   display: none;
   justify-content: flex-start;
   flex-direction: column;
-  //border: 1px black solid;
   height: 100%;
-  width: 100%;
+  width: 95%;
 }
-.teachers div{
+.teacherbox{
   display: flex;
-  flex-direction: column;
-  margin: 20px 20px;
+  flex-direction: row;
+  //margin: 20px 20px;
   border: 1px lightgray solid;
-  border-radius: 20px;
-  width: 20%;
-  height: 100px;
+  border-radius: 5px;
+  width: 400px;
+  height: 150px;
 }
 .teachers h1{
   font-size: 25px;
-  font-weight: normal;
-  text-decoration: underline;
-  margin-left: 20px;
+  color: #EA6D2C;
+  margin-bottom: 20px;
 }
 .teachers p{
   font-size: 16px;
   margin-left: 20px;
   margin-top: 5px;
+}
+
+.teacherimg{
+
+  height: 100px;
+  width: 100px;
+  margin: 5px 10px;
+}
+
+.teacherimg img {
+  height:110px;
+  width: 110px;
+  border-radius: 5px;
+}
+
+@media (max-width: 525px){
+  .teacherbox{
+    flex-direction: column;
+    height: 230px;
+    width:250px;
+    margin:0px;
+  }
+  .teachers p{
+    margin-left:10px;
+    margin-top: 10px;
+  }
+  .teacherbox img{
+
+  }
 }
