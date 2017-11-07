@@ -59,7 +59,6 @@ article.articleClass.courseEval{
   font-size: 25px;
   justify-content: flex-start;
   color: #EA6D2C;
-  font-weight: bold;
 }
 
 .answers input[type=radio] {
@@ -113,9 +112,8 @@ article.articleClass.courseEval{
 .evalForm p {
 	padding: 7px;
 }
-/*
-#send:checked {
-	background: #0CA22D;
-	transition: all 0.2s ease;
+@media (max-width: 800px){
+  .evalForm{
+    width: 95%;
+  }
 }
-*/
