@@ -34,6 +34,7 @@ hr {
 }
 .coursePlan h2{
   margin-top: 20px;
+  border-bottom: 1px lightgray solid;
 }
 #first-h2{
   margin-top: 0px;
@@ -42,6 +43,7 @@ hr {
 .coursePlan h3 {
 	font-size: 18px;
   margin-top: 20px;
+  font-weight: bold;
 }
 
 .coursePlan p {
@@ -52,7 +54,8 @@ hr {
 @media (max-width: 800px) {
   .coursePlan{
     flex-direction: column;
-    width: 85%
+    width: 85%;
+    height: auto;
   }
   .divClass{
     width:95%;
