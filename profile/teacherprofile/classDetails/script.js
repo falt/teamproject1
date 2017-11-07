@@ -83,18 +83,92 @@ gradeBtns.forEach((button, index)=>{
 }); 
 
 
+
+
+
+// Bring in elements from DOM, header-buttons, assignmentssections and 'arrows'
 const assignmentHeaderBtn = document.querySelectorAll(".assignments-header h1"); 
 const assignmentSections = document.querySelectorAll(".assignments-section"); 
 const arrows = document.querySelectorAll(".assignments-header i"); 
 
+// Adds eventlistener to all assignmentheader buttons
 assignmentHeaderBtn.forEach((element, index)=> {
+
   element.addEventListener('click', (e)=> {
-
-    assignmentSections[index].className == "assignments-section" ? assignmentSections[index].className = "assignments-section colapsed" : assignmentSections[index].className = "assignments-section"; 
     
-    arrows[index].className == "fa fa-arrow-right" ? arrows[index].className = "fa fa-arrow-down" : arrows[index].className = "fa fa-arrow-right";
+    // Toggles class for 'colapse'-feature for the sections and arrows 
+    if(assignmentSections[index].className == "assignments-section colapsed") {
+      assignmentSections[index].className = "assignments-section"; 
+    } else {
+      assignmentSections[index].className = "assignments-section colapsed"
+    }
 
+    arrows[index].className == "fa fa-arrow-right" ? arrows[index].className = "fa fa-arrow-down" : arrows[index].className = "fa fa-arrow-right";
 
   })
 
 }); 
+
+
+// Brings in create-new-assignment-form from DOM 
+const createNewAssignmentform = document.querySelector("#newAssignmentForm"); 
+
+// Returns markup for a new assignment and appends it to the assignments-section 
+function createAssignmentElement(header, description, g, vg) {
+
+  let assignmentSection = document.createElement("div"); 
+  assignmentSection.className = "assignments-section"; 
+
+  let assignment = '<div class="assignments-header">' + 
+                      
+                      '<h1>' +
+                        '<i class="fa fa-arrow-down" aria-hidden="true"></i> ' +
+                          header +
+                      '</h1>' +
+
+                      '<div class="assignment-description">' + 
+                        '<p>' + description + '</p>' + 
+
+                      '<ul>' +
+                        '<p>För betyg G:</p>' + 
+                        '<li>' + g + '</li>' + 
+                        '<p>För betyg VG:</p>' +
+                        '<li>' + vg + '</li>' + 
+                      '</ul>' + 
+
+                    '</div>' + 
+
+                  '</div>'
+
+    assignmentSection.innerHTML = assignment; 
+
+    let assignmentsWrapper = document.querySelector(".assignments-wrapper"); 
+
+    assignmentsWrapper.appendChild(assignmentSection);
+
+    return assignmentSection; 
+
+}
+
+// Eventlistener for add-new-assignment-form-button 
+createNewAssignmentform.createAssignmentBtn.addEventListener('click',function(){
+
+  const assignment = createAssignmentElement(createNewAssignmentform.assignmentName.value, createNewAssignmentform.assignmentDetails.value, createNewAssignmentform.gradeG.value, createNewAssignmentform.gradeVG.value); 
+
+  // Saves the assignmnet-header and assignment-arrow-icon 
+  const assignmentHeader = assignment.firstChild.firstChild; 
+  const arrow = assignment.firstChild.firstChild.firstChild; 
+  
+  // Adds eventlistener for the newly created assignment and toggles the class (colapsa-feature)
+  assignmentHeader.addEventListener('click',function(){
+
+    if(assignment.className == "assignments-section" && arrow.className == "fa fa-arrow-down") {
+      arrow.className = "fa fa-arrow-right"; 
+      assignment.className = "assignments-section colapsed"; 
+    } else {
+      arrow.className = "fa fa-arrow-down";
+      assignment.className = "assignments-section"; 
+    }
+  }) 
+  
+})
