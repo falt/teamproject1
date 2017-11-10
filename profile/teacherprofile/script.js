@@ -9,5 +9,23 @@ function genid() {
     document.getElementById('show').value = text;
 
   return text;
+} 
+//Datepicker 
+// new Date(); 
+// let year = Date.getFullYear();
+// let month = Date.getMonth();
+// let day = Date.getDate(); 
+
+
+
+function formatDate(date) {
+  var day = date.getDate();
+  var month = date.getMonth();
+  var year = date.getFullYear();
+
+  return year + '-' + month + '-' + day;
 }
-  
+
+
+
+document.getElementById('date').value = formatDate(new Date());
