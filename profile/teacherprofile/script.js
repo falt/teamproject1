@@ -11,12 +11,6 @@ function genid() {
   return text;
 } 
 //Datepicker 
-// new Date(); 
-// let year = Date.getFullYear();
-// let month = Date.getMonth();
-// let day = Date.getDate(); 
-
-
 
 function formatDate(date) {
   var day = date.getDate();
