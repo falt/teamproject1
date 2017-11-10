@@ -75,8 +75,7 @@
   font-weight: bold;
   font-size: 30px;
   color: #EA6D2C;
-  font-family:serif;
-  margin:0px;
+  margin: 0px; 
 }
 
 @media (max-width: 800px){
