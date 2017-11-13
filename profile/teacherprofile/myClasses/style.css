@@ -91,14 +91,83 @@ main .courses {
     border-radius: 2px;
 }
 
-
-
-main .ongoing-courses .course-card {
-    background-image: url(https://image.flaticon.com/icons/svg/182/182321.svg); 
+#card1{
+    background-image: url(../../../img/icon/arbetsmetodik.svg); 
     background-repeat: no-repeat; 
     background-position: 100% 0px;  
     background-size: 20%;
 }
+#card2{
+    background-image: url(../../../img/icon/js-30.svg); 
+    background-repeat: no-repeat; 
+    background-position: 100% 0px;  
+    background-size: 20%;
+}
+#card3{
+    background-image: url(../../../img/icon/html5.svg); 
+    background-repeat: no-repeat; 
+    background-position: 100% 0px;  
+    background-size: 20%;
+}
+
+#card4{
+    background-image: url(../../../img/icon/arbetsmetodik.svg); 
+    background-repeat: no-repeat; 
+    background-position: 100% 0px;  
+    background-size: 20%;
+}
+#card5{
+    background-image: url(../../../img/icon/js-30.svg); 
+    background-repeat: no-repeat; 
+    background-position: 100% 0px;  
+    background-size: 20%;
+}
+#card6{
+    background-image: url(../../../img/icon/html5.svg); 
+    background-repeat: no-repeat; 
+    background-position: 100% 0px;  
+    background-size: 20%;
+}
+
+#card7{
+    background-image: url(../../../img/icon/ux.svg); 
+    background-repeat: no-repeat; 
+    background-position: 100% 0px;  
+    background-size: 20%;
+}
+#card8{
+    background-image: url(../../../img/icon/backend.svg); 
+    background-repeat: no-repeat; 
+    background-position: 100% 0px;  
+    background-size: 20%;
+}
+#card9{
+    background-image: url(../../../img/icon/html5.svg); 
+    background-repeat: no-repeat; 
+    background-position: 100% 0px;  
+    background-size: 20%;
+}
+#card10{
+    background-image: url(../../../img/icon/arbetsmetodik.svg); 
+    background-repeat: no-repeat; 
+    background-position: 100% 0px;  
+    background-size: 20%;
+}
+#card11{
+    background-image: url(../../../img/icon/js-30.svg); 
+    background-repeat: no-repeat; 
+    background-position: 100% 0px;  
+    background-size: 20%;
+}
+
+
+
+/* main .ongoing-courses .course-card {
+    background-image: url(https://image.flaticon.com/icons/svg/182/182321.svg); 
+    background-repeat: no-repeat; 
+    background-position: 100% 0px;  
+    background-size: 20%;
+} */
 
 main .future-courses .course-card {
     background-image: url(https://image.flaticon.com/icons/svg/182/182323.svg); 
