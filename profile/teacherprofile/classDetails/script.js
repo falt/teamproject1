@@ -109,6 +109,19 @@ assignmentHeaderBtn.forEach((element, index)=> {
 
 }); 
 
+// Create new assignment-form
+const createAssignmentForm = document.querySelector(".create-new-assignment"); 
+
+// Create assignment-button that toggles heigth for form
+const createAssignmentBtn = document.querySelector(".create-new-assignment i"); 
+
+// Eventlistener for create new assignment-form
+createAssignmentBtn.addEventListener('click', function(){
+  if(createAssignmentForm.style.height != "") 
+    createAssignmentForm.style.height = ""; 
+  else 
+    createAssignmentForm.style.height = "70px"; 
+})
 
 // Brings in create-new-assignment-form from DOM 
 const createNewAssignmentform = document.querySelector("#newAssignmentForm"); 
@@ -138,7 +151,7 @@ function createAssignmentElement(header, description, g, vg) {
 
                     '</div>' + 
 
-                  '</div>'
+                  '</div>';
 
     assignmentSection.innerHTML = assignment; 
 
@@ -158,8 +171,11 @@ createNewAssignmentform.createAssignmentBtn.addEventListener('click',function(){
   // Saves the assignmnet-header and assignment-arrow-icon 
   const assignmentHeader = assignment.firstChild.firstChild; 
   const arrow = assignment.firstChild.firstChild.firstChild; 
+
+  // Colapses create-assignment form 
+  createAssignmentForm.style.height = "70px";   
   
-  // Adds eventlistener for the newly created assignment and toggles the class (colapsa-feature)
+  // Adds eventlistener for the newly created assignment and toggles the class (colaps-feature)
   assignmentHeader.addEventListener('click',function(){
 
     if(assignment.className == "assignments-section" && arrow.className == "fa fa-arrow-down") {
@@ -169,6 +185,7 @@ createNewAssignmentform.createAssignmentBtn.addEventListener('click',function(){
       arrow.className = "fa fa-arrow-down";
       assignment.className = "assignments-section"; 
     }
-  }) 
+
+  })
   
 })

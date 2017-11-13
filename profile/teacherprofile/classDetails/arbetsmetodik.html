@@ -72,18 +72,24 @@
 
 			<article class="articleClass assignments-wrapper">
 
-				<div class="create-new-assignment">
+				<div class="create-new-assignment" style="height: 70px;">
 
-					<h3>Skapa en ny uppgift</h3>
+					<div class="create-new-assignment-button"><i class="fa fa-plus fa-2x" aria-hidden="true"></i>Skapa ny uppgift</div>
 
 					<form id="newAssignmentForm">
-						<input id="assignmentName" type="text" placeholder="Namn på uppgift"/> 
-						<label for="assignmentDetails">Uppgiftsbeskrivning</label>
-						<textarea id="assignmentDetails"></textarea>
-	
-						<h3>Betygskriterier</h3>
-						<input id="gradeG" type="text" placeholder="För betyg G"/>
-						<input id="gradeVG" type="text" placeholder="För betyg VG"/>
+						<div class="assignment-details-container">
+							<input id="assignmentName" type="text" placeholder="Namn på uppgift"/> 
+							<label for="assignmentDetails">Uppgiftsbeskrivning</label>
+							<textarea id="assignmentDetails"></textarea>
+						</div>
+
+						
+						<div class="grade-criteria-container">
+							<h3>Betygskriterier</h3>
+							<input id="gradeG" type="text" placeholder="För betyg G"/>
+							<input id="gradeVG" type="text" placeholder="För betyg VG"/>
+						</div>
+						
 						
 	
 						
