@@ -13,13 +13,36 @@ body {
     background-color: rgb(242, 242, 242);
 }
 
-#create-post {
-	display: none;
+#plus {
+    position: absolute;
+    left: 960px;
+	top: 120px;
+	cursor: pointer;
+	color: #DD6925;
+}
+.create-post {
+	visibility: hidden;
+	opacity: 0;
 	margin: 20px 20px 5px 20px;
 	width: 95%;
+	max-height: 0;
+	transition: 0.3s;
 }
-
+.visiblePost {
+	max-height: 2000px;
+	opacity: 1;
+	visibility: visible;
+	/* height: 200px; */
+}
 .new-post-save {
+	cursor: pointer;
+}
+.headerPlus {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.fa-trash {
 	cursor: pointer;
 }
 
@@ -232,6 +255,7 @@ ul {
 .main-section article {
 	margin: 20px 20px 5px 20px;
 	font-size: 16px;
+	transition: 1s;
 }
 
 .main-section article:last-child {
@@ -283,9 +307,13 @@ button:hover {
 	margin: 10px 0;
 }
 .hidden {
-	display: none;
-	-webkit-transition: all .3s ease-out;
-  }
+	max-height: 0;
+	overflow: hidden;
+	transition: 0.3s;
+}
+.unhidden {
+	max-height: 2000px;
+}
 
 .news-feed {
 	width: 300px;
