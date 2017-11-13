@@ -41,7 +41,6 @@
 
 		<!-- MAIN SECTION (LEFT) -->
 		<section class="main-section">
-
 			<div>
 				<div class="headers">
 					<div class="headerPlus">
@@ -55,8 +54,8 @@
 						<h2 contenteditable="true">Nytt inlägg</h2>
 						<p contenteditable="true">Skriv din text här.</p>
 					</div>
-					<button type="button" onclick="newPostSave() " id="saveButton">Spara</button><i name="removePosts" onclick="removePost() "
-					    id="removePost" class="fa fa-trash" aria-hidden="true"></i>
+					<button type="button" onclick="newPostSave() " id="saveButton">Spara</button>
+					<i name="removePosts" onclick="removePost() " id="removePost" class="fa fa-trash" aria-hidden="true"></i>
 				</article>
 				<article>
 					<div class="editable">
@@ -72,7 +71,8 @@
 								dock är det icke sällan som sorgliga erfarenheter göras ordningens och ekon och miens därmed upprätthållande.</p>
 						</div>
 					</div>
-					<button onclick="editableContent() " class="read-more1">Redigera nyhet</button><i class="fa fa-trash" aria-hidden="true"></i>
+					<button onclick="editableContent() " class="read-more1">Redigera nyhet</button>
+					<i class="fa fa-trash" aria-hidden="true"></i>
 
 				</article>
 
@@ -90,7 +90,8 @@
 								dock är det icke sällan som sorgliga erfarenheter göras ordningens och ekon och miens därmed upprätthållande.</p>
 						</div>
 					</div>
-					<button onclick="editableContent() " class="read-more1">Redigera nyhet</button><i class="fa fa-trash" aria-hidden="true"></i>
+					<button onclick="editableContent() " class="read-more1">Redigera nyhet</button>
+					<i class="fa fa-trash" aria-hidden="true"></i>
 
 				</article>
 
@@ -108,7 +109,8 @@
 								dock är det icke sällan som sorgliga erfarenheter göras ordningens och ekon och miens därmed upprätthållande.</p>
 						</div>
 					</div>
-					<button onclick="editableContent() " class="read-more1">Redigera nyhet</button><i class="fa fa-trash" aria-hidden="true"></i>
+					<button onclick="editableContent() " class="read-more1">Redigera nyhet</button>
+					<i class="fa fa-trash" aria-hidden="true"></i>
 
 
 				</article>
@@ -128,11 +130,11 @@
 								dock är det icke sällan som sorgliga erfarenheter göras ordningens och ekon och miens därmed upprätthållande.</p>
 						</div>
 					</div>
-					<button onclick="editableContent() " class="read-more1">Redigera nyhet</button><i class="fa fa-trash" aria-hidden="true"></i>
+					<button onclick="editableContent() " class="read-more1">Redigera nyhet</button>
+					<i class="fa fa-trash" aria-hidden="true"></i>
 
 
 				</article>
-
 
 
 		</section>
@@ -145,47 +147,31 @@
 			<div class="aside-content-box">
 
 				<h1>Välkommen GW!</h1>
-				<img
-				<p>
 
-				</p>
 
 			</div>
 
-
-
-			<div class="aside-content-box">
-
-
 			<div class="aside-content-box-gen">
 				<!-- <div class="generate"> -->
-					<div class="generate-code">
-						<input id="show" type="text" value="">
-						<input id="btn" type="button" value="Generate" onclick="genid();">
-					</div>
-					<div class="choose-class">
-						<select class="class">
-							<option value="Javascript">Javascript</option>
-							<option value="HTML">HTML</option>
-							<option value="CSS">CSS</option>
-							<option value="Arbetsretorik">Arbetsretorik</option>
-						</select>
-						<p>Välj en klass: </p>
-					</div>
-					<div class="choose-days">
-						<select class="days">
-							<option value="1/10">1/10</option>
-							<option value="2/10">2/10</option>
-							<option value="3/10">3/10</option>
-							<option value="4/10">4/10</option>
-							<option value="5/10">5/10</option>
-							<option value="6/10">6/10</option>
-							<option value="7/10">7/10</option>
-						</select>
-						<p>Välj en dag: </p>
-					</div>
-					<h2>Generera dagens närvaro-kod:</h2>
+				<div class="generate-code">
+					<input id="show" type="text" value="">
+					<input id="btn" type="button" value="Generate" onclick="genid();">
 				</div>
+				<div class="choose-class">
+					<select class="class">
+						<option value="Javascript">Javascript</option>
+						<option value="HTML">HTML</option>
+						<option value="CSS">CSS</option>
+						<option value="Arbetsretorik">Arbetsretorik</option>
+					</select>
+					<p>Välj en klass: </p>
+				</div>
+				<div class="choose-days">
+					<input id="date" type="date" value="2017-01-12">
+					<p>Välj en dag: </p>
+				</div>
+				<h2>Generera dagens närvaro-kod:</h2>
+			</div>
 
 
 		</section>
@@ -198,9 +184,10 @@
 		<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
 
 	</footer>
-
 	<script src="adminprofile.js"></script>
 	<script src="script.js"></script>
+
+	</script>
 </body>
 
 </html>
