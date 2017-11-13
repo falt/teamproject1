@@ -9,6 +9,7 @@ function genid() {
     document.getElementById('show').value = text;
 
   return text;
+
 } 
 //Datepicker 
 
@@ -23,3 +24,4 @@ function formatDate(date) {
 
 
 document.getElementById('date').value = formatDate(new Date());
+
