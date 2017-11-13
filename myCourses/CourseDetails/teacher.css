@@ -19,10 +19,18 @@
   color: #EA6D2C;
   margin-bottom: 20px;
 }
+.teachers h2{
+margin-bottom: 20px;
+font-size: 25px;
+color: #EA6D2C;
+}
 .teachers p{
   font-size: 16px;
   margin-left: 20px;
   margin-top: 5px;
+}
+.teachers span{
+  font-weight: bold;
 }
 
 .teacherimg{

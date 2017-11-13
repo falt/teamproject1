@@ -188,22 +188,45 @@ view-container-border{
 	font-size: 30px;
 	color: orange;
 }
+.scheduleClass{
+	flex-direction: column;
+	font-size: 25px;
+	color: #EA6D2C;
+	margin-bottom: 20px;
+}
 
 @media (max-width: 800px){
 	.main-section .course-type-nav-bar{
 		flex-direction: column;
+		margin-left: 0px;
 	}
 }
 @media (max-width: 820px){
 	.articleClass{
 		margin-top: 50px;
+		width: auto;
+		height: auto;
 	}
 	ul.course-type-nav-bar li:last-child{
 		margin-bottom: 20px;
 	}
 	.iframeClass{
-		width: 400px;
+		width: auto;
 	  height: 400px;
 		overflow: scroll;
+	}
+	.scheduleClass{
+		width: 90%;
+		margin-left: 0px;
+	}
+	.main-section{
+		width: auto;
+	}
+	.main-section article{
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+	.courses-header h1 {
+		font-size: 20px;
 	}
 }

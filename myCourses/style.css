@@ -111,26 +111,77 @@ main .courses {
     border-radius: 2px;
 }
 
-main .ongoing-courses .course-card {
-    background-image: url(https://image.flaticon.com/icons/svg/182/182321.svg); 
+
+#card1{
+    background-image: url(../img/icon/arbetsmetodik.svg); 
+    background-repeat: no-repeat; 
+    background-position: 100% 0px;  
+    background-size: 20%;
+}
+#card2{
+    background-image: url(../img/icon/js-30.svg); 
+    background-repeat: no-repeat; 
+    background-position: 100% 0px;  
+    background-size: 20%;
+}
+#card3{
+    background-image: url(../img/icon/html5.svg); 
     background-repeat: no-repeat; 
     background-position: 100% 0px;  
     background-size: 20%;
 }
 
-main .future-courses .course-card {
-    background-image: url(https://image.flaticon.com/icons/svg/182/182323.svg); 
-    background-repeat: no-repeat; 
-    background-position: 100% 0px;
-    background-size: 20%;  
-}
-
-main .finished-courses .course-card {
-    background-image: url(https://image.flaticon.com/icons/svg/182/182327.svg); 
+#card4{
+    background-image: url(../img/icon/arbetsmetodik.svg); 
     background-repeat: no-repeat; 
     background-position: 100% 0px;  
     background-size: 20%;
 }
+#card5{
+    background-image: url(../img/icon/js-30.svg); 
+    background-repeat: no-repeat; 
+    background-position: 100% 0px;  
+    background-size: 20%;
+}
+#card6{
+    background-image: url(../img/icon/html5.svg); 
+    background-repeat: no-repeat; 
+    background-position: 100% 0px;  
+    background-size: 20%;
+}
+
+#card7{
+    background-image: url(../img/icon/ux.svg); 
+    background-repeat: no-repeat; 
+    background-position: 100% 0px;  
+    background-size: 20%;
+}
+#card8{
+    background-image: url(../img/icon/backend.svg); 
+    background-repeat: no-repeat; 
+    background-position: 100% 0px;  
+    background-size: 20%;
+}
+#card9{
+    background-image: url(../img/icon/html5.svg); 
+    background-repeat: no-repeat; 
+    background-position: 100% 0px;  
+    background-size: 20%;
+}
+#card10{
+    background-image: url(../img/icon/arbetsmetodik.svg); 
+    background-repeat: no-repeat; 
+    background-position: 100% 0px;  
+    background-size: 20%;
+}
+#card11{
+    background-image: url(../img/icon/js-30.svg); 
+    background-repeat: no-repeat; 
+    background-position: 100% 0px;  
+    background-size: 20%;
+}
+
+
 
 main .courses .courses-header {
     display: flex;
@@ -162,6 +213,20 @@ main .courses .course-cards .course-card {
     margin: 10px; 
     border-radius: 5px; 
     border: 1px solid lightgray;
+}
+.course-card{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.course-card-grade{
+    margin: 20px 80px 10px 10px;
+
+}
+.course-card-grade h2{
+    color: #CF6F38;
+
 }
 
 .course-card .course-card-header {

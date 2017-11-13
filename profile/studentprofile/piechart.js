@@ -26,8 +26,9 @@ let chart = new Chart(document.getElementById("pie-chart"), {
 
     for(let i = 0; i < smileys.length; i++) {
       smileys[i].addEventListener('click', function(e){
-        chart.data.datasets[0].data[0] += 1;
+        chart.data.datasets[0].data[0] += 0;
           chart.update();
+
 
           if (e.target.id == 'happy') {
             chart.data.datasets[0].data[0] += 1;
