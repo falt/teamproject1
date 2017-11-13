@@ -56,9 +56,9 @@
 				<ul class="course-type-nav-bar">
 
 					<li>Start</li>
-					<li>Inlämningar</li>
+					<li>Uppgifter</li>
 					<li>Kursutvärdering</li>
-					<li>Elever</li>
+					<li>Skapa gruppuppgift</li>
 
 				</ul>
 			</div>
@@ -71,6 +71,32 @@
 			</article>
 
 			<article class="articleClass assignments-wrapper">
+
+				<div class="create-new-assignment" style="height: 70px;">
+
+					<div class="create-new-assignment-button"><i class="fa fa-plus fa-2x" aria-hidden="true"></i>Skapa ny uppgift</div>
+
+					<form id="newAssignmentForm">
+						<div class="assignment-details-container">
+							<input id="assignmentName" type="text" placeholder="Namn på uppgift"/> 
+							<label for="assignmentDetails">Uppgiftsbeskrivning</label>
+							<textarea id="assignmentDetails"></textarea>
+						</div>
+
+						
+						<div class="grade-criteria-container">
+							<h3>Betygskriterier</h3>
+							<input id="gradeG" type="text" placeholder="För betyg G"/>
+							<input id="gradeVG" type="text" placeholder="För betyg VG"/>
+						</div>
+						
+						
+	
+						
+						<input id="createAssignmentBtn" type="button" value="Skapa"/> 
+					</form>
+
+				</div>
 
 				<!-- START ASSIGNMENT -->
 
