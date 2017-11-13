@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>LMS | Lärarprofil</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="adminprofile.css">
+	<meta charset="utf-8">
+</head>
+
+<body>
+
+	<!-- HEADER AND NAV -->
+	<header>
+		<div class="logo">
+			<a href="#">
+				<img src="http://kyh.se/wp-content/uploads/2017/04/KYH-logo.png" width="90">
+			</a>
+		</div>
+
+
+		<nav>
+
+			<ul>
+				<li>
+					<a href="#">Hem</a>
+				</li>
+				<li>
+					<a href="myClasses/myClasses.html">Mina kurser</a>
+				</li>
+
+			</ul>
+		</nav>
+
+	</header>
+
+	<!-- MAIN CONTENT -->
+	<main>
+
+		<!-- MAIN SECTION (LEFT) -->
+		<section class="main-section">
+
+			<div>
+				<div class="headers">
+					<div class="headerPlus">
+						<h1>Nyheter</h1>
+						<i onclick="createPost() " id="plus" class="fa fa-plus fa-3" aria-hidden="true"></i>
+					</div>
+				</div>
+				<hr>
+				<article id="create-post" class="create-post">
+					<div class="editable">
+						<h2 contenteditable="true">Nytt inlägg</h2>
+						<p contenteditable="true">Skriv din text här.</p>
+					</div>
+					<button type="button" onclick="newPostSave() " id="saveButton">Spara</button><i name="removePosts" onclick="removePost() "
+					    id="removePost" class="fa fa-trash" aria-hidden="true"></i>
+				</article>
+				<article>
+					<div class="editable">
+						<h2>Inlämning i Arbetsmetodik!</h2>
+
+						<p>Träutensilierna i ett tryckeri äro ingalunda en faktor där trevnadens ordningens och ekonomiens upprätthållande, och
+							dock är det icke sällan som sorgliga erfarenheter göras ordningens och ekon och miens därmed upprätthållande.</p>
+						<div class="hidden">
+							<p>Träutensilierna i ett tryckeri äro ingalunda en faktor där trevnadens ordningens och ekonomiens upprätthållande, och
+								dock är det icke sällan som sorgliga erfarenheter göras ordningens och ekon och miens därmed upprätthållande.</p>
+
+							<p>räutensilierna i ett tryckeri äro ingalunda en faktor där trevnadens ordningens och ekonomiens upprätthållande, och
+								dock är det icke sällan som sorgliga erfarenheter göras ordningens och ekon och miens därmed upprätthållande.</p>
+						</div>
+					</div>
+					<button onclick="editableContent() " class="read-more1">Redigera nyhet</button><i class="fa fa-trash" aria-hidden="true"></i>
+
+				</article>
+
+				<article>
+					<div class="editable">
+						<h2>Skolan har brunnit igen..</h2>
+
+						<p>Träutensilierna i ett tryckeri äro ingalunda en faktor där trevnadens ordningens och ekonomiens upprätthållande, och
+							dock är det icke sällan som sorgliga erfarenheter göras ordningens och ekon och miens därmed upprätthållande.</p>
+						<div class="hidden">
+							<p>Träutensilierna i ett tryckeri äro ingalunda en faktor där trevnadens ordningens och ekonomiens upprätthållande, och
+								dock är det icke sällan som sorgliga erfarenheter göras</p>
+
+							<p>Träutensilierna i ett tryckeri äro ingalunda en faktor där trevnadens ordningens och ekonomiens upprätthållande, och
+								dock är det icke sällan som sorgliga erfarenheter göras ordningens och ekon och miens därmed upprätthållande.</p>
+						</div>
+					</div>
+					<button onclick="editableContent() " class="read-more1">Redigera nyhet</button><i class="fa fa-trash" aria-hidden="true"></i>
+
+				</article>
+
+				<article>
+					<div class="editable">
+						<h2>Lärar-kickoffen blev en stor succé!</h2>
+
+						<p>Träutensilierna i ett tryckeri äro ingalunda en faktor där trevnadens ordningens och ekonomiens upprätthållande, och
+							dock är det icke sällan som sorgliga erfarenheter göras ordningens och ekon och miens därmed upprätthållande.</p>
+						<div class="hidden">
+							<p>Träutensilierna i ett tryckeri äro ingalunda en faktor där trevnadens ordningens och ekonomiens upprätthållande, och
+								dock är det icke sällan som sorgliga erfarenheter göras</p>
+
+							<p>Träutensilierna i ett tryckeri äro ingalunda en faktor där trevnadens ordningens och ekonomiens upprätthållande, och
+								dock är det icke sällan som sorgliga erfarenheter göras ordningens och ekon och miens därmed upprätthållande.</p>
+						</div>
+					</div>
+					<button onclick="editableContent() " class="read-more1">Redigera nyhet</button><i class="fa fa-trash" aria-hidden="true"></i>
+
+
+				</article>
+
+
+				<article>
+					<div class="editable">
+						<h2>Maskar i skolmatsalen</h2>
+
+						<p>Träutensilierna i ett tryckeri äro ingalunda en faktor där trevnadens ordningens och ekonomiens upprätthållande, och
+							dock är det icke sällan som sorgliga erfarenheter göras ordningens och ekon och miens därmed upprätthållande.</p>
+						<div class="hidden">
+							<p>Träutensilierna i ett tryckeri äro ingalunda en faktor där trevnadens ordningens och ekonomiens upprätthållande, och
+								dock är det icke sällan som sorgliga erfarenheter göras</p>
+
+							<p>Träutensilierna i ett tryckeri äro ingalunda en faktor där trevnadens ordningens och ekonomiens upprätthållande, och
+								dock är det icke sällan som sorgliga erfarenheter göras ordningens och ekon och miens därmed upprätthållande.</p>
+						</div>
+					</div>
+					<button onclick="editableContent() " class="read-more1">Redigera nyhet</button><i class="fa fa-trash" aria-hidden="true"></i>
+
+
+				</article>
+
+
+
+		</section>
+
+
+
+		<!-- PROFILE AND GRAPH SECTION ASIDE (RIGHT) -->
+		<section class="aside-section">
+
+			<div class="aside-content-box">
+
+				<h1>Välkommen GW!</h1>
+				<img
+				<p>
+
+				</p>
+
+			</div>
+
+
+
+			<div class="aside-content-box">
+
+
+			<div class="aside-content-box-gen">
+				<!-- <div class="generate"> -->
+					<div class="generate-code">
+						<input id="show" type="text" value="">
+						<input id="btn" type="button" value="Generate" onclick="genid();">
+					</div>
+					<div class="choose-class">
+						<select class="class">
+							<option value="Javascript">Javascript</option>
+							<option value="HTML">HTML</option>
+							<option value="CSS">CSS</option>
+							<option value="Arbetsretorik">Arbetsretorik</option>
+						</select>
+						<p>Välj en klass: </p>
+					</div>
+					<div class="choose-days">
+						<select class="days">
+							<option value="1/10">1/10</option>
+							<option value="2/10">2/10</option>
+							<option value="3/10">3/10</option>
+							<option value="4/10">4/10</option>
+							<option value="5/10">5/10</option>
+							<option value="6/10">6/10</option>
+							<option value="7/10">7/10</option>
+						</select>
+						<p>Välj en dag: </p>
+					</div>
+					<h2>Generera dagens närvaro-kod:</h2>
+				</div>
+
+
+		</section>
+
+	</main>
+
+	<footer>
+		<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+		<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+		<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+
+	</footer>
+
+	<script src="adminprofile.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
