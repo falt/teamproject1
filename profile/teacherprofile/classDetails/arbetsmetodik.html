@@ -416,23 +416,24 @@
 				<!-- <div class="students"> -->
 					
 					<div class="menu-container">
-						
-						<h1>Skapa gruppuppgift för FE17</h1>
-						
-						<label for="assignment-name">Namn på uppgift:</label>
-						<input type="text" id="assignment-name" name="assignment-name">
-				
-						<label for="amount-of-groups">Antal grupper</label>
-						
-						<select id="amount-of-groups">
-							<option value="5">5</option>
-							<option value="4">4</option>
-							<option value="3">3</option>
-							<option value="2">2</option>
-						</select>
 
-						<button id="divide-groups-btn">Dela in klassen i 5 grupper</button>
-						
+						<div class="divide-groups-info-container">
+							<h1>Skapa gruppuppgift för FE17</h1>
+							
+							<label for="assignment-name">Namn på uppgift:</label>
+							<input type="text" id="assignment-name" name="assignment-name">
+					
+							<label for="amount-of-groups">Antal grupper</label>
+							<input id="amount-of-groups" type="text"/>
+
+							<button id="divide-groups-btn">Dela in klassen i grupper</button>
+						</div>
+
+						<div class="divide-groups-info-container">
+
+							<p class="hidden">Dra och släpp ett namn på en tom yta i en grupp för att justera i grupperna.</p>
+
+						</div>
 				
 						<div class="class-list">
 							<h3>FE17</h3>
@@ -493,35 +494,6 @@
 				
 						<div class="assignment-groups">
 				
-							<div class="grid">
-								<h2>Grupp 1</h2>
-								<ul>
-								</ul>            
-							</div>
-					
-							<div class="grid">
-								<h2>Grupp 1</h2>
-								<ul>
-								</ul>            
-							</div>
-					
-							<div class="grid">
-								<h2>Grupp 1</h2>                
-								<ul>
-								</ul>
-							</div>
-					
-							<div class="grid">
-								<h2>Grupp 1</h2>                
-								<ul>
-								</ul>                
-							</div>
-							
-							<div class="grid">
-								<h2>Grupp 1</h2>                
-								<ul>
-								</ul>                                
-							</div>
 						</div>
 					</div>
 						
