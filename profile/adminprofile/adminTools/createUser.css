@@ -1,0 +1,36 @@
+.createUserArticle{
+  flex-direction: column;
+  width: 95%;
+  height: 800px;
+}
+.user-info div{
+  height: auto;
+  margin-bottom: 20px;
+}
+input, select{
+  position: absolute;
+  left: 200px;
+  width: 150px;
+}
+.user-info h1{
+  font-size: 25px;
+  color: #EA6D2C;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.user-info input[type=button] {
+  height: 50px;
+  width: 100px;
+  border: 0px;
+  border-radius: 5px;
+  background-color: #EA6D2C;
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  left: 200px;
+  text-align: center;
+}
+
+@media (max-width: 500px){
+
+}
