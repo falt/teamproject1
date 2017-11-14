@@ -1,0 +1,23 @@
+.flex-col-center {
+    display: flex; 
+    justify-content: center; 
+    flex-direction: column; 
+}
+
+.editEvaluationForms {
+    width: 90vw; 
+}
+
+.editEvaluationForms h1 {
+    font-size: 25px;
+    color: #EA6D2C;
+    margin: 20px 0;
+}
+
+.editEvaluationForms .evaluation {
+    padding: 10px 0; 
+}
+
+.editEvaluationForms form {
+    margin: 0 0 50px 0; 
+}
