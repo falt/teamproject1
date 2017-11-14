@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="assignments.css">
 	<link rel="stylesheet" href="divideGroups.css">
+	<link rel="stylesheet" href="narvaro.css">
 
 	<link rel="stylesheet" href="courseEval.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
@@ -59,6 +60,7 @@
 					<li>Uppgifter</li>
 					<li>Kursutvärdering</li>
 					<li>Skapa gruppuppgift</li>
+					<li>Närvaro</li>
 
 				</ul>
 			</div>
@@ -78,22 +80,22 @@
 
 					<form id="newAssignmentForm">
 						<div class="assignment-details-container">
-							<input id="assignmentName" type="text" placeholder="Namn på uppgift"/> 
+							<input id="assignmentName" type="text" placeholder="Namn på uppgift"/>
 							<label for="assignmentDetails">Uppgiftsbeskrivning</label>
 							<textarea id="assignmentDetails"></textarea>
 						</div>
 
-						
+
 						<div class="grade-criteria-container">
 							<h3>Betygskriterier</h3>
 							<input id="gradeG" type="text" placeholder="För betyg G"/>
 							<input id="gradeVG" type="text" placeholder="För betyg VG"/>
 						</div>
-						
-						
-	
-						
-						<input id="createAssignmentBtn" type="button" value="Skapa"/> 
+
+
+
+
+						<input id="createAssignmentBtn" type="button" value="Skapa"/>
 					</form>
 
 				</div>
@@ -362,27 +364,27 @@
 		<article class="articleClass evaluations">
 			<h1>Kursutvärdering</h1>
 			<div class="courseEval">
-		
+
 				<div class="evalQuestion">
 					<h3>Vad tyckte du om kursen i allmänhet?</h3>
 					<canvas id="firstChart" max-width="300" max-height="300"></canvas>
 				</div>
-		
+
 				<div class="evalQuestion">
 					<h3>Hur var kvalitén på kurslitteraturen?</h3>
 					<canvas id="secondChart" max-width="300" max-height="300"></canvas>
 				</div>
-		
+
 				<div class="evalQuestion">
 					<h3>Vad ger du förläsningarna för betyg?</h3>
 					<canvas id="thirdChart" max-width="300" max-height="300"></canvas>
 				</div>
-		
+
 				<div class="evalQuestion">
 					<h3>Fick du tillräckligt med hjälp av lärarna?</h3>
 					<canvas id="fourthChart" max-width="300" max-height="300"></canvas>
 				</div>
-		
+
 				<div class="evalQuestion">
 					<h3>Övriga kommentarer:</h3>
 					<ul>
@@ -404,25 +406,25 @@
 					</ul>
 				</div>
 			</div>
-		
-		
-		
-		
+
+
+
+
 		</article>
 		<!--- END COURSE EVAL -->
 
 			<article class="articleClass students">
 
 				<!-- <div class="students"> -->
-					
+
 					<div class="menu-container">
 
 						<div class="divide-groups-info-container">
 							<h1>Skapa gruppuppgift för FE17</h1>
-							
+
 							<label for="assignment-name">Namn på uppgift:</label>
 							<input type="text" id="assignment-name" name="assignment-name">
-					
+
 							<label for="amount-of-groups">Antal grupper</label>
 							<input id="amount-of-groups" type="text"/>
 
@@ -434,10 +436,10 @@
 							<p class="hidden">Dra och släpp ett namn på en tom yta i en grupp för att justera i grupperna.</p>
 
 						</div>
-				
+
 						<div class="class-list">
 							<h3>FE17</h3>
-				
+
 							<ul>
 								<li draggable="true">Daniel</li>
 								<li draggable="true">Andreas</li>
@@ -480,25 +482,329 @@
 								<li draggable="true">Adolf</li>
 								<li draggable="true">Tim</li>
 								</ul>
-				
+
 						</div>
-				
-				
+
+
 					</div>
-				
+
 					<div class="container hidden">
-				
+
 						<div class="assignment-header">
-							<h1></h1>                
+							<h1></h1>
 						</div>
-				
+
 						<div class="assignment-groups">
-				
+
 						</div>
 					</div>
-						
+
 
 				</div>
+
+			</article>
+
+			<article class="articleClass att">
+
+			<h1>Närvaro för elever i Arbetsmetodik FE17</h1>
+      <div class="narvaro-schema">
+        <table>
+					<tr>
+					  <th>Name</th>
+					  <th>10/11</th>
+					  <th>11/11</th>
+					  <th>12/11</th>
+					  <th>13/11</th>
+					  <th>14/11</th>
+					  <th>15/11</th>
+					  <th>16/11</th>
+					  <th>17/11</th>
+					  <th>18/11</th>
+					  <th>19/11</th>
+					  <th>20/11</th>
+					  <th>21/11</th>
+
+					</tr>
+					<tr>
+					  <td>Jill Smith</td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="no"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="no"></td>
+					  <td class="yes"></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+
+					</tr>
+					<tr>
+					  <td>Andreas Nordqvist</td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="no"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					</tr>
+					<tr>
+					  <td>Johanna franzen</td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="no"></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					</tr>
+					<tr>
+					  <td>John Olofsson</td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="no"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					</tr>
+					<tr>
+					  <td>Daniel Björklund</td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="no"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					</tr>
+					<tr>
+					  <td>Frida Lindgren</td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="no"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					</tr>
+					<tr>
+					  <td>Björn Palm</td>
+					  <td class="yes"></td>
+					  <td class="no"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					</tr>
+					<tr>
+					  <td>Fredrik Fransson</td>
+					  <td class="no"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					</tr>
+					<tr>
+					  <td>Johanna Westlund</td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="no"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="no"></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					</tr>
+					<tr>
+					  <td>Erik Snig</td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="no"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					</tr>
+					<tr>
+					  <td>Carl Gustav III</td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="no"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					</tr>
+					<tr>
+					  <td>Jonas Ask</td>
+					  <td class="yes"></td>
+					  <td class="no"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="no"></td>
+					  <td class="yes"></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					</tr>
+					<tr>
+					  <td>David Grund</td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="no"></td>
+					  <td class="yes"></td>
+					  <td class="no"></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					</tr>
+					<tr>
+					  <td>Magnus Joelsson</td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="no"></td>
+					  <td class="no"></td>
+					  <td class="no"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					</tr>
+					<tr>
+					  <td>Emil Hård</td>
+					  <td class="yes"></td>
+					  <td class="no"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					</tr>
+					<tr>
+					  <td>Doris Nygren</td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="no"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					</tr>
+					<tr>
+					  <td>Carl Ek</td>
+					  <td class="no"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="no"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					</tr>
+					<tr>
+					  <td>Jessica Hallberg</td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="no"></td>
+					  <td class="yes"></td>
+					  <td class="yes"></td>
+					  <td class="no"></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					</tr>
+
+
+
+					</table>
+
+      </div>
+
+
+
 
 			</article>
 
@@ -515,6 +821,9 @@
 	<script src="divideGroups.js"></script>
 	<script src="script.js"></script>
 	<script src="chart.js"></script>
+	<script src="narvaro.js">
+
+	</script>
 </body>
 
 </html>
