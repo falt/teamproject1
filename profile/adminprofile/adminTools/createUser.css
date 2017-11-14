@@ -7,7 +7,7 @@
   height: auto;
   margin-bottom: 20px;
 }
-input, select{
+.user-info input, select{
   position: absolute;
   left: 200px;
   width: 150px;
@@ -30,7 +30,9 @@ input, select{
   left: 200px;
   text-align: center;
 }
-
+#e-mail{
+  width: 225px;
+}
 @media (max-width: 500px){
 
 }
