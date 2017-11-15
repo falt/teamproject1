@@ -17,7 +17,9 @@
 	<!-- HEADER AND NAV -->
 	<header>
 		<div class="logo">
-			<a href="../../teacherprofile/teacherprofile.html"><img src="../../studentprofile/KYH-logo.png" width="90"></a>
+			<a href="../../teacherprofile/teacherprofile.html">
+				<img src="../../studentprofile/KYH-logo.png" width="90">
+			</a>
 		</div>
 
 		<nav>
@@ -60,71 +62,155 @@
 
 
 
-		<article class="articleClass createUserArticle">
+			<article class="articleClass createUserArticle">
 
-			<div class="user-info">
-				<h1>Skapa ny användare</h1>
+				<div class="user-info">
+					<h1>Skapa ny användare</h1>
 
-				<form>
+					<form>
 
-					<div>
-						Användartyp
-						<select name="" id="">
-							<option value="elev" name="usertype">Elev</option>
-							<option value="lärare" name="usertype">Lärare</option>
-							<option value="admin" name="usertype">Administratör</option>
-						</select>
+						<div>
+							Användartyp
+							<select name="" id="">
+								<option value="elev" name="usertype">Elev</option>
+								<option value="lärare" name="usertype">Lärare</option>
+								<option value="admin" name="usertype">Administratör</option>
+							</select>
+
+						</div>
+
+						<div>
+							Förnamn
+							<input type="textfield" id="first-name" name="fname">
+						</div>
+
+						<div>
+							Efternamn
+							<input type="textfield" id="last-name" name="lname">
+						</div>
+
+						<div>
+							Användarnamn
+							<input type="text" id="user-name" placeholder="Click to render" name="username">
+						</div>
+
+						<div>
+							Email
+							<input type="email" id="e-mail" value="@kyh.se" name="email">
+						</div>
+
+						<div>
+							Lösenord
+							<input type="text" id="pWordInput" name="password" contenteditable="false" value="hej"></input>
+						</div>
+
+						<input type="button" id="form-complete-Btn" value="Skapa"></input>
+					</form>
+				</div>
+
+			</article>
+
+			<article class="articleClass">
+				<!-- <h1></h1> -->
+			</article>
+
+			<article class="articleClass createClass">
+				<div class="createClassWrapper">
+					<div class="user-info createClassInput">
+						<div class="createClassInputPlacement">
+
+
+							<h1>Skapa ny klass</h1>
+
+							<form>
+
+								<div>
+									Utbildning
+									<select name="" id="">
+										<option value="Frontend" name="usertype">Frontend-utvecklare</option>
+										<option value="Energi" name="usertype">Energi</option>
+										<option value="Backend" name="usertype">Backend-utvecklare</option>
+										<option value="New" name="usertype">-Skapa ny utbildning-</option>
+									</select>
+
+								</div>
+
+								<div>
+									Klassnamn
+									<input type="textfield" id="className" name="className">
+								</div>
+
+								<div>
+									Ort
+									<input type="textfield" id="city" name="City">
+								</div>
+
+								<div>
+									Kursansvarig
+									<input type="text" id="adminName" name="adminName">
+								</div>
+
+								<input type="button" id="form-complete-Btn" value="Skapa"></input>
+							</form>
+						</div>
+						<div class="createClassInputPlacement">
+							<h1>Lägg till elev</h1>
+							<form>
+								<div>
+									Namn
+									<input type="textfield" id="studentName" name="studentName">
+								</div>
+								<div>
+									Tel
+									<input type="textfield" id="tel" name="tel">
+								</div>
+								<div>
+									Email
+									<input type="text" id="email" name="email">
+								</div>
+								<input type="button" id="form-complete-Btn" value="Skapa"></input>
+							</form>
+						</div>
+					</div>
+					<div class="user-info createClassReady">
+						<h1 id="className">--Klassnamn--</h1>
+						<div class="newStudent">
+							<h2 class="studentName">Förnamn Efternamn</h2>
+							<p class="email">e-mail:</p>
+							<p class="tele">telefon:</p>
+						</div>
+						<div class="newStudent">
+							<h2 class="studentName">Förnamn Efternamn</h2>
+							<p class="email">e-mail:</p>
+							<p class="tele">telefon:</p>
+						</div>
+						<div class="newStudent">
+							<h2 class="studentName">Förnamn Efternamn</h2>
+							<p class="email">e-mail:</p>
+							<p class="tele">telefon:</p>
+						</div>
+
+
 
 					</div>
 
-					<div>
-						Förnamn
-						<input type="textfield" id="first-name" name="fname">
-					</div>
+				</div>
 
-					<div>
-						Efternamn
-						<input type="textfield" id="last-name" name="lname">
-					</div>
 
-					<div>
-						Användarnamn
-						<input type="text" id="user-name" placeholder="Click to render" name="username">
-					</div>
 
-					<div>
-						Email
-						<input type="email" id="e-mail" value="@kyh.se" name="email">
-					</div>
 
-					<div>
-						Lösenord
-						<input type="text" id="pWordInput" name="password" contenteditable="false" value="hej"></input>
-					</div>
 
-					<input type="button" id="form-complete-Btn" value="Skapa"></input>
-				</form>
-			</div>
+			</article>
 
-		</article>
+			<article class="articleClass">
+				<!-- <h1></h1> -->
+			</article>
 
-		<article class="articleClass">
-			<!-- <h1></h1> -->
-		</article>
+			<article class="articleClass">
+				<!-- <h1></h1> -->
+			</article>
 
-	</article class="articleClass createClass">
-			<!-- <h1></h1> -->
-		</article>
-
-		<article class="articleClass">
-			<!-- <h1></h1> -->
-		</article>
-
-		<article class="articleClass">
-			<!-- <h1></h1> -->
-		</article>
-
-	<section>
+			<section>
 	</main>
 
 	<footer>
