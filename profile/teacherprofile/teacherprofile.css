@@ -14,9 +14,7 @@ body {
 }
 
 #plus {
-    position: absolute;
-    left: 960px;
-	top: 120px;
+	margin-right: 30px;
 	cursor: pointer;
 	color: #DD6925;
 }
@@ -37,11 +35,19 @@ body {
 .new-post-save {
 	cursor: pointer;
 }
+
 .headerPlus {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: center;
+	justify-content: space-between;
+	height: 80px;
 }
+
+.headerPlus h1 {
+	margin: 0 0 0 30px; 
+}
+
 .fa-trash {
 	cursor: pointer;
 }
@@ -73,7 +79,6 @@ header .logo {
 
 header nav {
 	height: 50px;
-	width: 350px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -339,6 +344,10 @@ footer {
 	main {
 		flex-direction: column;
 		height: 100%;
+	}
+
+	.aside-section {
+		width: 100%; 
 	}
 
 	.main-section {
