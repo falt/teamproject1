@@ -111,3 +111,7 @@
     border-radius: 5px;
     padding: 10px;
 }
+
+.create-new-evaluation input {
+    position: static; 
+}
