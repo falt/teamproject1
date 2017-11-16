@@ -31,7 +31,7 @@
   width: 95%;
   height: 800px;
 }
-.user-info div{
+.user-info-class div{
   height: auto;
   margin-bottom: 20px;
 }
@@ -40,13 +40,13 @@ input, select{
   left: 200px;
   width: 150px;
 }
-.user-info h1{
+.user-info-class h1{
   font-size: 25px;
   color: #EA6D2C;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.user-info input[type=button] {
+.user-info-class input[type=button] {
   height: 50px;
   width: 100px;
   border: 0px;
