@@ -20,7 +20,7 @@ editEvalButtons.forEach(function(button, index){
                 evalPara[index].innerHTML = e.target.value; 
                 evalPara[index].className = ""; 
                 editEvalInputFields[index].className = "edit hidden"; 
-                editEvalButtons[index].classList.toggle('hidden');                 
+                editEvalButtons[index].className = "edit-button fa fa-pencil";                  
             } else {
                 // Error message
             }
