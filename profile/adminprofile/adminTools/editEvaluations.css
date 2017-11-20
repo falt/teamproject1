@@ -1,7 +1,39 @@
+.flex-col {
+    display: flex; 
+    flex-direction: column; 
+}
+
+.flex-row {
+    display: flex; 
+    flex-direction: row; 
+}
+
 .flex-col-center {
     display: flex; 
     justify-content: center; 
     flex-direction: column; 
+}
+
+.flex-col-center i {
+    margin: 0 0 0 10px; 
+}
+
+.flex-row-center {
+    display: flex; 
+    align-items: center; 
+    flex-direction: row;    
+}
+
+.hidden {
+    display: none; 
+}
+
+.colapsed {
+    height: 25px; 
+}
+
+.expanded {
+    height: ; 
 }
 
 .editEvaluationForms {
@@ -14,10 +46,76 @@
     margin: 20px 0;
 }
 
+.editEvaluationForms h2 {
+    font-size: 22px; 
+    color: #EA6D2C;  
+    margin: 0 0 10px 0;   
+}
+
+.editEvaluationForms h3 {
+    font-size: 20px; 
+    color: #EA6D2C;    
+}
+
 .editEvaluationForms .evaluation {
     padding: 10px 0; 
 }
 
+.editEvaluationForms i {
+    cursor: pointer;
+}
+
 .editEvaluationForms form {
     margin: 0 0 50px 0; 
+}
+
+.evaluation-heading {
+    cursor: pointer;
+}
+
+.evaluation-heading i {
+    margin: 0 10px 0 0; 
+    color: #EA6D2C;
+    cursor: pointer;    
+}
+
+.question {
+    display: flex; 
+    align-items: center; 
+}
+
+.existing-evaluations {
+    margin: 0 0 50px 0; 
+}
+
+.existing-evaluations p {
+    padding: 5px 0; 
+    margin: 10px 0; 
+}
+
+.evaluation {
+    overflow: hidden; 
+    transition: all 1s ease; 
+}
+
+.evaluation .question i {
+    margin: 0 0 0 10px; 
+    cursor: pointer; 
+}
+
+.evaluation input {
+    position: static; 
+    margin: 10px 0; 
+}
+
+.add-question p {
+    background: #EA6D2C;
+    color: #fff; 
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.create-new-evaluation input {
+    position: static; 
 }

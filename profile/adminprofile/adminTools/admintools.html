@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="../../../font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="createUser.css">
+	<link rel="stylesheet" href="createClass.css">
 	<link rel="stylesheet" href="editEvaluations.css">
 	<link rel="stylesheet" href="createCourse.css">
 	<meta charset="utf-8">
@@ -18,7 +19,9 @@
 	<!-- HEADER AND NAV -->
 	<header>
 		<div class="logo">
-			<a href="../../adminprofile/adminprofile.html"><img src="../../studentprofile/KYH-logo.png" alt="KYH-logo" width="90"></a>
+			<a href="../../adminprofile/adminprofile.html">
+				<img src="../../studentprofile/KYH-logo.png" alt="KYH-logo" width="90">
+			</a>
 		</div>
 
 		<nav>
@@ -51,7 +54,7 @@
 					<li>Skapa användare</li>
 					<li>Hantera utvärderingar</li>
 					<li>Skapa kurser</li>
-					<li>h1</li>
+					<li>Skapa Klass</li>
 
 				</ul>
 			</div>
@@ -93,41 +96,116 @@
 
 			</article>
 
-		<article class="articleClass editEvaluationForms">
-
-			<div class="editEvaluationForms flex-col-center">
-
-				<h1>Hantera utvärderingar</h1>
-
-				<form>
-					<label for="className">Välj klass</label>
-
-					<select>
-						<option>FE17</option>
-						<option>FE16</option>
-					</select>
-
-				</form>
 
 
-				<h2>Befintliga utvärderingar</h2>
 
-				<div class="evaluation">
-					<h3>Kursutvärdering</h3>
+			<article class="articleClass editEvaluationForms">
+
+				<div class="editEvaluationForms flex-col-center">
+
+					<h1>Hantera utvärderingar</h1>
+
+					<form>
+						<label for="className">Välj klass</label>
+
+						<select>
+							<option>FE17</option>
+							<option>FE16</option>
+						</select>
+
+					</form>
+
+					<div class="existing-evaluations">
+						<h2>Befintliga utvärderingar</h2>
+
+						<div class="evaluation colapsed">
+
+							<div class="evaluation-heading flex-row-center">
+								<i class="fa fa-arrow-right" aria-hidden="true"></i>
+								<h3>Kursutvärdering</h3>
+							</div>
+
+							<div class="questions">
+								<div class="question">
+									<p>Vad tyckte du om kursen i allmänhet?</p>
+									<input class="edit hidden" type="text">
+									<i class="edit-button fa fa-pencil" aria-hidden="true"></i>
+								</div>
+
+								<div class="question">
+									<p>Hur var kvalitén på kurslitteraturen?</p>
+									<input class="edit hidden" type="text">
+									<i class="edit-button fa fa-pencil" aria-hidden="true"></i>
+								</div>
+
+								<div class="question">
+									<p>Vad ger du förläsningarna för betyg?</p>
+									<input class="edit hidden" type="text">
+									<i class="edit-button fa fa-pencil" aria-hidden="true"></i>
+								</div>
+
+								<div class="question">
+									<p>Fick du tillräckligt med hjälp av lärarna?</p>
+									<input class="edit hidden" type="text">
+									<i class="edit-button fa fa-pencil" aria-hidden="true"></i>
+								</div>
+							</div>
+
+							<div class="add-question flex-row-center">
+								<p>Lägg till fråga</p>
+							</div>
+
+						</div>
+
+						<div class="evaluation colapsed">
+							<div class="evaluation-heading flex-row-center">
+								<i class="fa fa-arrow-right" aria-hidden="true"></i>
+								<h3>Daglig utvärdering</h3>
+							</div>
+							<div class="questions">
+
+								<div class="question">
+									<p>Hur mår du idag?</p>
+									<input class="edit hidden" type="text">
+									<i class="edit-button fa fa-pencil" aria-hidden="true"></i>
+								</div>
+
+							</div>
+
+
+							<div class="add-question flex-row-center">
+								<p>Lägg till fråga</p>
+							</div>
+						</div>
+
+
+
+					</div>
+
+					<div class="create-new-evaluation flex-col">
+						<h2>Skapa ny utvärdering</h2>
+
+						<label for="eval-name">Namn på utvärdering</label>
+						<input id="eval-name" type="text" />
+
+						<label>Fråga 1</label>
+						<input type="text" />
+
+						<label>Fråga 2</label>
+						<input type="text" />
+
+						<div class="add-question flex-row-center">
+							<p>Lägg till fråga</p>
+						</div>
+					</div>
+
+
+
 				</div>
 
-				<div class="evaluation">
-					<h3>Daglig utvärdering</h3>
-				</div>
+			</article>
 
-				<h2>Skapa ny utvärdering</h2>
-
-
-			</div>
-
-		</article>
-
-		<article class="articleClass createCourseClass">
+			<article class="articleClass createCourseClass">
 
 				<div class="createCourse">
 
@@ -161,16 +239,76 @@
 				</div>
 
 			</article>
+			<article class="articleClass createClass">
+				<div class="createClassWrapper">
+					<div class="user-info-class createClassInput">
+						<div class="createClassInputPlacement">
+							<h1>Skapa ny klass</h1>
 
-		<article class="articleClass">
-			<!-- <h1></h1> -->
-		</article>
+							<form>
 
-		<article class="articleClass">
-			<!-- <h1></h1> -->
-		</article>
+								<div>
+									Utbildning
+									<select name="" id="">
+										<option value="Frontend" name="usertype">Frontend-utvecklare</option>
+										<option value="Energi" name="usertype">Energi</option>
+										<option value="Backend" name="usertype">Backend-utvecklare</option>
+									</select>
 
-	</section>
+								</div>
+
+								<div>
+									Klassnamn
+									<input type="textfield" id="className" name="className">
+								</div>
+
+								<div>
+									Ort
+									<input type="textfield" id="city" name="City">
+								</div>
+
+								<div>
+									Kursansvarig
+									<input type="text" id="adminName" name="adminName">
+								</div>
+
+								<input type="button" id="classBtn" value="Skapa"></input>
+							</form>
+						</div>
+						<div class="createClassInputPlacement">
+							<h1>Lägg till elev</h1>
+							<form>
+								<div>
+									Namn
+									<input type="textfield" id="studentName" name="studentName">
+								</div>
+								<div>
+									Tel
+									<input type="textfield" id="tel" name="tel">
+								</div>
+								<div>
+									Email
+									<input type="text" id="email" name="email">
+								</div>
+								<input type="button" id="studentBtn" value="Skapa"></input>
+							</form>
+						</div>
+					</div>
+					<div class="user-info createClassReady">
+						<h1 id="classNameH1"></h1>
+						<div id="studentList">
+
+						</div>
+
+
+					</div>
+
+				</div>
+
+			</article>
+
+
+		</section>
 	</main>
 
 	<footer>
@@ -179,7 +317,9 @@
 		<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
 	</footer>
 
+	<script src="editEvaluations.js"></script>
 	<script src="script.js"></script>
+	<script src="createClass.js"></script>
 	<script src="createCourse.js"></script>
 </body>
 
