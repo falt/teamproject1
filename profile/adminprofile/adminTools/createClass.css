@@ -26,11 +26,11 @@
   height: auto;
   margin-bottom: 20px;
 }
-input, select{
+.createClassInputPlacement input, .createClassInputPlacement  select{
   position: absolute;
   left: 200px;
   width: 150px;
-}
+} 
 .user-info-class h1{
   font-size: 25px;
   color: #EA6D2C;
