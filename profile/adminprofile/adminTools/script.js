@@ -49,9 +49,11 @@ function userNameSampler() {
   var fNameField = document.getElementById('first-name').value;
   var lNameField = document.getElementById('last-name').value;
   var uNameField = document.getElementById('user-name').value;
+  var string = "";
   if(fNameField.length > 0 && lNameField.length > 0) {
-    var string = fNameField.concat("." + lNameField);
+    string = fNameField.concat('.' + lNameField);
     var stringLow = string.toLowerCase();
+    // console.log(stringLow);
     return stringLow;
   }
   else{return null;}
@@ -59,6 +61,22 @@ function userNameSampler() {
 
 document.getElementById('user-name').addEventListener("click", function(){
   document.getElementById('user-name').value = userNameSampler();
+
+  var uName = document.getElementById('user-name').value;
+  var eMail = document.getElementById('e-mail');
+  var uTypeSel = document.getElementById('user-type-select');
+  var strUserType = uTypeSel.options[uTypeSel.selectedIndex].value;
+
+  if(strUserType == "elev"){
+    eMail.value = ((userNameSampler()) + '@student.kyh.se');
+  }
+  else if(strUserType == "lärare"){
+    eMail.value = ((userNameSampler()) + '@teacher.kyh.se');
+  }
+  else if(strUserType == "admin"){
+    eMail.value = ((userNameSampler()) + '@admin.kyh.se');
+  }
+  else{}
 });
 
 document.getElementById('form-complete-Btn').addEventListener("click", function(){

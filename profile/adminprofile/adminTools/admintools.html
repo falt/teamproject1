@@ -8,7 +8,8 @@
 	<link rel="stylesheet" href="../../../font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="createUser.css">
-	<link rel="stylesheet" href="editEvaluations.css">	
+	<link rel="stylesheet" href="editEvaluations.css">
+	<link rel="stylesheet" href="createCourse.css">
 	<meta charset="utf-8">
 </head>
 
@@ -17,16 +18,13 @@
 	<!-- HEADER AND NAV -->
 	<header>
 		<div class="logo">
-			<a href="../../teacherprofile/teacherprofile.html"><img src="../../studentprofile/KYH-logo.png" width="90"></a>
+			<a href="../../adminprofile/adminprofile.html"><img src="../../studentprofile/KYH-logo.png" alt="KYH-logo" width="90"></a>
 		</div>
 
 		<nav>
 			<ul>
 				<li>
-					<a href="../../teacherprofile/teacherprofile.html">Hem</a>
-				</li>
-				<li>
-					<a href "#">Mina kurser</a>
+					<a href="../../adminprofile/adminprofile.html">Hem</a>
 				</li>
 			</ul>
 		</nav>
@@ -52,7 +50,7 @@
 
 					<li>Skapa användare</li>
 					<li>Hantera utvärderingar</li>
-					<li>h1</li>
+					<li>Skapa kurser</li>
 					<li>h1</li>
 
 				</ul>
@@ -60,68 +58,55 @@
 
 
 
-		<article class="articleClass createUserArticle">
+			<article class="articleClass createUserArticle">
 
-			<div class="user-info">
-				<h1>Skapa ny användare</h1>
+				<div class="user-info">
 
-				<form>
+					<form>
 
-					<div>
-						Användartyp
-						<select name="" id="">
-							<option value="elev" name="usertype">Elev</option>
-							<option value="lärare" name="usertype">Lärare</option>
-							<option value="admin" name="usertype">Administratör</option>
-						</select>
+						<div class="first">
+							<h2>Skapa ny användare</h2>
+							<label>Användartyp</label>
+							<label>Förnamn</label>
+							<label>Efternamn</label>
+							<label>Användarnamn</label>
+							<label>Email</label>
+							<label>Lösenord</label>
+						</div>
 
-					</div>
+						<div class="second">
+							<select id="user-type-select">
+								<option value="elev">Elev</option>
+								<option value="lärare">Lärare</option>
+								<option value="admin">Administratör</option>
+							</select>
+							<input type="text" id="first-name" name="fname">
+							<input type="text" id="last-name" name="lname">
+							<input type="text" id="user-name" placeholder="Klicka här" name="username">
+							<input type="email" id="e-mail" value="@kyh.se" name="email">
+							<input type="text" id="pWordInput" name="password" contenteditable="false">
+							<input type="button" id="form-complete-Btn" value="Skapa">
+						</div>
 
-					<div>
-						Förnamn
-						<input type="textfield" id="first-name" name="fname">
-					</div>
+					</form>
+				</div>
 
-					<div>
-						Efternamn
-						<input type="textfield" id="last-name" name="lname">
-					</div>
-
-					<div>
-						Användarnamn
-						<input type="text" id="user-name" placeholder="Click to render" name="username">
-					</div>
-
-					<div>
-						Email
-						<input type="email" id="e-mail" value="@kyh.se" name="email">
-					</div>
-
-					<div>
-						Lösenord
-						<input type="text" id="pWordInput" name="password" contenteditable="false" value="hej"></input>
-					</div>
-
-					<input type="button" id="form-complete-Btn" value="Skapa"></input>
-				</form>
-			</div>
-
-		</article>
+			</article>
 
 		<article class="articleClass editEvaluationForms">
 
 			<div class="editEvaluationForms flex-col-center">
-				
+
 				<h1>Hantera utvärderingar</h1>
-		
+
 				<form>
 					<label for="className">Välj klass</label>
-					
+
 					<select>
 						<option>FE17</option>
-						<option>FE16</option>						
+						<option>FE16</option>
 					</select>
-					
+
 				</form>
 
 				<div class="existing-evaluations">
@@ -214,9 +199,40 @@
 
 		</article>
 
-	</article class="articleClass">
-			<!-- <h1></h1> -->
-		</article>
+		<article class="articleClass createCourseClass">
+
+				<div class="createCourse">
+
+					<h1>Skapa ny kurs</h1>
+					<form>
+
+						<h3>Kursnamn</h3>
+						<div id="courseDiv">
+							<input type="text" id="course-name">
+						</div>
+
+						<h3>Lärare</h3>
+						<div id="teacher-div">
+							<select id="mySelect"></select>
+							<input type="button" id="rerollBtn" value="?">
+						</div>
+
+						<h3>Kursplan</h3>
+						<div>
+							<textarea id="course-plan"></textarea>
+						</div>
+
+						<input type="button" id="sumbitBtn" value="Skapa">
+					</form>
+				</div>
+
+				<div class="createCourse hidden" id="show">
+					<h2>Skapade kurser</h2>
+					<div id="submitted-courses">
+					</div>
+				</div>
+
+			</article>
 
 		<article class="articleClass">
 			<!-- <h1></h1> -->
@@ -226,7 +242,7 @@
 			<!-- <h1></h1> -->
 		</article>
 
-	<section>
+	</section>
 	</main>
 
 	<footer>
@@ -237,6 +253,7 @@
 
 	<script src="editEvaluations.js"></script>
 	<script src="script.js"></script>
+	<script src="createCourse.js"></script>
 </body>
 
 </html>

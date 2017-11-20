@@ -1,33 +1,3 @@
-// const editEvalButtons = document.querySelectorAll('.evaluation .edit-button'); 
-// const editEvalInputFields = document.querySelectorAll('.evaluation input');
-// const evalPara = document.querySelectorAll('.evaluation p'); 
-
-// // Adds eventlistener to all edit-buttons
-// editEvalButtons.forEach(function(button, index){
-
-//     // When clicked, toggles hidden class for paragraph elements and input elements 
-//     button.addEventListener('click', function(event){
-       
-//         evalPara[index].className = "hidden"; 
-//         editEvalInputFields[index].className = "edit"; 
-//         editEvalButtons[index].classList.toggle('hidden'); 
-
-//         // Adds eventlistener to input-fields
-//         // If enter-button is pressed, sets corresponding paragraphs innerHTML to value of input-field
-//         // And toggles hidden class back 
-//         editEvalInputFields[index].addEventListener('keydown', function(e){
-//             if(e.key === "Enter" && e.target.value.length > 0) {
-//                 evalPara[index].innerHTML = e.target.value; 
-//                 evalPara[index].className = ""; 
-//                 editEvalInputFields[index].className = "edit hidden"; 
-//                 editEvalButtons[index].className = "edit-button fa fa-pencil";                  
-//             } else {
-//                 // Error message
-//             }
-//         })
-//     })
-// }); 
-
 editQuestionEvent(); 
 
 function editQuestionEvent() {
