@@ -24,7 +24,7 @@
   flex-direction: column;
   margin-top: 70.4px;
 }
-.second select, input{
+.second select, .second input{
   margin-top: 10px;
 }
 .user-info div{
