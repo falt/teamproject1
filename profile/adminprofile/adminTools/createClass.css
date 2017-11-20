@@ -22,11 +22,6 @@
     width: 45%;
     height: 1000px;
 }
-.createUserArticle{
-  flex-direction: column;
-  width: 95%;
-  height: 800px;
-}
 .user-info-class div{
   height: auto;
   margin-bottom: 20px;
