@@ -32,17 +32,17 @@ function editQuestionEvent() {
 
 }
 
-
-const evaluationHeadingBtns = document.querySelectorAll('.evaluation-heading i'); 
+const evaluationHeadingBtns = document.querySelectorAll('.evaluation-heading'); 
+const evaluationArrows = document.querySelectorAll('.evaluation-heading i'); 
 const evaluations = document.querySelectorAll('.evaluation'); 
 
 evaluationHeadingBtns.forEach(function(button, index){
     button.addEventListener('click', function(event){
         evaluations[index].classList.toggle('colapsed'); 
-        if(evaluationHeadingBtns[index].className == "fa fa-arrow-right") {
-            evaluationHeadingBtns[index].className = "fa fa-arrow-down"; 
+        if(evaluationArrows[index].className == "fa fa-arrow-right") {
+            evaluationArrows[index].className = "fa fa-arrow-down"; 
         } else {
-            evaluationHeadingBtns[index].className = "fa fa-arrow-right"; 
+            evaluationArrows[index].className = "fa fa-arrow-right"; 
         }
     })
 })
