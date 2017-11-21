@@ -22,3 +22,12 @@
     height: 300px;
     width: 300px;
 }
+
+@media (max-width: 800px) {
+  .evalQuestion {
+    height: auto;
+    width: auto;
+    margin-bottom: 50px;
+  }
+
+}
