@@ -12,18 +12,16 @@
 	<link rel="stylesheet" href="narvaro.css">
 
 	<link rel="stylesheet" href="courseEval.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
 	<meta charset="utf-8">
 </head>
 
 <body>
-
 	<!-- HEADER AND NAV -->
 	<header>
 		<div class="logo">
 			<a href="../../teacherprofile/teacherprofile.html"><img src="../../studentprofile/KYH-logo.png" width="90"></a>
 		</div>
-
 		<nav>
 			<ul>
 				<li>
@@ -34,17 +32,13 @@
 				</li>
 			</ul>
 		</nav>
-
 	</header>
 
 	<!-- MAIN CONTENT -->
 	<main>
 
-
-
 		<!-- MAIN SECTION -->
 		<section class="main-section">
-
 			<div class="courses-header">
 				<button class="goBackButton" onclick="goBack()">
 					<i class="fa fa-backward fa-3x"></i>
@@ -52,26 +46,14 @@
 				<h1>FE17</h1>
 				<p>Arbetsmetodik</p>
 			</div>
-
 			<div class="course-type-nav-bar-container">
 				<ul class="course-type-nav-bar">
-
-					<li>Start</li>
 					<li>Uppgifter</li>
 					<li>Kursutvärdering</li>
 					<li>Skapa gruppuppgift</li>
 					<li>Närvaro</li>
-
 				</ul>
 			</div>
-
-
-
-			<article class="articleClass">
-				<h1>Start</h1>
-
-			</article>
-
 			<article class="articleClass assignments-wrapper">
 
 				<div class="create-new-assignment" style="height: 70px;">
@@ -84,36 +66,25 @@
 							<label for="assignmentDetails">Uppgiftsbeskrivning</label>
 							<textarea id="assignmentDetails"></textarea>
 						</div>
-
-
 						<div class="grade-criteria-container">
 							<h3>Betygskriterier</h3>
-							<input id="gradeG" type="text" placeholder="För betyg G"/>
-							<input id="gradeVG" type="text" placeholder="För betyg VG"/>
+							<input id="gradeG" type="text" placeholder="För betyg G" />
+							<input id="gradeVG" type="text" placeholder="För betyg VG" />
 						</div>
 
-
-
-
-						<input id="createAssignmentBtn" type="button" value="Skapa"/>
+						<input id="createAssignmentBtn" type="button" value="Skapa" />
 					</form>
-
 				</div>
 
 				<!-- START ASSIGNMENT -->
 
 				<div class="assignments-section colapsed">
-
 					<div class="assignments-header">
 						<h1>
-							<i class="fa fa-arrow-right" aria-hidden="true"></i>
-							Arbetsmetodik och agila arbetsmetoder uppgift 1
-						</h1>
-
+							<i class="fa fa-arrow-right" aria-hidden="true"></i> Arbetsmetodik och agila arbetsmetoder uppgift 1</h1>
 						<div class="assignment-description">
 							<p>Skriv en kort uppsatts där du reflekterar över skillnader och likheter mellan att jobba agilt och med mer traditionella
 								arbetsmetoder. </p>
-
 							<ul>
 								<p>För betyg G:</p>
 								<li>Eleven redogör för skillnader mellan de olika arbetsmetoderna med visst handlag.</li>
@@ -121,69 +92,153 @@
 								<li>Eleven redogör för skillnader mellan de olika arbetsmetoderna med visst handlag.</li>
 							</ul>
 						</div>
-
-
 					</div>
-
 
 					<!-- PENDING ASSIGNMENTS (LEFT) -->
 
 					<div class="assignments-pending">
-
 						<h2>Ej betygsatta uppgifter</h2>
-
-
 						<div class="assignment">
-							<h2>Bror Schön</h2>
+							<h2 class="assignment-student-name">Bror Schön</h2>
+							<div class="assignment-student">
+								<span class="edit-grade hide">Redigera</span>
+								<p>Inlämnad 2017-09-29 19:33</p>
+								<p>Inlämning:
+									<span class="assignment-file">agila_arbetsmetoder.pdf</span>
+								</p>
+								<form>
+									<label for="grade">Betygsätt uppgift</label>
+									<select name="grade">
+										<option value="IG">IG</option>
+										<option value="G">G</option>
+										<option value="VG">VG</option>
+									</select>
+										<label for="assignment-comment">Kommentera uppgift</label>
+										<textarea required></textarea>
+										<input class="submit-grade" type="submit" value="Skicka" />
+									</form>
+								</div>
+							</div>
+						<div class="assignment">
+							<h2 class="assignment-student-name">Felicia Gottfridsson</h2>
+							<div class="assignment-student hide">
+								<span class="edit-grade hide">Redigera</span>
+								<p>Inlämnad 2017-09-29 19:33</p>
+								<p>Inlämning:
+									<span class="assignment-file">agila_arbetsmetoder.pdf</span>
+								</p>
+								<form>
+									<label for="grade">Betygsätt uppgift</label>
+									<select name="grade">
+										<option value="IG">IG</option>
+										<option value="G">G</option>
+										<option value="VG">VG</option>
+									</select>
+										<label for="assignment-comment">Kommentera uppgift</label>
+										<textarea required></textarea>
+										<input class="submit-grade" type="submit" value="Skicka" />
+									</form>
+								</div>
+							</div>
+						</div>	
+						<!-- END PENDING ASSIGNMENTS -->
 
-							<span class="edit-grade hide">Redigera</span>
+					<!-- DONE ASSIGNMENTS (RIGHT) -->
 
-							<p>Inlämnad 2017-09-29 19:33</p>
-							<p>Inlämning:
+					<div class="assignments-done">
+						<h2>Betygsatta uppgifter</h2>
+						<div class="assignment">
+							<h2 class="assignment-student-name">Adam Larsson</h2>
+							<div class="assignment-student hide">
+								<span class="edit-grade hide">Redigera</span>
+									<p>Inlämnad 2017-09-29 19:33</p>
+									<p>Inlämning:
 								<span class="assignment-file">agila_arbetsmetoder.pdf</span>
 							</p>
+								<form>
+									<label for="grade">Betygsätt uppgift</label>
+									<select name="grade">
+										<option value="IG">IG</option>
+										<option value="G">G</option>
+										<option value="VG">VG</option>
+									</select>
+										<label for="assignment-comment">Kommentera uppgift</label>
+										<textarea required></textarea>
+										<input class="submit-grade" type="submit" value="Skicka" />
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				<!-- START ASSIGNMENT -->
+				<div class="assignments-section colapsed">
+					<div class="assignments-header">
+						<h1>
+							<i class="fa fa-arrow-right" aria-hidden="true"></i> Arbetsmetodik och agila arbetsmetoder uppgift 2</h1>
+						<div class="assignment-description">
+							<p>Skriv en kort uppsatts där du reflekterar över skillnader och likheter mellan att jobba agilt och med mer traditionella
+								arbetsmetoder. </p>
+							<ul>
+								<p>För betyg G:</p>
+								<li>Eleven redogör för skillnader mellan de olika arbetsmetoderna med visst handlag.</li>
+								<p>För betyg VG:</p>
+								<li>Eleven redogör för skillnader mellan de olika arbetsmetoderna med visst handlag.</li>
+							</ul>
+						</div>
+					</div>
+					<!-- PENDING ASSIGNMENTS (LEFT) -->
 
-							<form>
+					<div class="assignments-pending">
+						<h2>Ej betygsatta uppgifter</h2>
+						<div class="assignment">
+							<h2 class="assignment-student-name">Bror Schön</h2>
+							<div class="assignment-student">
+								<span class="edit-grade hide">Redigera</span>
+								<p>Inlämnad 2017-09-29 19:33</p>
+								<p>Inlämning:
+									<span class="assignment-file">agila_arbetsmetoder.pdf</span>
+								</p>
+								<form>
 
-								<label for="grade">Betygsätt uppgift</label>
-								<select name="grade">
+									<label for="grade">Betygsätt uppgift</label>
+									<select name="grade">
 									<option value="IG">IG</option>
 									<option value="G">G</option>
 									<option value="VG">VG</option>
 								</select>
 
-								<label for="assignment-comment">Kommentera uppgift</label>
-								<textarea required></textarea>
-								<input class="submit-grade" type="submit" value="Skicka" />
-							</form>
-
+									<label for="assignment-comment">Kommentera uppgift</label>
+									<textarea required></textarea>
+									<input class="submit-grade" type="submit" value="Skicka" />
+								</form>
+							</div>
 						</div>
 
 
 						<div class="assignment">
-							<h2>Felicia Gottfridsson</h2>
+							<h2 class="assignment-student-name">Felicia Gottfridsson</h2>
+							<div class="assignment-student hide">
+								<span class="edit-grade hide">Redigera</span>
 
-							<span class="edit-grade hide">Redigera</span>
+								<p>Inlämnad 2017-09-29 19:33</p>
+								<p>Inlämning:
+									<span class="assignment-file">agila_arbetsmetoder.pdf</span>
+								</p>
 
-							<p>Inlämnad 2017-09-29 19:33</p>
-							<p>Inlämning:
-								<span class="assignment-file">agila_arbetsmetoder.pdf</span>
-							</p>
+								<form>
 
-							<form>
-
-								<label for="grade">Betygsätt uppgift</label>
-								<select name="grade">
+									<label for="grade">Betygsätt uppgift</label>
+									<select name="grade">
 									<option value="IG">IG</option>
 									<option value="G">G</option>
 									<option value="VG">VG</option>
 								</select>
 
-								<label for="assignment-comment">Kommentera uppgift</label>
-								<textarea required></textarea>
-								<input class="submit-grade" type="submit" value="Skicka" />
-							</form>
-
+									<label for="assignment-comment">Kommentera uppgift</label>
+									<textarea required></textarea>
+									<input class="submit-grade" type="submit" value="Skicka" />
+								</form>
+							</div>
 						</div>
 						<!-- END PENDING ASSIGNMENTS -->
 
@@ -195,170 +250,31 @@
 
 						<h2>Betygsatta uppgifter</h2>
 
-						<div class="assignment done-grade">
-							<h2>Adam Larsson</h2>
-
-							<span class="edit-grade hide">Redigera</span>
-
-							<p>Inlämnad 2017-09-30 23:00</p>
-							<p>Inlämning:
-								<span class="assignment-file">agila_arbetsmetoder.pdf</span>
-							</p>
-
-							<form>
-
-								<label for="grade">Betygsätt uppgift</label>
-								<select name="grade">
-									<option value="IG">IG</option>
-									<option value="G">G</option>
-									<option value="VG">VG</option>
-								</select>
-
-								<label for="assignment-comment">Kommentera uppgift</label>
-								<textarea required></textarea>
-								<input class="submit-grade" type="submit" value="Skicka" />
-							</form>
-
-						</div>
-
-
-
-					</div>
-					<!-- END DONE ASSIGNMENTS -->
-				</div>
-				<!-- END ASSIGNMENT -->
-
-
-				<!-- START ASSIGNMENT -->
-				<div class="assignments-section colapsed">
-
-					<div class="assignments-header">
-						<h1>
-							<i class="fa fa-arrow-right" aria-hidden="true"></i>
-							Arbetsmetodik och agila arbetsmetoder uppgift 2</h1>
-
-						<div class="assignment-description">
-							<p>Skriv en kort uppsatts där du reflekterar över skillnader och likheter mellan att jobba agilt och med mer traditionella
-								arbetsmetoder. </p>
-
-							<ul>
-								<p>För betyg G:</p>
-								<li>Eleven redogör för skillnader mellan de olika arbetsmetoderna med visst handlag.</li>
-								<p>För betyg VG:</p>
-								<li>Eleven redogör för skillnader mellan de olika arbetsmetoderna med visst handlag.</li>
-							</ul>
-						</div>
-
-					</div>
-
-
-					<!-- PENDING ASSIGNMENTS (LEFT) -->
-
-					<div class="assignments-pending">
-
-						<h2>Ej betygsatta uppgifter</h2>
-
-
 						<div class="assignment">
-							<h2>Bror Schön</h2>
-
-							<span class="edit-grade hide">Redigera</span>
-
-							<p>Inlämnad 2017-09-29 19:33</p>
-							<p>Inlämning:
-								<span class="assignment-file">agila_arbetsmetoder.pdf</span>
-							</p>
-
-							<form>
-
-								<label for="grade">Betygsätt uppgift</label>
-								<select name="grade">
+							<h2 class="assignment-student-name">Eva Adamsson</h2>
+							<div class="assignment-student hide">
+								<span class="edit-grade hide">Redigera</span>
+								<p>Inlämnad 2017-09-29 19:33</p>
+								<p>Inlämning:
+									<span class="assignment-file">agila_arbetsmetoder.pdf</span>
+								</p>
+								<form>
+									<label for="grade">Betygsätt uppgift</label>
+									<select name="grade">
 									<option value="IG">IG</option>
 									<option value="G">G</option>
 									<option value="VG">VG</option>
 								</select>
-
-								<label for="assignment-comment">Kommentera uppgift</label>
-								<textarea required></textarea>
-								<input class="submit-grade" type="submit" value="Skicka" />
-							</form>
-
+									<label for="assignment-comment">Kommentera uppgift</label>
+									<textarea required></textarea>
+									<input class="submit-grade" type="submit" value="Skicka" />
+								</form>
+							</div>
 						</div>
-
-
-						<div class="assignment">
-							<h2>Felicia Gottfridsson</h2>
-
-							<span class="edit-grade hide">Redigera</span>
-
-							<p>Inlämnad 2017-09-29 19:33</p>
-							<p>Inlämning:
-								<span class="assignment-file">agila_arbetsmetoder.pdf</span>
-							</p>
-
-							<form>
-
-								<label for="grade">Betygsätt uppgift</label>
-								<select name="grade">
-									<option value="IG">IG</option>
-									<option value="G">G</option>
-									<option value="VG">VG</option>
-								</select>
-
-								<label for="assignment-comment">Kommentera uppgift</label>
-								<textarea required></textarea>
-								<input class="submit-grade" type="submit" value="Skicka" />
-							</form>
-
-						</div>
-						<!-- END PENDING ASSIGNMENTS -->
-
 					</div>
-
-					<!-- DONE ASSIGNMENTS (RIGHT) -->
-
-					<div class="assignments-done">
-
-						<h2>Betygsatta uppgifter</h2>
-
-						<div class="assignment done-grade">
-							<h2>Eva Adamsson</h2>
-
-							<span class="edit-grade hide">Redigera</span>
-
-							<p>Inlämnad 2017-09-29 19:33</p>
-							<p>Inlämning:
-								<span class="assignment-file">agila_arbetsmetoder.pdf</span>
-							</p>
-
-							<form>
-
-								<label for="grade">Betygsätt uppgift</label>
-
-								<select name="grade">
-
-									<option value="IG">IG</option>
-									<option value="G">G</option>
-									<option value="VG">VG</option>
-
-								</select>
-
-								<label for="assignment-comment">Kommentera uppgift</label>
-								<textarea required></textarea>
-								<input class="submit-grade" type="submit" value="Skicka" />
-							</form>
-
-						</div>
-
-					</div>
-					<!-- END DONE ASSIGNMENTS -->
-
 				</div>
-
-				<!-- END ASSIGNMENT -->
-
-
 			</article>
+		<!-- END DONE ASSIGNMENTS -->
 
 		<!--- COURSE EVAL -->
 		<article class="articleClass evaluations">
@@ -413,10 +329,51 @@
 		</article>
 		<!--- END COURSE EVAL -->
 
-			<article class="articleClass students">
+			<!--- COURSE EVAL -->
+			<article class="articleClass evaluations">
+				<h1>Kursutvärdering</h1>
+				<div class="courseEval">
+					<div class="evalQuestion">
+						<h3>Vad tyckte du om kursen i allmänhet?</h3>
+						<canvas id="firstChart" max-width="300" max-height="300"></canvas>
+					</div>
+					<div class="evalQuestion">
+						<h3>Hur var kvalitén på kurslitteraturen?</h3>
+						<canvas id="secondChart" max-width="300" max-height="300"></canvas>
+					</div>
+					<div class="evalQuestion">
+						<h3>Vad ger du förläsningarna för betyg?</h3>
+						<canvas id="thirdChart" max-width="300" max-height="300"></canvas>
+					</div>
+					<div class="evalQuestion">
+						<h3>Fick du tillräckligt med hjälp av lärarna?</h3>
+						<canvas id="fourthChart" max-width="300" max-height="300"></canvas>
+					</div>
+					<div class="evalQuestion">
+						<h3>Övriga kommentarer:</h3>
+						<ul>
+							<li>
+								<p>Superbra kurs!</p>
+							</li>
+							<li>
+								<p>Bästa kursen ever</p>
+							</li>
+							<li>
+								<p>Läraren är så bra i tv</p>
+							</li>
+							<li>
+								<p>Bästa kursen</p>
+							</li>
+							<li>
+								<p>Bra</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</article>
+			<!--- END COURSE EVAL -->
 
 				<!-- <div class="students"> -->
-
 					<div class="menu-container">
 
 						<div class="divide-groups-info-container">
