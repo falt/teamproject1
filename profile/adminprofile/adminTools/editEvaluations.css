@@ -29,7 +29,7 @@
 }
 
 .colapsed {
-    height: 25px; 
+    height: 23px; 
 }
 
 .expanded {
@@ -98,7 +98,12 @@
     transition: all 1s ease; 
 }
 
-.evaluation .question i {
+.evaluation .question .remove-button {
+    margin: 0 10px 0 0; 
+    cursor: pointer; 
+}
+
+.evaluation .question .edit-button {
     margin: 0 0 0 10px; 
     cursor: pointer; 
 }
@@ -117,5 +122,6 @@
 }
 
 .create-new-evaluation input {
-    position: static; 
+    width: 200px;
+    margin: 10px 0;
 }
