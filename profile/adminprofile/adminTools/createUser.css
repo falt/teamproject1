@@ -1,18 +1,40 @@
 .createUserArticle{
-  flex-direction: column;
   width: 95%;
   height: 800px;
+}
+.createUserArticle form{
+  display: flex;
+  flex-direction: row;
+}
+.user-info{
+  display: flex;
+  flex-direction: row;
+}
+
+.first{
+  display: flex;
+  flex-direction: column;
+}
+.first label{
+  margin-top: 12px;
+  font-weight: bold;
+}
+.second{
+  display: flex;
+  flex-direction: column;
+  margin-top: 70.4px;
+}
+.second select, .second input{
+  margin-top: 10px;
 }
 .user-info div{
   height: auto;
   margin-bottom: 20px;
 }
-input, select{
-  position: absolute;
-  left: 200px;
+.user-info input, select{
   width: 150px;
 }
-.user-info h1{
+.user-info h2{
   font-size: 25px;
   color: #EA6D2C;
   margin-top: 20px;
@@ -26,11 +48,11 @@ input, select{
   background-color: #EA6D2C;
   color: white;
   font-size: 15px;
-  position: absolute;
-  left: 200px;
   text-align: center;
 }
-
+#e-mail{
+  width: 225px;
+}
 @media (max-width: 500px){
 
 }
