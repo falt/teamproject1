@@ -1,0 +1,39 @@
+.att{
+    display: none;
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+}
+
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    border-color: grey;
+
+}
+th, td {
+    padding: 2px;
+    text-align: left;
+
+}
+table {
+    width: 60%;
+    background-color: #fff;
+
+}
+
+.yes{
+  background-color: #11f94f;
+}
+
+.no{
+  background-color: #ff3b00;
+}
+
+.narvaro-schema{
+  width: 90%;
+  display: flex;
+  margin-top: 10px;
+
+
+}

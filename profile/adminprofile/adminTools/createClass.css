@@ -1,0 +1,71 @@
+.createClassWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90vw;
+    height: 1200px;
+}
+
+.createClassInput{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 1000px;
+}
+.createClassInputPlacement {
+    padding-bottom: 50px;
+
+}
+.createClassReady{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 1000px;
+}
+.user-info-class div{
+  height: auto;
+  margin-bottom: 20px;
+}
+.createClassInputPlacement input, .createClassInputPlacement  select{
+  position: absolute;
+  left: 200px;
+  width: 150px;
+} 
+.user-info-class h1{
+  font-size: 25px;
+  color: #EA6D2C;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.user-info-class input[type=button] {
+  height: 50px;
+  width: 100px;
+  border: 0px;
+  border-radius: 5px;
+  background-color: #EA6D2C;
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  left: 200px;
+  text-align: center;
+}
+.newStudent{
+    /* background-color: lightskyblue; */
+    width: 450px;
+    border-radius: 3px;
+    border: solid 1px lightgrey;
+    padding: 10px;
+}
+
+.studentName{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+
+
+
+@media (max-width: 500px){
+
+}
+

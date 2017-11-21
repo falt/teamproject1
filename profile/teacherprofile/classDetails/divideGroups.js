@@ -1,95 +1,58 @@
-const dropzone = document.querySelectorAll(".grid"); 
-const droppables = document.querySelectorAll(".class-list ul li"); 
-
-let selected; 
-
-dropzone.forEach(function(grid){
-
-    // Allows drop
-    grid.ondragover = function(event) {
-
-        return false; 
-    }
-
-    grid.ondrop = function(event) {
-
-        event.preventDefault(); 
-
-        const DROP_ZONE = event.target; 
-
-        console.log(event.target.children); 
-
-        console.dir(DROP_ZONE); 
-
-        if(DROP_ZONE.nodeName == "UL") {
-            DROP_ZONE.appendChild(selected);
-        }
-        
-
-    }
-
-})
-
-droppables.forEach(function(droppable, index){
-    droppable.addEventListener('mousedown', function(event) {
-       
-        selected = event.target;
-        
-        console.log(selected); 
-    })
-})
-
+// DOM Elements
 let classList = document.querySelectorAll(".class-list ul li");
 let divideGroupsBtn = document.querySelector("#divide-groups-btn"); 
 const assignmentName = document.querySelector(".assignment-header h1"); 
 const assignmentNameInput = document.querySelector("#assignment-name"); 
 const amountOfGroups = document.querySelector("#amount-of-groups"); 
 
+// Eventlistener for dividegroups-button 
 divideGroupsBtn.addEventListener('click', function(event){
+    
     addGroupsToDOM(); 
-
-    console.log(amountOfGroups[amountOfGroups.options.selectedIndex].innerHTML); 
 
     divideGroupsBtn.innerHTML = "Slumpa grupper igen";
     document.querySelector(".class-list").style.display = "none"; 
 
     document.querySelector(".container").className = "container"; 
     assignmentName.innerHTML = assignmentNameInput.value; 
-    
-    dropzone.forEach(function(grid, index){
-        grid.className = 'grid';
-        document.querySelectorAll(".grid h2")[index].innerHTML = `Grupp ${(index + 1)}`;      
-    })
+
 }); 
 
 // Creates array that holds arrays for groups 
 function createArray(noOfGroups) {
 
-    let arrayHolder = []; 
+    // Checks if input is NaN and that each group has at least two students 
+    if(isNaN(noOfGroups)) {
+        amountOfGroups.value = "Ange ett nummer"; 
+        throw "error: 'Not a number'"; 
+    } else if (noOfGroups > (classList.length / 2)) {
+        amountOfGroups.value = "Antal grupper måste vara större än antal elever / 2.";
+        throw "error: 'Too many groups'"; 
+    } else {
 
-    for(let i = 0; i < noOfGroups; i++) {
+        let arrayHolder = []; 
 
-        arrayHolder.push(new Array()); 
+        for(let i = 0; i < noOfGroups; i++) {
 
+            arrayHolder.push(new Array()); 
+
+        }
+
+        return arrayHolder; 
     }
-
-    return arrayHolder; 
 }
 
 
 // Adds students to array that holds groups
 function divideGroups(names) {
 
-    // Sets amount of groups to 5 // PARAMETER GLOBAL VARIABLE, change at later stage
-    let groupHolder = createArray(amountOfGroups[amountOfGroups.options.selectedIndex].innerHTML); 
-
-    //console.log(groupHolder); 
+    // Creates array that holds X amount of arrays for groups 
+    let groupHolder = createArray(amountOfGroups.value); 
 
     let arrayCounter = 0;
 
+    // Divides into groups 
     for(let i = 0; i < names.length; i++) {
-
-        //console.log(arrayCounter);         
 
         if(i % 2 === 0) {
             if(arrayCounter > groupHolder.length - 1){
@@ -118,35 +81,60 @@ function divideGroups(names) {
 
 let groups = document.querySelectorAll(".grid ul"); 
 
-// Adds lis with students to DOM
+// Adds li's with students to DOM
 function addGroupsToDOM(){
+
+    // Throws error if no input value
+    if(!amountOfGroups.value) {
+        throw "error: 'Empty input field."; 
+    }
+
+    // Displays helper-message paragraph when clicked 
+    document.querySelector(".divide-groups-info-container p").className = ""; 
+
+    // Clears the assignmnets group-section
+    document.querySelector(".assignment-groups").innerHTML = ""; 
 
     // Global variable
     classList = shuffle(classList);
 
+    // Creates X amount of groups 
     let Lis = divideGroups(classList); 
 
-    // console.log(Lis); 
-
+    // Loops through group array and creates container elements for them
     for(let i = 0; i < Lis.length; i++) {
 
-        for(let j = 0; j < Lis[i].length; j++) {
-            //console.log(Lis[i][j]);
+        let grid = document.createElement("div"); 
+        grid.className = "grid"; 
 
-            groups[i].appendChild(Lis[i][j]); 
+        let groupHeading = document.createElement("h2"); 
+        groupHeading.innerHTML = "Grupp " + (i + 1); 
+
+        let groupUl = document.createElement("ul"); 
+
+        grid.appendChild(groupHeading); 
+        grid.appendChild(groupUl); 
+
+        document.querySelector(".assignment-groups").appendChild(grid); 
+        
+        // APPENDS ELEMENTS TO DOM
+        for(let j = 0; j < Lis[i].length; j++) {
+            groupUl.appendChild(Lis[i][j]); 
         }
 
     }
 
+    // Activates drag and drop function 
+    let dragNdrop = dragAndDropHandler();
+    dragNdrop(); 
+
 }
 
 
-// Shuffles classlist 
+// Returns shuffled classlist array
 function shuffle(list) {
 
     let temp; 
-
-    // console.log(list.length); 
 
     for(let i = 0; i < list.length; i++) {
         let rand = Math.floor(Math.random() * i);
@@ -161,3 +149,49 @@ function shuffle(list) {
 
 }
 
+// Returns function that activates drag and drop-functionality
+function dragAndDropHandler() {
+
+    return function() {
+
+        // Drop zone and dropable elements
+        const dropzone = document.querySelectorAll(".grid"); 
+        const droppables = document.querySelectorAll(".grid ul li"); 
+
+        // Selected element to drag / drop initialized as empty 
+        let selected; 
+        
+        // Applies drag and drop-functionality on all elements with 'grid'-class
+        dropzone.forEach(function(grid){
+
+            // Allows drop
+            grid.ondragover = function(event) {
+
+                return false; 
+            }
+
+            // Appends the dropped element to the target if target == UL-element
+            grid.ondrop = function(event) {
+
+                event.preventDefault(); 
+
+                const DROP_ZONE = event.target; 
+
+                if(DROP_ZONE.nodeName == "UL") {
+                    DROP_ZONE.appendChild(selected);
+                }
+            }
+
+        })
+
+        // Applies eventlistener for for all dropabble elements and listens for mousedown-event
+        droppables.forEach(function(droppable, index){
+            droppable.addEventListener('mousedown', function(event) {
+                
+                // Assigns the drop-target to selected-variable
+                selected = event.target;
+                
+            })
+        })
+    }
+}
