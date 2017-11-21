@@ -72,33 +72,14 @@ main {
     justify-content: center;
     margin: 50px 0 0 0;
     background-color: rgb(242, 242, 242);
-}
-
-main .course-section {
-    width: 80%;
-    background: white;
-    margin: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    border-radius: 5px;
-    border:1px solid #d6d6d6;
-    /*overflow: scroll;*/
-}
-
-main .course-section .Utvärdering{
-  margin-top: 30px;
-  height: 60px;
-  width: 300px;
-
 
 }
-main .course-section .Utvärdering h3{
-  font-size: 25px;
-  margin: 10px 0;
-  color: #dd6925;
 
-}
+
+
+
+
+
 
 footer {
     border-top: solid 1px;
@@ -112,18 +93,63 @@ footer {
     background: #fff;
 }
 
-.EvChart{
-  margin-left: -1060px;
-  margin-top: 150px;
+.wrapper{
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  width: 90%;
+  height: 600px;
+  border-radius: 10px;
+  background-color: #fff;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  padding: 20px 20px 20px 20px;
+
+}
+
+h3{
+  color: #ff8000;
+  font-size: 30px;
+  margin-top: -500px;
+  width: 300px;
+  height: 60px;
+  margin-right: -450px;
+  margin-left: -5px;
+}
+
+
+
+
+
+.wrapper .chart-container{
   width: 300px;
   height: 300px;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-
 }
 
+.wrapper .fa-smile-o {
+
+  color: green;
+}
+
+.wrapper .fa-meh-o{
+  color: yellow;
+}
+
+.wrapper .fa-frown-o{
+  color: red;
+}
+
+.face{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 60px;
+
+}
 
 
 
