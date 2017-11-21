@@ -189,10 +189,3 @@ createNewAssignmentform.createAssignmentBtn.addEventListener('click',function(){
   })
   
 })
-
-const headers = document.querySelectorAll('.assignment-student-name')
-headers.forEach( header => {
-  header.addEventListener('click', (e) => {
-    e.target.nextElementSibling.classList.toggle('hide')
-  })
-})

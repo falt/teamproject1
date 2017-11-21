@@ -92,15 +92,8 @@
 .assignments-pending, .assignments-done {
 	margin: 20px 0; 
 }
-.assignments-header {
-	display: flex;
-	flex-direction: column;
-}
 
 .assignment .edit-grade:hover {
-	cursor: pointer;
-}
-.assignment h2 {
 	cursor: pointer;
 }
 
@@ -175,6 +168,7 @@
 
 .done-grade {
 	height: 40px; 
+	background:; 
 	overflow: hidden; 
 	transform: all 1s ease; 
 }
