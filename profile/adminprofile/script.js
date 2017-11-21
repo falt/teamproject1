@@ -1,4 +1,6 @@
-document.getElementById("btn").onclick = function() {genid()};
+document.getElementById("btn").onclick = function () {
+  genid()
+};
 
 function genid() {
   var text = "";
@@ -6,8 +8,7 @@ function genid() {
 
   for (var i = 0; i < 8; i++)
     text += alfabet.charAt(Math.floor(Math.random() * alfabet.length));
-    document.getElementById('show').value = text;
+  document.getElementById('show').value = text;
 
   return text;
 }
-  
