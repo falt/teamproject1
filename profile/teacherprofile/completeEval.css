@@ -99,7 +99,8 @@ footer {
   display: flex;
   width: 90%;
   height: 600px;
-  border-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   background-color: #fff;
   flex-direction: row;
   justify-content: space-around;
@@ -150,6 +151,8 @@ h3{
   margin-top: 60px;
 
 }
+
+
 
 
 

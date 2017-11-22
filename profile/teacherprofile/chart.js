@@ -37,7 +37,7 @@ new Chart(document.getElementById("chart2"), {
   data: {
     labels: [1,2,3,4,5,6,7,8,9,10],
     datasets: [{
-        data: [0,0,-35,0,25,10,30,15,20,50],
+        data: [0,-10,-35,0,5,25,30,15,20,50],
         label: "Mood för FE17",
         borderColor: "#ff8000",
         fill: false
@@ -48,7 +48,7 @@ new Chart(document.getElementById("chart2"), {
   options: {
     title: {
       display: true,
-      text: 'Veckoutvärdering'
+      text: 'Veckoutvärdering: Hur upplever du just nu tempot i utbildningen?'
     },
       scales: {
           yAxes: [{
@@ -71,7 +71,7 @@ new Chart(document.getElementById("chart3"), {
   data: {
     labels: [1,2,3,4,5,6,7,8,9,10],
     datasets: [{
-        data: [0,0,-35,0,25,10,30,15,20,50],
+        data: [0,0,30,0,-25,10,40,15,20,50],
         label: "Mood för FE17",
         borderColor: "#ff8000",
         fill: false
@@ -82,7 +82,7 @@ new Chart(document.getElementById("chart3"), {
   options: {
     title: {
       display: true,
-      text: 'Månadsutvärdering'
+      text: 'Veckoutvärdering: Hur engagerad anser du själv att du är i dina studier?'
     },
       scales: {
           yAxes: [{
