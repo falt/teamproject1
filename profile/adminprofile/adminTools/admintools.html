@@ -102,106 +102,105 @@
 			<article class="articleClass editEvaluationForms">
 
 				<div class="editEvaluationForms flex-col-center">
-
-					<h1>Hantera utvärderingar</h1>
-
-					<form>
-						<label for="className">Välj klass</label>
-
-						<select>
-							<option>FE17</option>
-							<option>FE16</option>
-						</select>
-
-					</form>
-
-					<div class="existing-evaluations">
-						<h2>Befintliga utvärderingar</h2>
-
-						<div class="evaluation colapsed">
-
-							<div class="evaluation-heading flex-row-center">
-								<i class="fa fa-arrow-right" aria-hidden="true"></i>
-								<h3>Kursutvärdering</h3>
+		
+						<h1>Hantera utvärderingar</h1>
+		
+						<form>
+							<label for="className">Välj klass</label>
+		
+							<select>
+								<option>FE17</option>
+								<option>FE16</option>
+							</select>
+		
+						</form>
+		
+						<div class="existing-evaluations">
+							<h2>Utvärderingar</h2>
+							
+							<div class="evaluation colapsed">
+		
+								<div class="evaluation-heading flex-row-center">
+									<i class="fa fa-arrow-right" aria-hidden="true"></i>
+									<h3>Kursutvärdering</h3>
+								</div>
+		
+								<div class="questions">
+									<div class="question">
+										<i class="remove-button fa fa-trash" aria-hidden="true"></i>									
+										<p>Vad tyckte du om kursen i allmänhet?</p>
+										<input class="edit hidden" type="text">
+										<i class="edit-button fa fa-pencil" aria-hidden="true"></i>							
+									</div>	
+									
+									<div class="question">
+										<i class="remove-button fa fa-trash" aria-hidden="true"></i>																		
+										<p>Hur var kvalitén på kurslitteraturen?</p>
+										<input class="edit hidden" type="text">
+										<i class="edit-button fa fa-pencil" aria-hidden="true"></i>							
+									</div>	
+									
+									<div class="question">
+										<i class="remove-button fa fa-trash" aria-hidden="true"></i>										
+										<p>Vad ger du förläsningarna för betyg?</p>
+										<input class="edit hidden" type="text">
+										<i class="edit-button fa fa-pencil" aria-hidden="true"></i>							
+									</div>	
+		
+									<div class="question">
+										<i class="remove-button fa fa-trash" aria-hidden="true"></i>																		
+										<p>Fick du tillräckligt med hjälp av lärarna?</p>
+										<input class="edit hidden" type="text">
+										<i class="edit-button fa fa-pencil" aria-hidden="true"></i>							
+									</div>
+								</div>
+								
+								<div class="add-question flex-row-center">
+									<p>Lägg till fråga</p>
+								</div>
+		
 							</div>
-
-							<div class="questions">
-								<div class="question">
-									<p>Vad tyckte du om kursen i allmänhet?</p>
-									<input class="edit hidden" type="text">
-									<i class="edit-button fa fa-pencil" aria-hidden="true"></i>
+			
+							<div class="evaluation colapsed">
+								<div class="evaluation-heading flex-row-center">
+									<i class="fa fa-arrow-right" aria-hidden="true"></i>
+									<h3>Daglig utvärdering</h3>
 								</div>
-
-								<div class="question">
-									<p>Hur var kvalitén på kurslitteraturen?</p>
-									<input class="edit hidden" type="text">
-									<i class="edit-button fa fa-pencil" aria-hidden="true"></i>
+								<div class="questions">
+		
+									<div class="question">
+										<i class="remove-button fa fa-trash" aria-hidden="true"></i>																		
+										<p>Hur mår du idag?</p>
+										<input class="edit hidden" type="text">
+										<i class="edit-button fa fa-pencil" aria-hidden="true"></i>							
+									</div>
+		
 								</div>
-
-								<div class="question">
-									<p>Vad ger du förläsningarna för betyg?</p>
-									<input class="edit hidden" type="text">
-									<i class="edit-button fa fa-pencil" aria-hidden="true"></i>
-								</div>
-
-								<div class="question">
-									<p>Fick du tillräckligt med hjälp av lärarna?</p>
-									<input class="edit hidden" type="text">
-									<i class="edit-button fa fa-pencil" aria-hidden="true"></i>
+								
+								
+								<div class="add-question flex-row-center">
+									<p>Lägg till fråga</p>
 								</div>
 							</div>
-
+		
+		
+		
+						</div>
+		
+						<div class="create-new-evaluation flex-col">
+							<h2>Skapa ny utvärdering</h2>
+							
+							<label for="eval-name">Namn på utvärdering</label>
+							<input id="eval-name" type="text" />
+		
 							<div class="add-question flex-row-center">
-								<p>Lägg till fråga</p>
-							</div>
-
-						</div>
-
-						<div class="evaluation colapsed">
-							<div class="evaluation-heading flex-row-center">
-								<i class="fa fa-arrow-right" aria-hidden="true"></i>
-								<h3>Daglig utvärdering</h3>
-							</div>
-							<div class="questions">
-
-								<div class="question">
-									<p>Hur mår du idag?</p>
-									<input class="edit hidden" type="text">
-									<i class="edit-button fa fa-pencil" aria-hidden="true"></i>
-								</div>
-
-							</div>
-
-
-							<div class="add-question flex-row-center">
-								<p>Lägg till fråga</p>
+								<button>Skapa ny utvärdering</button>
 							</div>
 						</div>
-
-
-
+		
+		
+		
 					</div>
-
-					<div class="create-new-evaluation flex-col">
-						<h2>Skapa ny utvärdering</h2>
-
-						<label for="eval-name">Namn på utvärdering</label>
-						<input id="eval-name" type="text" />
-
-						<label>Fråga 1</label>
-						<input type="text" />
-
-						<label>Fråga 2</label>
-						<input type="text" />
-
-						<div class="add-question flex-row-center">
-							<p>Lägg till fråga</p>
-						</div>
-					</div>
-
-
-
-				</div>
 
 			</article>
 
