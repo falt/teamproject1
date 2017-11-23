@@ -31,7 +31,7 @@
   left: 200px;
   width: 150px;
 } 
-.user-info-class h1{
+.user-info-class h1, #classNameH1{
   font-size: 25px;
   color: #EA6D2C;
   margin-top: 20px;
