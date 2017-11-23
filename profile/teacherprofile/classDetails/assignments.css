@@ -61,6 +61,9 @@
 .assignments-header h1 {
 	cursor: pointer; 
 }
+.assignment-student-name {
+	cursor: pointer;
+}
 
 .assignment-description {
 	width: 55%; 
