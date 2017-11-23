@@ -19,7 +19,7 @@ var lNamesArray = [
     'Roberts'
 ];
 
-document.getElementById('rerollBtn').addEventListener('click', function(){
+window.onload = function(){
 
   /*Function call*/
   clearList();
@@ -55,7 +55,7 @@ document.getElementById('rerollBtn').addEventListener('click', function(){
     }
     else{return}
   };
-});
+};
 
 document.getElementById('sumbitBtn').addEventListener('click', function(){
   var newDiv = document.createElement('div');
