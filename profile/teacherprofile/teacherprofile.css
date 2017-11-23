@@ -45,7 +45,7 @@ body {
 }
 
 .headerPlus h1 {
-	margin: 0 0 0 30px; 
+	margin: 0 0 0 30px;
 }
 
 .fa-trash {
@@ -161,7 +161,7 @@ ul {
 	background: #fff;
 	border-radius: 7px;
 	margin: 29px 0;
-	
+
 }
 
 .aside-content-box h1 {
@@ -341,21 +341,47 @@ footer {
 /* MEDIA QUERYS FOR SMALL SCREENS AND DEVICES */
 
 @media (max-width: 900px) {
+
 	main {
 		flex-direction: column;
 		height: 100%;
+		margin-top: 80px;
 	}
-
+	.main-section .course-type-nav-bar{
+		flex-direction: column;
+		margin-left: 0px;
+	}
+	.main-section .course-type-nav-bar li{
+		margin: 0px;
+		margin-top: 5px;
+	}
+	ul.course-type-nav-bar li:last-child{
+		margin-bottom: 20px;
+	}
 	.aside-section {
-		width: 100%; 
+		width: auto;
+		margin: 0 10px;
 	}
-
 	.main-section {
 		order: 3;
-		width: 100%;
 		flex-grow: 3;
 		height: 100%;
 		overflow: initial;
-		margin: 0;
+		margin: 10px;
+	}
+	header {
+		height: 90px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		transition: all 0.3s ease;
+	}
+
+	header .logo img {
+			width: 100px;
+			margin: 0;
+			transition: all 1s ease;
+			margin-top: 25px;
+			margin-left: -5px;
 	}
 }

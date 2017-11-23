@@ -1,35 +1,35 @@
 .assignments-wrapper {
-	flex-direction: column; 
+	flex-direction: column;
 }
 
 .articleClass .assignments-section {
-	display: flex; 
-	flex-direction: row; 
-	justify-content: space-between; 
-	flex-wrap: wrap; 
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
 	padding: 0 0 0 10px;
-	margin: 10px 0 25px 0;	
+	margin: 10px 0 25px 0;
 }
 
 .create-new-assignment-button {
-	height: 70px; 
-	width: 100%; 
-	display: flex; 
-	align-items: center; 
+	height: 70px;
+	width: 100%;
+	display: flex;
+	align-items: center;
 }
 
 .create-new-assignment-button i {
-	cursor: pointer; 
-	margin: 0 10px 0 0; 
+	cursor: pointer;
+	margin: 0 10px 0 0;
 }
 
 .create-new-assignment {
 	width: 55%;
-	overflow: hidden; 
+	overflow: hidden;
 }
 
 .assignment-details-container {
-	display: flex; 
+	display: flex;
 	flex-direction: column;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .create-new-assignment form input {
-	margin: 10px 0; 
+	margin: 10px 0;
 	margin: 10px 0;
 	height: 30px;
 	padding: 10px;
@@ -59,21 +59,21 @@
 }
 
 .assignments-header h1 {
-	cursor: pointer; 
+	cursor: pointer;
 }
 
 .assignment-description {
-	width: 55%; 
-	margin: 25px 0; 
+	width: 55%;
+	margin: 25px 0;
 }
 
 .assignment-description ul {
-	margin: 20px 0; 
+	margin: 20px 0;
 }
 
 .assignment-description ul li{
-	list-style: disc; 
-	margin: 0 20px; 
+	list-style: disc;
+	margin: 0 20px;
 }
 
 .colapsed {
@@ -84,13 +84,13 @@
 }
 
 .assignment .edit-grade {
-	position: relative; 
-	top: -30px; 
-	right: -380px; 
+	position: relative;
+	top: -30px;
+	right: -380px;
 }
 
 .assignments-pending, .assignments-done {
-	margin: 20px 0; 
+	margin: 20px 0;
 }
 
 .assignment .edit-grade:hover {
@@ -98,77 +98,98 @@
 }
 
 .hide {
-	display: none; 
+	display: none;
 }
 
 .show {
-	display: block; 
+	display: block;
 }
 
 .articleClass .assignments-section .assignment {
-	display: flex; 
-	flex-direction: column; 
-	border: 1px solid lightgray; 
-	border-radius: 5px; 
-	padding: 10px; 
-	margin: 0px 10px 10px 0; 
-	width: 450px; 
+	display: flex;
+	flex-direction: column;
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 0px 10px 10px 0;
+	width: 450px;
 
 }
 
 .assignment  .assignment-file {
-	color: gray; 
-	font-style: italic; 
-	font-size: 15px; 
+	color: gray;
+	font-style: italic;
+	font-size: 15px;
 }
 
 .assignment .assignment-file:hover {
-	cursor: pointer; 
-	text-decoration: underline; 
+	cursor: pointer;
+	text-decoration: underline;
 }
 
 .assignment form {
-	display: flex; 
-	flex-direction: column; 
-	margin: 20px 0 0 0; 
+	display: flex;
+	flex-direction: column;
+	margin: 20px 0 0 0;
 }
 
 .assignment form select {
-	width: 100px; 
+	width: 100px;
 }
 
 .assignment label {
-	margin: 10px 0 5px 0; 
+	margin: 10px 0 5px 0;
 }
 
 .assignment form input[type="submit"] {
-	width: 100px; 
-	margin: 10px 0; 
+	width: 100px;
+	margin: 10px 0;
 }
 
 .articleClass h1 {
-	font-size: 25px; 
-	margin: 10px 0; 
-	color: #dd6925; 
+	font-size: 25px;
+	margin: 10px 0;
+	color: #dd6925;
 }
 
 .articleClass h2 {
-	font-size: 20px; 
+	font-size: 20px;
 	margin: 10px 0;
 }
 
 .articleClass p {
-	margin: 10px 0; 
+	margin: 10px 0;
 }
 
 .articleClass textarea {
-	height: 100px; 
-	margin: 5px 0 10px 0; 
+	height: 100px;
+	margin: 5px 0 10px 0;
 }
 
 .done-grade {
-	height: 40px; 
-	background:; 
-	overflow: hidden; 
-	transform: all 1s ease; 
+	height: 40px;
+	background:;
+	overflow: hidden;
+	transform: all 1s ease;
+}
+@media (max-width: 800px) {
+	.colapsed {
+		height: 100px;
+		overflow: hidden;
+	}
+	.assignments-header h1 {
+		width: 200px;
+	}
+	.articleClass .assignments-section .assignment {
+		width: auto;
+	}
+	.assignment-description{
+		width: auto;
+	}
+	.articleClass .assignments-section .assignment {
+		margin-bottom: 20px;
+	}
+	.create-new-assignment {
+		width: auto;
+	}
 }
