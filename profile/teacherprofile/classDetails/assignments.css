@@ -171,10 +171,10 @@
 
 .done-grade {
 	height: 40px;
-	background:;
 	overflow: hidden;
 	transform: all 1s ease;
 }
+
 @media (max-width: 800px) {
 	.colapsed {
 		height: 100px;
