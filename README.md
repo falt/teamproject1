@@ -14,7 +14,22 @@
 </p>
 
 <br>
-
+  teamproject1/					
+	├── index.html				
+	├── style.css				
+	├── login.js				
+	├── README.md				
+	├── img/			
+	    ├── icon/		
+         ├── font-awesome/			
+         ├── profile/			
+	     ├── adminprofile/		
+		├── adminTools/	
+	    ├── studentprofile/
+		├── myCourses/
+	    ├── teacherprofile/		
+		├── classDetails/
+		├── myClasses/
 
 ### Layout colors:
 * Background on dashboard cards: white;
