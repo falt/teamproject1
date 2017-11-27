@@ -17,20 +17,20 @@
 
 ### Filestructure
 ```
-  teamproject1/					
-	├── index.html				
-	├── style.css				
-	├── login.js				
-	├── README.md				
-	├── img/			
-	    ├── icon/		
-         ├── font-awesome/			
-         ├── profile/			
-	     ├── adminprofile/		
-		├── adminTools/	
-	    ├── studentprofile/
-		├── myCourses/
-	    ├── teacherprofile/		
+teamproject1/					
+  ├── index.html				
+  ├── style.css				
+  ├── login.js				
+  ├── README.md				
+  ├── img/			
+  │	├── icon/		
+  ├── font-awesome/			
+  ├── profile/			
+  	├── adminprofile/		
+	│	├── adminTools/	
+	├── studentprofile/
+	│	├── myCourses/
+	├── teacherprofile/		
 		├── classDetails/
 		├── myClasses/
 ```
