@@ -10,19 +10,16 @@ body, h1, h2, h3, h4, h5, h6, ol, ul, li, a, p {
 
 /* HEADER SECTION */
 header {
-    height: 50px;
-    width: 100%;
-    display: flex;
-    position: fixed;
-    justify-content: space-between;
-    flex-direction: row;
-    border-width: 1px;
-    border-style: solid;
-    border-color:#d6d6d6;
-    border-image: initial;
-    top: 0px;
-    background-color: #fff;
-    z-index: 1;
+	height: 50px;
+	width: 100%;
+	border: 1px solid #d6d6d6;
+	border-top-color: white;
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	top: 0px;
+	background: white;
+	z-index: 1;
 }
 
 header .logo {
@@ -33,35 +30,33 @@ header .logo {
 	align-items: center;
 	font-size: 25px;
 	font-weight: bold;
-}
-
-header .logo img {
-    width: 100px; 
-    margin: 0 0 0 25px; 
+	margin-left: 10px;
 }
 
 header nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #000;
-    margin: 0 10px 0 0; 
+	height: 50px;
+	width: 350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 10px 0 0;
+	color: #776f6f;
+}
+
+header nav a {
+	text-decoration: none;
+	color: black;
 }
 
 header nav ul li {
 	display: inline-block;
-    padding: 0 10px;
+	padding: 0 10px;
 }
 
-header nav ul a:hover {
+header a:hover {
 	cursor: pointer;
-    color: #DD6925; 
+	color: #DD6925;
 }
-
-header nav ul li a {
-    color: black; 
-}
-
 /*  END HEADER SECTION */
 
 main {
