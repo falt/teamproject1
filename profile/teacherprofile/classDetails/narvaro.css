@@ -37,3 +37,10 @@ table {
 
 
 }
+
+@media (max-width: 800px) {
+ .narvaro-schema  {
+    width: inherit;
+    overflow: scroll;
+  }
+}
