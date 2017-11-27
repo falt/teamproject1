@@ -44,3 +44,11 @@ teamproject1/
 		├── classDetails/
 		├── myClasses/
 ```
+## Walktrough
+
+### First/Landing page
+On the first page 
+
+### Logged in
+
+
