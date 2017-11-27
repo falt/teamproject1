@@ -1,12 +1,12 @@
 <p align="center">
   <a href="https://getbootstrap.com/">
-    <img src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width=72 height=72>
+    <img src="https://lh3.googleusercontent.com/oFlHrHIHr3IT0KgbFVmNjCsI7PDzdm6YQj9WhXpaPiM7elyTXpHlNDLklr5RElpG3gM=h310" alt="" width=72 height=72>
   </a>
 
   <h3 align="center">Bootstrap</h3>
 
   <p align="center">
-    Sleek, intuitive, and powerful front-end framework for faster and easier web development.
+    Sleek, intuitive, and powerful 
     <br>
     <a href="https://getbootstrap.com/docs/4.0/"><strong>Explore Bootstrap docs »</strong></a>
     <br>
