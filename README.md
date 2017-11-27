@@ -6,7 +6,7 @@
   <h3 align="center">Teamproject1</h3>
 
   <p align="center">
-    Ett responsivt LMS 
+    Ett responsivt LMS för YH-skolor     
   <a href="https://trello.com/b/nOapM9nK/projektarbete">Trello</a>
 
 
