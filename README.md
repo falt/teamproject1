@@ -3,7 +3,7 @@
     <img src="https://lh3.googleusercontent.com/oFlHrHIHr3IT0KgbFVmNjCsI7PDzdm6YQj9WhXpaPiM7elyTXpHlNDLklr5RElpG3gM=h310" alt="" width=100 height=100>
   </a>
 
-  <h3 align="center">Teamproject1</h3>
+  <h3 align="center">Teamproject1 Lions</h3>
 
   <p align="center">
     Ett responsivt LMS för YH-skolor <br>
