@@ -38,8 +38,8 @@ header .logo {
 }
 
 header .logo img {
-    width: 100px; 
-    margin: 0 0 0 25px; 
+    width: 100px;
+    margin: 0 0 0 25px;
 }
 
 header nav {
@@ -47,7 +47,7 @@ header nav {
     justify-content: center;
     align-items: center;
     color: #000;
-    margin: 0 10px 0 0; 
+    margin: 0 10px 0 0;
 }
 
 header nav ul li {
@@ -57,11 +57,11 @@ header nav ul li {
 
 header nav ul a:hover {
 	cursor: pointer;
-    color: #EA6D2C; 
+    color: #EA6D2C;
 }
 
 header nav ul li a {
-    color: black; 
+    color: black;
 }
 
 /*  END HEADER SECTION */
@@ -87,97 +87,97 @@ header nav ul li a {
 main {
     width: 100%;
     min-height: 100vh;
-    display: flex; 
+    display: flex;
     flex-direction: row;
-    justify-content: center; 
-    margin: 50px 0 0 0; 
+    justify-content: center;
+    margin: 50px 0 0 0;
     background-color: rgb(242, 242, 242);
-} 
+}
 
 main .course-section {
     background: white;
-    margin: 10px; 
+    margin: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around; 
-    border-radius: 5px; 
+    justify-content: space-around;
+    border-radius: 5px;
     border:1px solid #d6d6d6;
-    overflow: scroll; 
+    overflow: scroll;
 }
 
 main .courses {
-    background: white; 
-    margin: 10px 0; 
+    background: white;
+    margin: 10px 0;
     border-radius: 2px;
 }
 
 
 #card1{
-    background-image: url(../img/icon/arbetsmetodik.svg); 
-    background-repeat: no-repeat; 
-    background-position: 100% 0px;  
+    background-image: url(../../../img/icon/arbetsmetodik.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0px;
     background-size: 20%;
 }
 #card2{
-    background-image: url(../img/icon/js-30.svg); 
-    background-repeat: no-repeat; 
-    background-position: 100% 0px;  
+    background-image: url(../../../img/icon/js-30.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0px;
     background-size: 20%;
 }
 #card3{
-    background-image: url(../img/icon/html5.svg); 
-    background-repeat: no-repeat; 
-    background-position: 100% 0px;  
+    background-image: url(../../../img/icon/html5.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0px;
     background-size: 20%;
 }
 
 #card4{
-    background-image: url(../img/icon/arbetsmetodik.svg); 
-    background-repeat: no-repeat; 
-    background-position: 100% 0px;  
+    background-image: url(../../../img/icon/arbetsmetodik.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0px;
     background-size: 20%;
 }
 #card5{
-    background-image: url(../img/icon/js-30.svg); 
-    background-repeat: no-repeat; 
-    background-position: 100% 0px;  
+    background-image: url(../../../img/icon/js-30.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0px;
     background-size: 20%;
 }
 #card6{
-    background-image: url(../img/icon/html5.svg); 
-    background-repeat: no-repeat; 
-    background-position: 100% 0px;  
+    background-image: url(../../../img/icon/html5.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0px;
     background-size: 20%;
 }
 
 #card7{
-    background-image: url(../img/icon/ux.svg); 
-    background-repeat: no-repeat; 
-    background-position: 100% 0px;  
+    background-image: url(../../../img/icon/ux.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0px;
     background-size: 20%;
 }
 #card8{
-    background-image: url(../img/icon/backend.svg); 
-    background-repeat: no-repeat; 
-    background-position: 100% 0px;  
+    background-image: url(../../../img/icon/backend.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0px;
     background-size: 20%;
 }
 #card9{
-    background-image: url(../img/icon/html5.svg); 
-    background-repeat: no-repeat; 
-    background-position: 100% 0px;  
+    background-image: url(../../../img/icon/html5.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0px;
     background-size: 20%;
 }
 #card10{
-    background-image: url(../img/icon/arbetsmetodik.svg); 
-    background-repeat: no-repeat; 
-    background-position: 100% 0px;  
+    background-image: url(../../../img/icon/arbetsmetodik.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0px;
     background-size: 20%;
 }
 #card11{
-    background-image: url(../img/icon/js-30.svg); 
-    background-repeat: no-repeat; 
-    background-position: 100% 0px;  
+    background-image: url(../../../img/icon/js-30.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0px;
     background-size: 20%;
 }
 
@@ -186,39 +186,39 @@ main .courses {
 main .courses .courses-header {
     display: flex;
     justify-content: flex-start;
-    align-items: center; 
+    align-items: center;
     height: 50px;
 }
 
 main .courses .courses-header:hover {
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 main .courses .courses-header h1 {
-    font-size: 25px; 
-    padding: 0 15px; 
+    font-size: 25px;
+    padding: 0 15px;
     /* border-bottom: 1px dotted #EA6D2C;  */
-    color: #EA6D2C; 
+    color: #EA6D2C;
 }
 
 main .course-cards {
-    width: 100%; 
+    width: 100%;
     display: flex;
-    justify-content: center; 
-    flex-direction: column; 
+    justify-content: center;
+    flex-direction: column;
 }
 
 main .courses .course-cards .course-card {
-    width: 300px; 
-    margin: 10px; 
-    border-radius: 5px; 
+    width: 300px;
+    margin: 10px;
+    border-radius: 5px;
     border: 1px solid lightgray;
 }
 .course-card{
     display: flex;
     flex-direction: row;
-    
-    
+
+
 }
 .course-card-grade{
     margin: 20px 80px 10px 10px;
@@ -231,25 +231,25 @@ main .courses .course-cards .course-card {
 
 .course-card .course-card-header {
     width: 220px;
-    border-radius: 2px; 
+    border-radius: 2px;
 }
 
 .course-card:hover {
     cursor: pointer;
-    transform: scale(1.05);  
-    transition: transform 2s ease; 
-    
+    transform: scale(1.05);
+    transition: transform 2s ease;
+
 }
 
 .course-card .course-card-header h1 {
-    padding: 10px 10px 5px 10px; 
-    font-size: 17px; 
-    text-transform: uppercase;     
+    padding: 10px 10px 5px 10px;
+    font-size: 17px;
+    text-transform: uppercase;
 }
 
 .course-card .course-card-header p {
-    padding: 5px 10px; 
-    font-size: 14px; 
+    padding: 5px 10px;
+    font-size: 14px;
 }
 
 footer {
@@ -259,9 +259,9 @@ footer {
     height: 50px;
     text-align: center;
     padding: 25px 0 0 0;
-    display: fixed; 
-    bottom: 0px; 
-    background: #fff; 
+    display: fixed;
+    bottom: 0px;
+    background: #fff;
 }
 
 
@@ -269,14 +269,14 @@ footer {
 @media (max-width: 972px) {
 
         main .course-section {
-            width: 100%; 
+            width: 100%;
             flex-direction: column;
         }
 
         main .course-section .course-cards {
-            flex-direction: row; 
-            justify-content: flex-start; 
-            flex-wrap: wrap; 
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: wrap;
         }
 
 
@@ -287,46 +287,46 @@ footer {
 
 
     header {
-        height: 90px; 
+        height: 90px;
         flex-direction: column;
-        justify-content: center; 
-        align-items: center; 
-        transition: all 0.3s ease;         
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
     }
 
     header .logo img {
-        width: 100px; 
-        margin: 0; 
-        transition: all 1s ease;         
+        width: 100px;
+        margin: 0;
+        transition: all 1s ease;
     }
 
     main {
         flex-direction: column;
         justify-content: center;
-        align-items: center; 
-        margin: 90px 0 0 0; 
-        transition: all 1s ease;         
+        align-items: center;
+        margin: 90px 0 0 0;
+        transition: all 1s ease;
     }
 
     main .course-section {
         flex-direction: column;
-        width: 95%; 
-        transition: all 1s ease; 
+        width: 95%;
+        transition: all 1s ease;
         align-items: center;
     }
 
     main .courses {
-        align-items: center;         
+        align-items: center;
     }
 
     main .courses .course-cards .course-card {
-        flex-direction: column; 
-        width: 95%; 
+        flex-direction: column;
+        width: 95%;
     }
 
     main .courses .course-card-header {
-        width: 100%; 
-        transition: all 1s ease;         
+        width: 100%;
+        transition: all 1s ease;
     }
 
 }
