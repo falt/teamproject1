@@ -1,6 +1,3 @@
-//document.getElementById("span").addEventListener("click", ExpandToggle)
-//var d = document.getElementById("span");
-
 
 function ExpandToggle(){
   var expand = document.getElementById("topic1");
