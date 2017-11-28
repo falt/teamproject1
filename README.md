@@ -105,8 +105,40 @@ Class details:
   * Asignment.js controlls this function
   
 * Course evaluation tab:
-  *
-```
+  * Course evaluation results displayed in four difrent graphs
+  * Chart.js controlls the graphs
+
+* Create group asignment tab:
+  * Input how many groups to divide into and generate a visualisation of the groups.
+  * Drag and drop between groups is posible
+  * Dividegroup.js controlls this function
+
+* Attendance tab:
+  * Grid for visualisation of each students attendace
+  * Possibility to toggle attendance on each student
+  ```
+  Admin:
+  ```
+  Admin tools:
+  * Create new user tab
+    * New user can be created for all types of accounts
+    * Generates username, email and password 
+    * Script.js controlls this file
+    
+  * Edit evaluations tab
+    * Uppdate current evaluations and delete questions
+    * Create new evaluations
+    * Editevaluations.js controlls this function
+    
+  * Create course tab
+    * Ability to create new courses and asign teacher
+    * Createcourse.js controlls this function
+  
+  * Create class tab
+    * Ability to create class and assign students
+    
+    
+  ```
 
 
 
