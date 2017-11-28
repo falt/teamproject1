@@ -69,10 +69,10 @@ General:
 Tabs 
 * Tabs used in course details (student), admin tools (admin) and class details (teacher) are controlled by the script.js-file. 
 Each user tab-styling are divided into separate css stylesheets. 
-```
-Student:
 
-Firstpage 
+Student:
+```Firstpage 
+
 Report attendance module. 
 * Student user can register attendance via an input field. Attendane code is generated from the teacher script-file. 
 
