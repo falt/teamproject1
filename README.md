@@ -63,8 +63,16 @@ Smooth scroll
 After logging in the user is greeted by corresponding profilepage depending if they are Student, Teacher or Admin they have a little difrent layout and functions.
 
 ### Technical
+
+General: 
+
+Tabs 
+* Tabs used in course details (student), admin tools (admin) and class details (teacher) are controlled by the script.js-file. 
+Each user tab-styling are divided into separate css stylesheets. 
+```
 Student:
 
+Firstpage 
 Report attendance module. 
 * Student user can register attendance via an input field. Attendane code is generated from the teacher script-file. 
 
@@ -73,6 +81,8 @@ Daily mood rate section.
 
 Weekly course rate section. 
 * Students can rate the course in a weekly evaluation. 
+```
+
 
 
 
