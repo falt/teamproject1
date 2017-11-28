@@ -67,16 +67,16 @@ After logging in the user is greeted by corresponding profilepage depending if t
 General: 
 ```
 Tabs 
-* Tabs used in course details (student), admin tools (admin) and class details (teacher) are controlled by the script.js-file. 
+* Tabs used in course details (student), admin tools (admin) and class details (teacher) are controlled by the script.js. 
 Each user tab-styling are divided into separate css stylesheets. 
 ```
 
 Student:
 ```
-Firstpage:
+Startpage:
 
 Report attendance module. 
-* Student user can register attendance via an input field. Attendane code is generated from the teacher script-file. 
+* Student user can register attendance via an input field. Attendane code is generated from the teacher script.js. 
 
 Daily mood rate section. 
 * Student can rate their current mood and see a graph (provided from graph.js-library) over all students mood from that day. 
@@ -92,10 +92,21 @@ Schedule.
 
 ```
 Teacher:
-`
-Teacher:
-`
-Teacher:
+```
+Startpage:
+Generate attendance code.
+* Creates an random generated 8 character code from the script.js
+```
+```
+Class details:
+* Asignment tab:
+  * Each asignment is expandable whit information about the asignment and submited asignments from students
+  * It is possible to make new asignments whit the + symbol
+  * Asignment.js controlls this function
+  
+* Course evaluation tab:
+  *
+```
 
 
 
