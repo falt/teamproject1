@@ -16,15 +16,6 @@
 <br>
 
 
-
-### Layout
-* Background on dashboard cards: #fff
-* Background BEHIND dashbord cards: #f2f2f2
-* Border-color: #f2f2f2; 
-* Nav border color: #d6d6d6;
-* Orange color for buttons etc: #dd6925;
-* Border radius: 5px;
-
 ### Filestructure
 ```
 teamproject1/					
@@ -69,5 +60,27 @@ Smooth scroll
 
 
 ## Logged in
+After logging in the user is greeted by corresponding profilepage depending if they are Student, Teacher or Admin they have a little difrent layout and functions.
 
+### Technical
+Student:
+
+Report attendance module. 
+* Student user can register attendance via an input field. Attendane code is generated from the teacher script-file. 
+
+Daily mood rate section. 
+* Student can rate their current mood and see a graph (provided from graph.js-library) over all students mood from that day. 
+
+Weekly course rate section. 
+* Students can rate the course in a weekly evaluation. 
+
+
+
+### Visual
+* Background on dashboard cards: #FFF
+* Background BEHIND dashbord cards: #F2F2F2
+* Border-color: #F2F2F2 
+* Nav border color: #D6D6D6
+* Orange color for buttons etc: #DD6925;
+* Border radius: 5px;
 
