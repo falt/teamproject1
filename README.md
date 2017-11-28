@@ -65,10 +65,11 @@ After logging in the user is greeted by corresponding profilepage depending if t
 ### Technical
 
 General: 
-
+```
 Tabs 
 * Tabs used in course details (student), admin tools (admin) and class details (teacher) are controlled by the script.js-file. 
 Each user tab-styling are divided into separate css stylesheets. 
+```
 
 Student:
 ```
@@ -90,6 +91,12 @@ Schedule.
 * Imported google calendar whit iframe
 
 ```
+Teacher:
+`
+Teacher:
+`
+Teacher:
+
 
 
 
