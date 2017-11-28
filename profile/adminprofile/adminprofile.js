@@ -3,12 +3,11 @@ buttons.forEach(function (button) { //calls all buttons with class .readmore1
     button.addEventListener('click', function (e) { //this will happen when you call all buttons
         e.target.previousSibling.previousSibling.childNodes[5].classList.toggle('hidden')
         e.target.innerHTML = "Spara";
-        // once you activate the function "buttons" "e" - the div "hidden" will toggle on and off 
+        // once you activate the function "buttons" "e" - the div "hidden" will toggle on and off
     })
 })
 
 let articles = document.querySelectorAll(".editable")
-console.log(articles)
 
 function editableContent() {
     for (let i = 0; i < articles.length; i++) {

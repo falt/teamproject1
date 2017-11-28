@@ -17,9 +17,7 @@ function attendance() {
         textfield.classList.toggle("hide");
         approved.classList.toggle("hide");
         button.classList.toggle("hide")
-        console.log("rätt")
     } else {
-        console.log("fel")
         textfield.value = "skriv in rätt kod";
     }
 }
@@ -36,6 +34,3 @@ function send(){
     button.classList.toggle("hide");
     approved.classList.toggle("hide");
 }
-
-
-
