@@ -118,7 +118,7 @@ Class details:
   * Possibility to toggle attendance on each student
   ```
   Admin:
-  ```
+```
   Admin tools:
   * Create new user tab
     * New user can be created for all types of accounts
