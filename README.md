@@ -138,7 +138,7 @@ Class details:
     * Ability to create class and assign students
     
     
-  ```
+```
 
 
 
