@@ -44,11 +44,30 @@ teamproject1/
 		├── classDetails/
 		├── myClasses/
 ```
-## Walktrough
+# Walktrough
 
-### First/Landing page
-On the first page 
+## First/Landing page
+First page describes the service, shows information about the pricing and contact information.
+Clients can sign in via the sign in box in top right corner.
+### Technical
 
-### Logged in
+Login
+* The login function have three hardcoded users, Student, Teacher and Admin
+* The password is same as the username
+* New users can be configured trough the login.js file
+
+Smooth scroll
+* The links on the navbar are linked to corresponding sections of the page whit a smooth scroll function
+
+### Visual
+* Background: #FFF
+* Accent color: #5295DD
+* Secondary accent color: F7F7F7
+* Section border color: #D3D3D3
+* Border radius general: 5px;
+* Border radius pricing: 15px;
+
+
+## Logged in
 
 
