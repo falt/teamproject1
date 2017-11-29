@@ -64,14 +64,14 @@ After logging in the user is greeted by corresponding profilepage depending if t
 
 ### Technical
 
-#### General: 
+#### General
 ```
-##### Tabs 
+Tabs:
 * Tabs used in course details (student), admin tools (admin) and class details (teacher) are controlled by the script.js. 
 Each user tab-styling are divided into separate css stylesheets. 
 ```
 
-Student:
+#### Student
 ```
 Startpage:
 
@@ -91,7 +91,7 @@ Schedule.
 * Imported google calendar whit iframe
 
 ```
-Teacher:
+#### Teacher
 ```
 Startpage:
 Generate attendance code.
@@ -117,7 +117,7 @@ Class details:
   * Grid for visualisation of each students attendace
   * Possibility to toggle attendance on each student
   ```
-  Admin:
+#### Admin
 ```
   Admin tools:
   * Create new user tab
