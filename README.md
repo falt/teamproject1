@@ -42,12 +42,12 @@ First page describes the service, shows information about the pricing and contac
 Clients can sign in via the sign in box in top right corner.
 ### Technical
 
-Login
+#### Login
 * The login function have three hardcoded users, Student, Teacher and Admin
 * The password is same as the username
 * New users can be configured trough the login.js file
 
-Smooth scroll
+#### Smooth scroll
 * The links on the navbar are linked to corresponding sections of the page whit a smooth scroll function
 
 ### Visual
@@ -64,9 +64,9 @@ After logging in the user is greeted by corresponding profilepage depending if t
 
 ### Technical
 
-General: 
+#### General: 
 ```
-Tabs 
+##### Tabs 
 * Tabs used in course details (student), admin tools (admin) and class details (teacher) are controlled by the script.js. 
 Each user tab-styling are divided into separate css stylesheets. 
 ```
