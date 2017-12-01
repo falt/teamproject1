@@ -7,6 +7,7 @@
 
   <p align="center">
     Ett responsivt LMS för YH-skolor <br>
+	Utvecklat av: Andreas Fält, Björn Ahrsjö, Daniel Öhrn Hasslöf, Johanna Jovér och Robin Wisseng<br>
   <a href="https://trello.com/b/nOapM9nK/projektarbete">Trello</a>
 
 
